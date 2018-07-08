@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view limit="1000" name="DEFAULT_VIEW" default="true">
+<sort/>
+<columns>
+<column name="STAT_EXEC" width="-1"/>
+<column name="SOURCE" width="-1"/>
+<column name="STAT_ELAP" width="-1"/>
+<column name="AVG_STAT_ELAP" width="-1"/>
+<column name="STAT_CPU" width="-1"/>
+<column name="AVG_STAT_CPU" width="-1"/>
+<column name="STAT_GPAG" width="-1"/>
+<column name="AVG_STAT_GPAG" width="-1"/>
+<column name="EXPLAINED" width="-1"/>
+<column name="STMT_TEXT" width="-1"/>
+</columns>
+</view>

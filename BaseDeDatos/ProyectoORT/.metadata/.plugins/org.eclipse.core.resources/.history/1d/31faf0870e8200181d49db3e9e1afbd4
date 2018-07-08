@@ -1,0 +1,9 @@
+Create or Replace Procedure ESQUEMA.SP_Tipos_Delete(P_TIPOS_CODIGO 
+)
+P1:Begin
+
+Delete ESQUEMA.TIPOS
+WHERE TIPOS_CODIGO=P_TIPOS_CODIGO
+;
+
+End p1

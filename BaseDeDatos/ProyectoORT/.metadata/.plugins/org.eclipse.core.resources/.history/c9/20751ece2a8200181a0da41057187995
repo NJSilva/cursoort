@@ -1,0 +1,4 @@
+Select 
+	* 
+from 
+	sysibm.syscolumns where tbname='PERSONAS' AND tbcreator='ESQUEMA' AND generated<>'A' and GENERATED<>'A' order by KEYSEQ , COLNO

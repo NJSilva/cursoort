@@ -1,0 +1,12 @@
+#Sat Jul 07 14:27:22 UYT 2018
+url=jdbc\:db2\://localhost\:50000/CURSOORT\:retrieveMessagesFromServerOnGetMessage\=true;
+driverName=com.ibm.db2.jcc.DB2Driver
+profileProviderID=com.ibm.datatools.db2.alias.connectionProfile
+jarList=C\:\\Program Files\\IBM\\DS4.1.3\\..\\SDPShared\\plugins\\com.ibm.datatools.db2_2.2.201.v20170814_2141\\driver\\db2jcc.jar;C\:\\Program Files\\IBM\\DS4.1.3\\..\\SDPShared\\plugins\\com.ibm.datatools.db2_2.2.201.v20170814_2141\\driver\\db2jcc_license_cisuz.jar
+userid=nico
+version=V11.1
+databaseName=CURSOORT
+conName=CURSOORT
+driverDefinitionType=com.ibm.datatools.db2.alias.driverTemplate
+driverDefinitionID=DriverDefn.com.ibm.datatools.db2.alias.driverTemplate.Controlador de IBM Data Server para JDBC y SQLJ Default
+product=DB2 UDB

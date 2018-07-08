@@ -1,0 +1,16 @@
+/* Archivo generado automaticamente por GeneradorSP_Obtener */ 
+Create or Replace Procedure ESQUEMA.SP_Tipos_Obtener()
+
+DYNAMIC RESULT SETS 1
+
+P1:Begin
+
+DECLARE c1 CURSOR WITH RETURN FOR Select 
+TIPOS.TIPOS_CODIGO,
+TIPOS.TIPOS_NOMBRE
+from ESQUEMA.TIPOS TIPOS
+;
+OPEN C1;
+
+
+End p1@

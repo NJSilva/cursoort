@@ -1,0 +1,10 @@
+/* Archivo generado automaticamente por GeneradorSP_Delete */ 
+Create or Replace Procedure ESQUEMA.SP_Prestamos_Delete
+)
+P1:Begin
+
+Delete ESQUEMA.PRESTAMOS
+WH
+;
+
+End p1@

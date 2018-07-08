@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view limit="1000" name="VIEW_TEMPLATE" default="true">
+<sort>
+<column direction="ASC" name="STMTNO"/>
+</sort>
+<columns>
+<column name="PLNAME"/>
+<column name="COLLID"/>
+<column name="NAME"/>
+<column name="STMTNO"/>
+<column name="STMTNOI"/>
+<column name="QUERYNO"/>
+<column name="PROCMS"/>
+<column name="PROCSU"/>
+<column name="STMT_TEXT"/>
+<column name="SECTNO"/>
+<column name="SECTNOI"/>
+<column name="OWNER"/>
+<column name="QUALIFIER"/>
+<column name="VERSION"/>
+<column name="BINDTIME"/>
+<column name="ISOLATION"/>
+<column name="DEFERPREP"/>
+<column name="EXPREDICATE"/>
+<column name="DEGREE"/>
+<column name="SQLRULES"/>
+<column name="DYNAMICRULES"/>
+</columns>
+</view>

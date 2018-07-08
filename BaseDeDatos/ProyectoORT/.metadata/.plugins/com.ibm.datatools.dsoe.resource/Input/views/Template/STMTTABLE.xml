@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filter [
+<!ELEMENT filter (element*)> 
+
+<!ELEMENT	element	(colname,datatype,comment)>
+  <!ELEMENT	colname		(#PCDATA)>
+  <!ELEMENT	datatype	(#PCDATA)>
+  <!ELEMENT	comment		(#PCDATA)>
+]>
+
+<filter>
+
+<element>
+  <colname> <![CDATA[QUERYNO]]></colname>
+  <datatype>  <![CDATA[INT_DATA]]></datatype>
+  <comment> <![CDATA[01020700]]></comment>
+</element>
+<element>
+  <colname> <![CDATA[PROCMS]]></colname>
+  <datatype>  <![CDATA[INT_DATA]]></datatype>
+  <comment> <![CDATA[01020701]]></comment>
+</element>
+<element>
+  <colname> <![CDATA[PROCSU]]></colname>
+  <datatype>  <![CDATA[INT_DATA]]></datatype>
+  <comment> <![CDATA[01020702]]></comment>
+</element>
+<element>
+  <colname> <![CDATA[APPLNAME]]></colname>
+  <datatype>  <![CDATA[CHAR_DATA]]></datatype>
+  <comment> <![CDATA[01020703]]></comment>
+</element>
+<element>
+  <colname> <![CDATA[PROGNAME]]></colname>
+  <datatype>  <![CDATA[CHAR_DATA]]></datatype>
+  <comment> <![CDATA[01020704]]></comment>
+</element>
+<element>
+  <colname> <![CDATA[COLLID]]></colname>
+  <datatype>  <![CDATA[CHAR_DATA]]></datatype>
+  <comment> <![CDATA[01020705]]></comment>
+</element>
+<element>
+  <colname> <![CDATA[EXPLAIN_TIME]]></colname>
+  <datatype>  <![CDATA[TIMESTAMP]]></datatype>
+  <comment> <![CDATA[01020706]]></comment>
+</element>
+
+</filter>

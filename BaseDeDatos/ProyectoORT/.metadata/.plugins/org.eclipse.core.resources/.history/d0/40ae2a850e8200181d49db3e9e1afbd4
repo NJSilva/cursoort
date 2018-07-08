@@ -1,0 +1,11 @@
+Create or Replace Procedure ESQUEMA.SP_Libros_Delete(
+IN P_LIBROS_CODIGO VARCHAR(12)
+)
+P1:Begin
+
+Delete ESQUEMA.LIBROS
+WHERE 
+LIBROS_CODIGO=P_LIBROS_CODIGO 
+;
+
+End P1

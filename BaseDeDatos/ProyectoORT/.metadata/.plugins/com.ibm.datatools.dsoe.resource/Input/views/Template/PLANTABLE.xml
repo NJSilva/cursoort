@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filter [
+<!ELEMENT filter (element*)> 
+
+<!ELEMENT	element	(colname,datatype,comment)>
+  <!ELEMENT	colname		(#PCDATA)>
+  <!ELEMENT	datatype	(#PCDATA)>
+  <!ELEMENT	comment		(#PCDATA)>
+]>
+
+<filter>
+
+<element>
+  <colname> <![CDATA[QUERYNO]]></colname>
+  <datatype>  <![CDATA[INT_DATA]]></datatype>
+  <comment> <![CDATA[01020500]]></comment>
+</element>
+<element>
+  <colname> <![CDATA[COLLID]]></colname>
+  <datatype>  <![CDATA[CHAR_DATA]]></datatype>
+  <comment> <![CDATA[01020501]]></comment>
+</element>
+<element>
+  <colname> <![CDATA[APPLNAME]]></colname>
+  <datatype>  <![CDATA[CHAR_DATA]]></datatype>
+  <comment> <![CDATA[01020502]]></comment>
+</element>
+<element>
+  <colname> <![CDATA[PROGNAME]]></colname>
+  <datatype>  <![CDATA[CHAR_DATA]]></datatype>
+  <comment> <![CDATA[01020503]]></comment>
+</element>
+<element>
+  <colname> <![CDATA[VERSION]]></colname>
+  <datatype>  <![CDATA[CHAR_DATA]]></datatype>
+  <comment> <![CDATA[01020504]]></comment>
+</element>
+<element>
+  <colname> <![CDATA[BIND_TIME]]></colname>
+  <datatype>  <![CDATA[TIMESTAMP]]></datatype>
+  <comment> <![CDATA[01020505]]></comment>
+</element>
+
+</filter>

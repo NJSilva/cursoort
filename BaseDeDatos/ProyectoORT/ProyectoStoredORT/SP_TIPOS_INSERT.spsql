@@ -1,0 +1,16 @@
+Create or Replace Procedure ESQUEMA.SP_Tipos_Insert(
+--Campos de la tabla 
+IN P_TIPOS_CODIGO NUMERIC(5,0),
+IN P_TIPOS_NOMBRE VARCHAR(50)
+)
+P1:Begin
+
+Insert into ESQUEMA.TIPOS(
+TIPOS_CODIGO,
+TIPOS_NOMBRE
+) values (
+P_TIPOS_CODIGO,
+P_TIPOS_NOMBRE
+);
+
+End P1

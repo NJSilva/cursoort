@@ -1,0 +1,9 @@
+Create or Replace Procedure ESQUEMA.SP_Prestamos_Delete
+)
+P1:Begin
+
+Delete ESQUEMA.PRESTAMOS
+WH
+;
+
+End p1

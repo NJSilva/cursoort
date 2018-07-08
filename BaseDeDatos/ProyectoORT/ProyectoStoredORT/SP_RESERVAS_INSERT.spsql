@@ -1,0 +1,16 @@
+Create or Replace Procedure ESQUEMA.SP_Reservas_Insert(
+--Campos de la tabla 
+IN @PERSONAS_CEDULA VARCHAR(10),
+IN @LIBROS_CODIGO VARCHAR(12)
+)
+P1:Begin
+
+Insert into ESQUEMA.RESERVAS(
+PERSONAS_CEDULA,
+LIBROS_CODIGO
+) values (
+@PERSONAS_CEDULA,
+@LIBROS_CODIGO
+);
+
+End P1
