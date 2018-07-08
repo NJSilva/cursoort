@@ -18,8 +18,8 @@ public class ServletObtenerLibros extends HttpServlet {
     public ServletObtenerLibros() {
         super();
     }
-
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+   
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
         response.setContentType("text/html; charset=utf-8");
         try {

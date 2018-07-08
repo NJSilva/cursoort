@@ -2,7 +2,7 @@
 function getSelectLibros() {
     var selectLibros = '';
     $.ajax({
-        url: '/BibliotecaORT/src/ServletObtenerLibros',
+        url: '/BibliotecaORT/ServletObtenerLibros',
         dataType: 'json',
         type: 'GET',
         cache: false,
@@ -11,7 +11,7 @@ function getSelectLibros() {
         success: function (data) {
             $.each(data, function (i, obj) {
                 selectLibros = selectLibros + data[i].libros_codigo + ':' +
-                data[i].libros_titulo + ';';
+                        data[i].libros_titulo + ';';
             });
         },
         error: function (request, textStatus, errorThrown) {
@@ -24,7 +24,7 @@ function getSelectLibros() {
 function getSelectCodigoLibros() {
     var selectCodigoLibros = [];
     $.ajax({
-        url: '/BibliotecaORT/src/ServletObtenerLibros',
+        url: '/BibliotecaORT/ServletObtenerLibros',
         dataType: 'json',
         type: 'GET',
         cache: false,
@@ -45,7 +45,7 @@ function getSelectCodigoLibros() {
 function getSelectNombreLibros() {
     var selectNombreLibros = [];
     $.ajax({
-        url: '/BibliotecaORT/src/ServletObtenerLibros',
+        url: '/BibliotecaORT/ServletObtenerLibros',
         dataType: 'json',
         type: 'GET',
         cache: false,
@@ -66,7 +66,7 @@ function getSelectNombreLibros() {
 function getSelectLogin() {
     var selectLogin = '';
     $.ajax({
-        url: '/BibliotecaORT/src/ServletObtenerLogin',
+        url: '/BibliotecaORT/ServletObtenerLogin',
         dataType: 'json',
         type: 'GET',
         cache: false,
@@ -75,7 +75,7 @@ function getSelectLogin() {
         success: function (data) {
             $.each(data, function (i, obj) {
                 selectLogin = selectLogin + data[i].login_clave + ':' +
-                data[i].personas_cedula + ';';
+                        data[i].personas_cedula + ';';
             });
         },
         error: function (request, textStatus, errorThrown) {
@@ -88,7 +88,7 @@ function getSelectLogin() {
 function getSelectCodigoLogin() {
     var selectCodigoLogin = [];
     $.ajax({
-        url: '/BibliotecaORT/src/ServletObtenerLogin',
+        url: '/BibliotecaORT/ServletObtenerLogin',
         dataType: 'json',
         type: 'GET',
         cache: false,
@@ -109,7 +109,7 @@ function getSelectCodigoLogin() {
 function getSelectNombreLogin() {
     var selectNombreLogin = [];
     $.ajax({
-        url: '/BibliotecaORT/src/ServletObtenerLogin',
+        url: '/BibliotecaORT/ServletObtenerLogin',
         dataType: 'json',
         type: 'GET',
         cache: false,
@@ -130,7 +130,7 @@ function getSelectNombreLogin() {
 function getSelectPersonas() {
     var selectPersonas = '';
     $.ajax({
-        url: '/BibliotecaORT/src/ServletObtenerPersonas',
+        url: '/BibliotecaORT/ServletObtenerPersonas',
         dataType: 'json',
         type: 'GET',
         cache: false,
@@ -139,7 +139,7 @@ function getSelectPersonas() {
         success: function (data) {
             $.each(data, function (i, obj) {
                 selectPersonas = selectPersonas + data[i].personas_cedula + ':' +
-                data[i].personas_mail + ';';
+                        data[i].personas_mail + ';';
             });
         },
         error: function (request, textStatus, errorThrown) {
@@ -152,7 +152,7 @@ function getSelectPersonas() {
 function getSelectCodigoPersonas() {
     var selectCodigoPersonas = [];
     $.ajax({
-        url: '/BibliotecaORT/src/ServletObtenerPersonas',
+        url: '/BibliotecaORT/ServletObtenerPersonas',
         dataType: 'json',
         type: 'GET',
         cache: false,
@@ -173,7 +173,7 @@ function getSelectCodigoPersonas() {
 function getSelectNombrePersonas() {
     var selectNombrePersonas = [];
     $.ajax({
-        url: '/BibliotecaORT/src/ServletObtenerPersonas',
+        url: '/BibliotecaORT/ServletObtenerPersonas',
         dataType: 'json',
         type: 'GET',
         cache: false,
@@ -194,7 +194,7 @@ function getSelectNombrePersonas() {
 function getSelectPrestamos() {
     var selectPrestamos = '';
     $.ajax({
-        url: '/BibliotecaORT/src/ServletObtenerPrestamos',
+        url: '/BibliotecaORT/ServletObtenerPrestamos',
         dataType: 'json',
         type: 'GET',
         cache: false,
@@ -203,7 +203,7 @@ function getSelectPrestamos() {
         success: function (data) {
             $.each(data, function (i, obj) {
                 selectPrestamos = selectPrestamos + data[i].libros_codigo + ':' +
-                data[i].personas_cedula + ';';
+                        data[i].personas_cedula + ';';
             });
         },
         error: function (request, textStatus, errorThrown) {
@@ -216,7 +216,7 @@ function getSelectPrestamos() {
 function getSelectCodigoPrestamos() {
     var selectCodigoPrestamos = [];
     $.ajax({
-        url: '/BibliotecaORT/src/ServletObtenerPrestamos',
+        url: '/BibliotecaORT/ServletObtenerPrestamos',
         dataType: 'json',
         type: 'GET',
         cache: false,
@@ -237,7 +237,7 @@ function getSelectCodigoPrestamos() {
 function getSelectNombrePrestamos() {
     var selectNombrePrestamos = [];
     $.ajax({
-        url: '/BibliotecaORT/src/ServletObtenerPrestamos',
+        url: '/BibliotecaORT/ServletObtenerPrestamos',
         dataType: 'json',
         type: 'GET',
         cache: false,
@@ -258,7 +258,7 @@ function getSelectNombrePrestamos() {
 function getSelectReservas() {
     var selectReservas = '';
     $.ajax({
-        url: '/BibliotecaORT/src/ServletObtenerReservas',
+        url: '/BibliotecaORT/ServletObtenerReservas',
         dataType: 'json',
         type: 'GET',
         cache: false,
@@ -267,7 +267,7 @@ function getSelectReservas() {
         success: function (data) {
             $.each(data, function (i, obj) {
                 selectReservas = selectReservas + data[i].personas_cedula + ':' +
-                data[i].libros_codigo + ';';
+                        data[i].libros_codigo + ';';
             });
         },
         error: function (request, textStatus, errorThrown) {
@@ -280,7 +280,7 @@ function getSelectReservas() {
 function getSelectCodigoReservas() {
     var selectCodigoReservas = [];
     $.ajax({
-        url: '/BibliotecaORT/src/ServletObtenerReservas',
+        url: '/BibliotecaORT/ServletObtenerReservas',
         dataType: 'json',
         type: 'GET',
         cache: false,
@@ -301,7 +301,7 @@ function getSelectCodigoReservas() {
 function getSelectNombreReservas() {
     var selectNombreReservas = [];
     $.ajax({
-        url: '/BibliotecaORT/src/ServletObtenerReservas',
+        url: '/BibliotecaORT/ServletObtenerReservas',
         dataType: 'json',
         type: 'GET',
         cache: false,
@@ -322,7 +322,7 @@ function getSelectNombreReservas() {
 function getSelectTipos() {
     var selectTipos = '';
     $.ajax({
-        url: '/BibliotecaORT/src/ServletObtenerTipos',
+        url: '/BibliotecaORT/ServletObtenerTipos',
         dataType: 'json',
         type: 'GET',
         cache: false,
@@ -331,7 +331,7 @@ function getSelectTipos() {
         success: function (data) {
             $.each(data, function (i, obj) {
                 selectTipos = selectTipos + data[i].tipos_codigo + ':' +
-                data[i].tipos_nombre + ';';
+                        data[i].tipos_nombre + ';';
             });
         },
         error: function (request, textStatus, errorThrown) {
@@ -344,7 +344,7 @@ function getSelectTipos() {
 function getSelectCodigoTipos() {
     var selectCodigoTipos = [];
     $.ajax({
-        url: '/BibliotecaORT/src/ServletObtenerTipos',
+        url: '/BibliotecaORT/ServletObtenerTipos',
         dataType: 'json',
         type: 'GET',
         cache: false,
@@ -365,7 +365,7 @@ function getSelectCodigoTipos() {
 function getSelectNombreTipos() {
     var selectNombreTipos = [];
     $.ajax({
-        url: '/BibliotecaORT/src/ServletObtenerTipos',
+        url: '/BibliotecaORT/ServletObtenerTipos',
         dataType: 'json',
         type: 'GET',
         cache: false,

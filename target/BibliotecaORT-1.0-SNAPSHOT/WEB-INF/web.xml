@@ -15,7 +15,7 @@
         <description></description>
         <display-name>ServletGrabarLibros</display-name>
         <servlet-name>ServletGrabarLibros</servlet-name>
-        <servlet-class>servlets.ServletGrabarLibros</servlet-class>
+        <servlet-class>src.servlets.ServletGrabarLibros</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ServletGrabarLibros</servlet-name>
@@ -27,7 +27,7 @@
         <description></description>
         <display-name>ServletObtenerLibros</display-name>
         <servlet-name>ServletObtenerLibros</servlet-name>
-        <servlet-class>servlets.ServletObtenerLibros</servlet-class>
+        <servlet-class>src.servlets.ServletObtenerLibros</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ServletObtenerLibros</servlet-name>
@@ -39,7 +39,7 @@
         <description></description>
         <display-name>ServletGrabarLogin</display-name>
         <servlet-name>ServletGrabarLogin</servlet-name>
-        <servlet-class>servlets.ServletGrabarLogin</servlet-class>
+        <servlet-class>src.servlets.ServletGrabarLogin</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ServletGrabarLogin</servlet-name>
@@ -51,7 +51,7 @@
         <description></description>
         <display-name>ServletObtenerLogin</display-name>
         <servlet-name>ServletObtenerLogin</servlet-name>
-        <servlet-class>servlets.ServletObtenerLogin</servlet-class>
+        <servlet-class>src.servlets.ServletObtenerLogin</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ServletObtenerLogin</servlet-name>
@@ -63,7 +63,7 @@
         <description></description>
         <display-name>ServletGrabarPersonas</display-name>
         <servlet-name>ServletGrabarPersonas</servlet-name>
-        <servlet-class>servlets.ServletGrabarPersonas</servlet-class>
+        <servlet-class>src.servlets.ServletGrabarPersonas</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ServletGrabarPersonas</servlet-name>
@@ -75,7 +75,7 @@
         <description></description>
         <display-name>ServletObtenerPersonas</display-name>
         <servlet-name>ServletObtenerPersonas</servlet-name>
-        <servlet-class>servlets.ServletObtenerPersonas</servlet-class>
+        <servlet-class>src.servlets.ServletObtenerPersonas</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ServletObtenerPersonas</servlet-name>
@@ -87,7 +87,7 @@
         <description></description>
         <display-name>ServletGrabarPrestamos</display-name>
         <servlet-name>ServletGrabarPrestamos</servlet-name>
-        <servlet-class>servlets.ServletGrabarPrestamos</servlet-class>
+        <servlet-class>src.servlets.ServletGrabarPrestamos</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ServletGrabarPrestamos</servlet-name>
@@ -99,7 +99,7 @@
         <description></description>
         <display-name>ServletObtenerPrestamos</display-name>
         <servlet-name>ServletObtenerPrestamos</servlet-name>
-        <servlet-class>servlets.ServletObtenerPrestamos</servlet-class>
+        <servlet-class>src.servlets.ServletObtenerPrestamos</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ServletObtenerPrestamos</servlet-name>
@@ -111,7 +111,7 @@
         <description></description>
         <display-name>ServletGrabarReservas</display-name>
         <servlet-name>ServletGrabarReservas</servlet-name>
-        <servlet-class>servlets.ServletGrabarReservas</servlet-class>
+        <servlet-class>src.servlets.ServletGrabarReservas</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ServletGrabarReservas</servlet-name>
@@ -123,7 +123,7 @@
         <description></description>
         <display-name>ServletObtenerReservas</display-name>
         <servlet-name>ServletObtenerReservas</servlet-name>
-        <servlet-class>servlets.ServletObtenerReservas</servlet-class>
+        <servlet-class>src.servlets.ServletObtenerReservas</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ServletObtenerReservas</servlet-name>
@@ -135,7 +135,7 @@
         <description></description>
         <display-name>ServletGrabarTipos</display-name>
         <servlet-name>ServletGrabarTipos</servlet-name>
-        <servlet-class>servlets.ServletGrabarTipos</servlet-class>
+        <servlet-class>src.servlets.ServletGrabarTipos</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ServletGrabarTipos</servlet-name>
@@ -147,7 +147,7 @@
         <description></description>
         <display-name>ServletObtenerTipos</display-name>
         <servlet-name>ServletObtenerTipos</servlet-name>
-        <servlet-class>servlets.ServletObtenerTipos</servlet-class>
+        <servlet-class>src.servlets.ServletObtenerTipos</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ServletObtenerTipos</servlet-name>
