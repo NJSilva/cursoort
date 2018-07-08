@@ -1,0 +1,75 @@
+/* Archivo generado automaticamente por GeneradorValueObject */
+package src.vo;
+
+import src.framework.valueobject.VOI;
+
+public class LibrosVO implements VOI {
+
+    private String libros_codigo;
+    private String libros_titulo;
+    private String libros_isbn;
+    private int libros_anio;
+    private String libros_descripcion;
+    private int libros_disponible;
+    private TiposVO tipos;
+
+    public LibrosVO() {
+    }
+
+    public String getLibros_codigo() {
+        return this.libros_codigo;
+    }
+
+    public void setLibros_codigo(String _libros_codigo) {
+        this.libros_codigo = _libros_codigo;
+    }
+
+    public String getLibros_titulo() {
+        return this.libros_titulo;
+    }
+
+    public void setLibros_titulo(String _libros_titulo) {
+        this.libros_titulo = _libros_titulo;
+    }
+
+    public String getLibros_isbn() {
+        return this.libros_isbn;
+    }
+
+    public void setLibros_isbn(String _libros_isbn) {
+        this.libros_isbn = _libros_isbn;
+    }
+
+    public int getLibros_anio() {
+        return this.libros_anio;
+    }
+
+    public void setLibros_anio(int _libros_anio) {
+        this.libros_anio = _libros_anio;
+    }
+
+    public String getLibros_descripcion() {
+        return this.libros_descripcion;
+    }
+
+    public void setLibros_descripcion(String _libros_descripcion) {
+        this.libros_descripcion = _libros_descripcion;
+    }
+
+    public int getLibros_disponible() {
+        return this.libros_disponible;
+    }
+
+    public void setLibros_disponible(int _libros_disponible) {
+        this.libros_disponible = _libros_disponible;
+    }
+
+    public TiposVO getTiposVO() {
+        return this.tipos;
+    }
+
+    public void setTiposVO(TiposVO _tipos) {
+        this.tipos = _tipos;
+    }
+
+}
