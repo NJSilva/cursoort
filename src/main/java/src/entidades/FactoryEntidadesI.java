@@ -18,9 +18,7 @@ import src.vo.TiposVO;
  */
 public class FactoryEntidadesI {
 
-    private FactoryEntidadesI fei = new FactoryEntidadesI();
-
-    //use getShape method to get object of type shape 
+    
     public EntidadesI getTipo(VOI tipo) {
 
         if (tipo == null) {
@@ -48,7 +46,7 @@ public class FactoryEntidadesI {
             Login login = new Login();
             login.setLogin_clave(((LoginVO) tipo).getLogin_clave());
 
-            Personas persona = (Personas) fei.getTipo(((LoginVO) tipo).getPersonas());
+            Personas persona = (Personas) getTipo(((LoginVO) tipo).getPersonas());
             login.setPersonas(persona);
 
             return login;
@@ -63,17 +61,19 @@ public class FactoryEntidadesI {
             libro.setLibros_isbn(((LibrosVO) tipo).getLibros_isbn());
             libro.setLibros_titulo(((LibrosVO) tipo).getLibros_titulo());
             
-            Tipos tipos = (Tipos) fei.getTipo(((LibrosVO) tipo).getTiposVO());
+            Tipos tipos = (Tipos) getTipo(((LibrosVO) tipo).getTiposVO());
             libro.setTiposVO(tipos);
+            
+            return libro;
             
         }
         
         if(tipo instanceof Prestamos){
             Prestamos prestamo = new Prestamos();
-            Libros libros = (Libros) fei.getTipo(((Prestamos) tipo).getLibros());
+            Libros libros = (Libros) getTipo(((Prestamos) tipo).getLibros());
             prestamo.setLibros(libros);
             
-            Personas persona = (Personas) fei.getTipo(((LoginVO) tipo).getPersonas());
+            Personas persona = (Personas) getTipo(((LoginVO) tipo).getPersonas());
             prestamo.setPersonas(persona);
             
             prestamo.setPrestamos_fecha_desde(((Prestamos) tipo).getPrestamos_fecha_desde());
@@ -85,10 +85,10 @@ public class FactoryEntidadesI {
         if(tipo instanceof Reservas){
             Reservas reserva = new Reservas();
             
-            Libros libros = (Libros) fei.getTipo(((Prestamos) tipo).getLibros());
+            Libros libros = (Libros) getTipo(((Prestamos) tipo).getLibros());
             reserva.setLibros(libros);
             
-            Personas persona = (Personas) fei.getTipo(((LoginVO) tipo).getPersonas());
+            Personas persona = (Personas) getTipo(((LoginVO) tipo).getPersonas());
             reserva.setPersonas(persona);
             
             return reserva;

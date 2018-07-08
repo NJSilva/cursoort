@@ -5,22 +5,12 @@
 		<item value="" key="ADVOPTS_COMPILE"/>
 		<item value="false" key="ADVOPTS_DEBUG"/>
 	</section>
-	<section name="SP_TIPOS_DELETE">
-		<item value="" key="ADVOPTS_PRECOMPILE"/>
-		<item value="" key="ADVOPTS_COMPILE"/>
-		<item value="false" key="ADVOPTS_DEBUG"/>
-	</section>
-	<section name="SP_LIBROS_INSERT">
-		<item value="" key="ADVOPTS_PRECOMPILE"/>
-		<item value="" key="ADVOPTS_COMPILE"/>
-		<item value="false" key="ADVOPTS_DEBUG"/>
-	</section>
 	<section name="SP_LOGIN_INSERT">
 		<item value="" key="ADVOPTS_PRECOMPILE"/>
 		<item value="" key="ADVOPTS_COMPILE"/>
 		<item value="false" key="ADVOPTS_DEBUG"/>
 	</section>
-	<section name="SP_TIPOS_INSERT">
+	<section name="SP_LOGIN_UPDATE">
 		<item value="" key="ADVOPTS_PRECOMPILE"/>
 		<item value="" key="ADVOPTS_COMPILE"/>
 		<item value="false" key="ADVOPTS_DEBUG"/>
@@ -30,12 +20,7 @@
 		<item value="" key="ADVOPTS_COMPILE"/>
 		<item value="false" key="ADVOPTS_DEBUG"/>
 	</section>
-	<section name="SP_LIBROS_OBTENER">
-		<item value="" key="ADVOPTS_PRECOMPILE"/>
-		<item value="" key="ADVOPTS_COMPILE"/>
-		<item value="false" key="ADVOPTS_DEBUG"/>
-	</section>
-	<section name="SP_PRESTAMOS_OBTENER">
+	<section name="SP_PRESTAMOS_UPDATE">
 		<item value="" key="ADVOPTS_PRECOMPILE"/>
 		<item value="" key="ADVOPTS_COMPILE"/>
 		<item value="false" key="ADVOPTS_DEBUG"/>
@@ -45,32 +30,7 @@
 		<item value="" key="ADVOPTS_COMPILE"/>
 		<item value="false" key="ADVOPTS_DEBUG"/>
 	</section>
-	<section name="SP_LIBROS_DELETE">
-		<item value="" key="ADVOPTS_PRECOMPILE"/>
-		<item value="" key="ADVOPTS_COMPILE"/>
-		<item value="false" key="ADVOPTS_DEBUG"/>
-	</section>
 	<section name="SP_LOGIN_DELETE">
-		<item value="" key="ADVOPTS_PRECOMPILE"/>
-		<item value="" key="ADVOPTS_COMPILE"/>
-		<item value="false" key="ADVOPTS_DEBUG"/>
-	</section>
-	<section name="SP_PERSONAS_DELETE">
-		<item value="" key="ADVOPTS_PRECOMPILE"/>
-		<item value="" key="ADVOPTS_COMPILE"/>
-		<item value="false" key="ADVOPTS_DEBUG"/>
-	</section>
-	<section name="SP_RESERVAS_DELETE">
-		<item value="" key="ADVOPTS_PRECOMPILE"/>
-		<item value="" key="ADVOPTS_COMPILE"/>
-		<item value="false" key="ADVOPTS_DEBUG"/>
-	</section>
-	<section name="SP_RESERVAS_INSERT">
-		<item value="" key="ADVOPTS_PRECOMPILE"/>
-		<item value="" key="ADVOPTS_COMPILE"/>
-		<item value="false" key="ADVOPTS_DEBUG"/>
-	</section>
-	<section name="SP_TIPOS_OBTENER">
 		<item value="" key="ADVOPTS_PRECOMPILE"/>
 		<item value="" key="ADVOPTS_COMPILE"/>
 		<item value="false" key="ADVOPTS_DEBUG"/>
@@ -91,6 +51,76 @@
 		<item value="false" key="ADVOPTS_DEBUG"/>
 	</section>
 	<section name="SP_RESERVAS_OBTENERPK">
+		<item value="" key="ADVOPTS_PRECOMPILE"/>
+		<item value="" key="ADVOPTS_COMPILE"/>
+		<item value="false" key="ADVOPTS_DEBUG"/>
+	</section>
+	<section name="SP_PERSONAS_UPDATE">
+		<item value="" key="ADVOPTS_PRECOMPILE"/>
+		<item value="" key="ADVOPTS_COMPILE"/>
+		<item value="false" key="ADVOPTS_DEBUG"/>
+	</section>
+	<section name="SP_TIPOS_DELETE">
+		<item value="" key="ADVOPTS_PRECOMPILE"/>
+		<item value="" key="ADVOPTS_COMPILE"/>
+		<item value="false" key="ADVOPTS_DEBUG"/>
+	</section>
+	<section name="SP_LIBROS_INSERT">
+		<item value="" key="ADVOPTS_PRECOMPILE"/>
+		<item value="" key="ADVOPTS_COMPILE"/>
+		<item value="false" key="ADVOPTS_DEBUG"/>
+	</section>
+	<section name="SP_TIPOS_INSERT">
+		<item value="" key="ADVOPTS_PRECOMPILE"/>
+		<item value="" key="ADVOPTS_COMPILE"/>
+		<item value="false" key="ADVOPTS_DEBUG"/>
+	</section>
+	<section name="SP_LIBROS_UPDATE">
+		<item value="" key="ADVOPTS_PRECOMPILE"/>
+		<item value="" key="ADVOPTS_COMPILE"/>
+		<item value="false" key="ADVOPTS_DEBUG"/>
+	</section>
+	<section name="SP_TIPOS_UPDATE">
+		<item value="" key="ADVOPTS_PRECOMPILE"/>
+		<item value="" key="ADVOPTS_COMPILE"/>
+		<item value="false" key="ADVOPTS_DEBUG"/>
+	</section>
+	<section name="SP_LIBROS_OBTENER">
+		<item value="" key="ADVOPTS_PRECOMPILE"/>
+		<item value="" key="ADVOPTS_COMPILE"/>
+		<item value="false" key="ADVOPTS_DEBUG"/>
+	</section>
+	<section name="SP_PRESTAMOS_OBTENER">
+		<item value="" key="ADVOPTS_PRECOMPILE"/>
+		<item value="" key="ADVOPTS_COMPILE"/>
+		<item value="false" key="ADVOPTS_DEBUG"/>
+	</section>
+	<section name="SP_LIBROS_DELETE">
+		<item value="" key="ADVOPTS_PRECOMPILE"/>
+		<item value="" key="ADVOPTS_COMPILE"/>
+		<item value="false" key="ADVOPTS_DEBUG"/>
+	</section>
+	<section name="SP_PERSONAS_DELETE">
+		<item value="" key="ADVOPTS_PRECOMPILE"/>
+		<item value="" key="ADVOPTS_COMPILE"/>
+		<item value="false" key="ADVOPTS_DEBUG"/>
+	</section>
+	<section name="SP_RESERVAS_DELETE">
+		<item value="" key="ADVOPTS_PRECOMPILE"/>
+		<item value="" key="ADVOPTS_COMPILE"/>
+		<item value="false" key="ADVOPTS_DEBUG"/>
+	</section>
+	<section name="SP_RESERVAS_INSERT">
+		<item value="" key="ADVOPTS_PRECOMPILE"/>
+		<item value="" key="ADVOPTS_COMPILE"/>
+		<item value="false" key="ADVOPTS_DEBUG"/>
+	</section>
+	<section name="SP_RESERVAS_UPDATE">
+		<item value="" key="ADVOPTS_PRECOMPILE"/>
+		<item value="" key="ADVOPTS_COMPILE"/>
+		<item value="false" key="ADVOPTS_DEBUG"/>
+	</section>
+	<section name="SP_TIPOS_OBTENER">
 		<item value="" key="ADVOPTS_PRECOMPILE"/>
 		<item value="" key="ADVOPTS_COMPILE"/>
 		<item value="false" key="ADVOPTS_DEBUG"/>

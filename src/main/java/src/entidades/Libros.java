@@ -26,8 +26,7 @@ public class Libros extends LibrosVO implements EntidadesI {
 
     public Object[] generarPK() {
         Object[] datos = {
-            getLibros_codigo(),
-            getTiposVO().getTipos_codigo()};
+            getLibros_codigo()};
         return datos;
     }
 }
