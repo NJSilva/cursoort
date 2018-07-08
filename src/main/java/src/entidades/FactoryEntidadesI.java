@@ -10,6 +10,8 @@ import src.framework.valueobject.VOI;
 import src.vo.LibrosVO;
 import src.vo.LoginVO;
 import src.vo.PersonasVO;
+import src.vo.PrestamosVO;
+import src.vo.ReservasVO;
 import src.vo.TiposVO;
 
 /**
@@ -68,21 +70,21 @@ public class FactoryEntidadesI {
             
         }
         
-        if(tipo instanceof Prestamos){
+        if(tipo instanceof PrestamosVO){
             Prestamos prestamo = new Prestamos();
-            Libros libros = (Libros) getTipo(((Prestamos) tipo).getLibros());
+            Libros libros = (Libros) getTipo(((PrestamosVO) tipo).getLibros());
             prestamo.setLibros(libros);
             
-            Personas persona = (Personas) getTipo(((LoginVO) tipo).getPersonas());
+            Personas persona = (Personas) getTipo(((PrestamosVO) tipo).getPersonas());
             prestamo.setPersonas(persona);
             
-            prestamo.setPrestamos_fecha_desde(((Prestamos) tipo).getPrestamos_fecha_desde());
-            prestamo.setPrestamos_fecha_hasta(((Prestamos) tipo).getPrestamos_fecha_hasta());
+            prestamo.setPrestamos_fecha_desde(((PrestamosVO) tipo).getPrestamos_fecha_desde());
+            prestamo.setPrestamos_fecha_hasta(((PrestamosVO) tipo).getPrestamos_fecha_hasta());
             
             return prestamo;
         }
         
-        if(tipo instanceof Reservas){
+        if(tipo instanceof ReservasVO){
             Reservas reserva = new Reservas();
             
             Libros libros = (Libros) getTipo(((Prestamos) tipo).getLibros());

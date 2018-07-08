@@ -30,363 +30,377 @@ import src.framework.valueobject.VOI;
 // TODO: Auto-generated Javadoc
 /**
  * The Class HelperAbstractDao.
- */ 
+ */
 public abstract class HelperAbstractDao extends HelperAbstractConnectionDao {
 
-	/** The logger. */
-	protected static Logger logger = Logger.getLogger(HelperAbstractDao.class);
+    /**
+     * The logger.
+     */
+    protected static Logger logger = Logger.getLogger(HelperAbstractDao.class);
 
-	/** The consulta find all. */
-	protected String consultaFindAll = null;
+    /**
+     * The consulta find all.
+     */
+    protected String consultaFindAll = null;
 
-	/** The consulta find by primary key. */
-	protected String consultaFindByPrimaryKey = null;
+    /**
+     * The consulta find by primary key.
+     */
+    protected String consultaFindByPrimaryKey = null;
 
-	/** The consulta insert. */
-	protected String consultaInsert = null;
+    /**
+     * The consulta insert.
+     */
+    protected String consultaInsert = null;
 
-	/** The consulta delete. */
-	protected String consultaDelete = null;
+    /**
+     * The consulta delete.
+     */
+    protected String consultaDelete = null;
 
-	/** The consulta update. */
-	protected String consultaUpdate = null;
+    /**
+     * The consulta update.
+     */
+    protected String consultaUpdate = null;
 
-	/** The consulta cantidad. */
-	protected String consultaCantidad = null;
-        
-        protected FactoryEntidadesI factoryEntidadesI = new FactoryEntidadesI();
+    /**
+     * The consulta cantidad.
+     */
+    protected String consultaCantidad = null;
 
-	/**
-	 * Instantiates a new helper abstract dao.
-	 */
-	protected HelperAbstractDao() {
+    protected FactoryEntidadesI factoryEntidadesI = new FactoryEntidadesI();
 
-	}
+    /**
+     * Instantiates a new helper abstract dao.
+     */
+    protected HelperAbstractDao() {
 
-	/**
-	 * Gets the timestamp.
-	 *
-	 * @return the timestamp
-	 */
-	protected Timestamp getTimestamp() {
+    }
 
-		Calendar calendar = Calendar.getInstance();
-		Date now = calendar.getTime();
+    /**
+     * Gets the timestamp.
+     *
+     * @return the timestamp
+     */
+    protected Timestamp getTimestamp() {
 
-		Timestamp currentTimestamp = new java.sql.Timestamp(now.getTime());
+        Calendar calendar = Calendar.getInstance();
+        Date now = calendar.getTime();
 
-		return currentTimestamp;
-	}
+        Timestamp currentTimestamp = new java.sql.Timestamp(now.getTime());
 
-	/**
-	 * 
-	 * @param rs
-	 * @return
-	 * @throws SQLException
-	 */
-	protected abstract VOI procesarResultSet(ResultSet rs) throws SQLException;
+        return currentTimestamp;
+    }
 
-	/**
-	 * 
-	 * @return
-	 * @throws SQLException
-	 */
-	public synchronized List<VOI> findAll() throws SQLException {
+    /**
+     *
+     * @param rs
+     * @return
+     * @throws SQLException
+     */
+    protected abstract VOI procesarResultSet(ResultSet rs) throws SQLException;
 
-		List<VOI> lista = null;
-		CallableStatement cs = null;
-		ResultSet resultSet = null;
-		Connection con = null;
-		try {
+    /**
+     *
+     * @return @throws SQLException
+     */
+    public synchronized List<VOI> findAll() throws SQLException {
 
-			con = getConnection();
-			cs = con.prepareCall(consultaFindAll);
-			resultSet = cs.executeQuery();
-			lista = new ArrayList<VOI>();
+        List<VOI> lista = null;
+        CallableStatement cs = null;
+        ResultSet resultSet = null;
+        Connection con = null;
+        try {
 
-			while (resultSet.next()) {
-				VOI objeto = procesarResultSet(resultSet);
-				lista.add(objeto);
-			}
+            con = getConnection();
+            cs = con.prepareCall(consultaFindAll);
+            resultSet = cs.executeQuery();
+            lista = new ArrayList<VOI>();
 
-		} catch (SQLException e) {
-			e.printStackTrace();
-			throw new SQLException(UtilConexion.printSQLException(e).getMessage());
-		} finally {
-			try {
-				if (resultSet != null) {
-					resultSet.close();
-				}
+            while (resultSet.next()) {
+                VOI objeto = procesarResultSet(resultSet);
+                lista.add(objeto);
+            }
 
-				if (cs != null) {
-					cs.close();
-				}
-			} catch (SQLException e1) {
-				e1.printStackTrace();
-				throw new SQLException(e1.getMessage());
-			}
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw new SQLException(UtilConexion.printSQLException(e).getMessage());
+        } finally {
+            try {
+                if (resultSet != null) {
+                    resultSet.close();
+                }
 
-		}
+                if (cs != null) {
+                    cs.close();
+                }
+            } catch (SQLException e1) {
+                e1.printStackTrace();
+                throw new SQLException(e1.getMessage());
+            }
 
-		if (lista != null && lista.size() == 0) {
-			throw new SQLException("No hay datos");
-		}
+        }
 
-		return lista;
-	}
+        if (lista != null && lista.size() == 0) {
+            throw new SQLException("No hay datos");
+        }
 
-	/**
-	 * 
-	 * @param key
-	 * @return
-	 * @throws SQLException
-	 */
-	public synchronized List<VOI> findByPrimaryKey(Object key) throws SQLException {
+        return lista;
+    }
 
-		CallableStatement cs = null;
-		ResultSet resultSet = null;
-		Connection con = null;
-		VOI entidad = null;
-		List<VOI> lista = new ArrayList<VOI>();
+    /**
+     *
+     * @param key
+     * @return
+     * @throws SQLException
+     */
+    public synchronized List<VOI> findByPrimaryKey(Object key) throws SQLException {
 
-		try {
-			logger.debug(consultaFindByPrimaryKey);
-			con = getConnection();
-			cs = con.prepareCall(consultaFindByPrimaryKey);
-			cs.setObject(1, key);
+        CallableStatement cs = null;
+        ResultSet resultSet = null;
+        Connection con = null;
+        VOI entidad = null;
+        List<VOI> lista = new ArrayList<VOI>();
 
-			resultSet = cs.executeQuery();
+        try {
+            logger.debug(consultaFindByPrimaryKey);
+            con = getConnection();
+            cs = con.prepareCall(consultaFindByPrimaryKey);
+            cs.setObject(1, key);
 
-			while (resultSet.next()) {
-				entidad = (procesarResultSet(resultSet));
-				lista.add(entidad);
-			}
+            resultSet = cs.executeQuery();
 
-		} catch (SQLException e) {
-			e.printStackTrace();
-			throw new SQLException(UtilConexion.printSQLException(e).getMessage());
-		} finally {
-			try {
-				if (resultSet != null) {
-					resultSet.close();
-				}
+            while (resultSet.next()) {
+                entidad = (procesarResultSet(resultSet));
+                lista.add(entidad);
+            }
 
-				if (cs != null) {
-					cs.close();
-				}
-			} catch (SQLException e1) {
-				e1.printStackTrace();
-				throw new SQLException(UtilConexion.printSQLException(e1).getMessage());
-			}
-		}
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw new SQLException(UtilConexion.printSQLException(e).getMessage());
+        } finally {
+            try {
+                if (resultSet != null) {
+                    resultSet.close();
+                }
 
-		return lista;
-	}
+                if (cs != null) {
+                    cs.close();
+                }
+            } catch (SQLException e1) {
+                e1.printStackTrace();
+                throw new SQLException(UtilConexion.printSQLException(e1).getMessage());
+            }
+        }
 
-	/**
-	 * 
-	 * @param objeto
-	 * @return
-	 * @throws SQLException
-	 */
-	public synchronized String insert(VOI objeto) throws SQLException {
+        return lista;
+    }
 
-		int insertado = 0;
-		Connection con = null;
-		CallableStatement cs = null;
-		try {
-                        
-                        EntidadesI entidadI = factoryEntidadesI.getTipo(objeto);
-			Object[] campos = entidadI.generarCampos();
-			logger.debug(campos);
-			con = getConnection();
+    /**
+     *
+     * @param objeto
+     * @return
+     * @throws SQLException
+     */
+    public synchronized String insert(VOI objeto) throws SQLException {
 
-			for (int i = 0; i < campos.length; i++) {
-				logger.info(campos[i]);
-			}
+        int insertado = 0;
+        Connection con = null;
+        CallableStatement cs = null;
+        try {
 
-			logger.info(consultaInsert);
-			cs = con.prepareCall(consultaInsert);
+            EntidadesI entidadI = factoryEntidadesI.getTipo(objeto);
+            Object[] campos = entidadI.generarCampos();
+            logger.debug(campos);
+            con = getConnection();
 
-			for (int i = 0; i < campos.length; i++) {
-				cs.setObject(i + 1, campos[i]);
-			}
+            for (int i = 0; i < campos.length; i++) {
+                logger.info(campos[i]);
+            }
 
-			insertado = cs.executeUpdate();
+            logger.info(consultaInsert);
+            cs = con.prepareCall(consultaInsert);
 
-			con.commit();
+            for (int i = 0; i < campos.length; i++) {
+                if (null == campos[i]) {
+                    cs.setNull(i+1 , Types.NULL);
+                } else {
+                    cs.setObject(i + 1, campos[i]);
+                }
 
-		} catch (SQLException e) {
-			e.printStackTrace();
-			throw new SQLException(UtilConexion.printSQLException(e).getMessage());
-		} finally {
-			try {
-				if (cs != null) {
-					cs.close();
-				}
-			} catch (SQLException e1) {
-				throw new SQLException(UtilConexion.printSQLException(e1).getMessage());
-			}
-		}
+            }
 
-		if (insertado == 0) {
-			throw new SQLException("No se inserto");
-		}
+            insertado = cs.executeUpdate();
 
-		return String.valueOf(insertado);
-	}
+            con.commit();
 
-	/**
-	 * Update.
-	 *
-	 * @param objeto
-	 *            the objeto
-	 * @return the string
-	 * @throws SQLException
-	 *             the SQL exception
-	 */
-	public synchronized String update(VOI objeto) throws SQLException {
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw new SQLException(UtilConexion.printSQLException(e).getMessage());
+        } finally {
+            try {
+                if (cs != null) {
+                    cs.close();
+                }
+            } catch (SQLException e1) {
+                throw new SQLException(UtilConexion.printSQLException(e1).getMessage());
+            }
+        }
 
-		Timestamp inicio = getTimestamp();
+        if (insertado == 0) {
+            throw new SQLException("No se inserto");
+        }
 
-		int insertado = 0;
-		Connection con = null;
-		CallableStatement cs = null;
-		try {
-                        EntidadesI entidadI = factoryEntidadesI.getTipo(objeto);
-			Object[] campos = entidadI.generarCampos();
-			con = getConnection();
-			cs = con.prepareCall(consultaUpdate);
+        return String.valueOf(insertado);
+    }
 
-			for (int i = 0; i < campos.length; i++) {
-				if (campos[i] != null) {
-					cs.setObject(i + 1, campos[i]);
-				} else {
-					cs.setObject(i + 1, Types.NULL);
-				}
-			}
+    /**
+     * Update.
+     *
+     * @param objeto the objeto
+     * @return the string
+     * @throws SQLException the SQL exception
+     */
+    public synchronized String update(VOI objeto) throws SQLException {
 
-			insertado = cs.executeUpdate();
+        Timestamp inicio = getTimestamp();
 
-			con.commit();
+        int insertado = 0;
+        Connection con = null;
+        CallableStatement cs = null;
+        try {
+            EntidadesI entidadI = factoryEntidadesI.getTipo(objeto);
+            Object[] campos = entidadI.generarCampos();
+            con = getConnection();
+            cs = con.prepareCall(consultaUpdate);
 
-		} catch (SQLException e) {
-			e.printStackTrace();
-			throw new SQLException(UtilConexion.printSQLException(e).getMessage());
-		} finally {
-			try {
-				if (cs != null) {
-					cs.close();
-				}
-			} catch (SQLException e1) {
-				throw new SQLException(UtilConexion.printSQLException(e1).getMessage());
-			}
-		}
+            for (int i = 0; i < campos.length; i++) {
+                if (campos[i] != null) {
+                    cs.setObject(i + 1, campos[i]);
+                } else {
+                    cs.setNull(i + 1, Types.NULL);
+                }
+            }
 
-		if (insertado == 0) {
-			throw new SQLException("No se actualizo");
-		}
+            insertado = cs.executeUpdate();
 
-		return String.valueOf(insertado);
+            con.commit();
 
-	}
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw new SQLException(UtilConexion.printSQLException(e).getMessage());
+        } finally {
+            try {
+                if (cs != null) {
+                    cs.close();
+                }
+            } catch (SQLException e1) {
+                throw new SQLException(UtilConexion.printSQLException(e1).getMessage());
+            }
+        }
 
-	/**
-	 * Delete.
-	 *
-	 * @param objeto
-	 *            the objeto
-	 * @return the string
-	 * @throws SQLException
-	 *             the SQL exception
-	 */
-	public synchronized String delete(VOI objeto) throws SQLException {
+        if (insertado == 0) {
+            throw new SQLException("No se actualizo");
+        }
 
-		int eliminado = 0;
-		Connection con = null;
-		CallableStatement cs = null;
+        return String.valueOf(insertado);
 
-		try {
-                        EntidadesI entidadI = factoryEntidadesI.getTipo(objeto);
-			Object[] campos = entidadI.generarPK();
-			logger.debug(campos);
+    }
 
-			for (int i = 0; i < campos.length; i++) {
-				logger.info(campos[i]);
-			}
+    /**
+     * Delete.
+     *
+     * @param objeto the objeto
+     * @return the string
+     * @throws SQLException the SQL exception
+     */
+    public synchronized String delete(VOI objeto) throws SQLException {
 
-			con = getConnection();
-			cs = con.prepareCall(consultaDelete);
-			logger.debug(consultaDelete);
+        int eliminado = 0;
+        Connection con = null;
+        CallableStatement cs = null;
 
-			for (int i = 0; i < campos.length; i++) {
-				cs.setObject(i + 1, campos[i]);
-			}
+        try {
+            EntidadesI entidadI = factoryEntidadesI.getTipo(objeto);
+            Object[] campos = entidadI.generarPK();
+            logger.debug(campos);
 
-			eliminado = cs.executeUpdate();
+            for (int i = 0; i < campos.length; i++) {
+                logger.info(campos[i]);
+            }
 
-			con.commit();
+            con = getConnection();
+            cs = con.prepareCall(consultaDelete);
+            logger.debug(consultaDelete);
 
-		} catch (SQLException e) {
-			e.printStackTrace();
-			throw new SQLException(UtilConexion.printSQLException(e).getMessage());
-		} finally {
-			if (cs != null) {
-				cs.close();
-			}
-		}
+            for (int i = 0; i < campos.length; i++) {
+                cs.setObject(i + 1, campos[i]);
+            }
 
-		if (eliminado == 0) {
-			throw new SQLException("No se elimino");
-		}
+            eliminado = cs.executeUpdate();
 
-		return String.valueOf(eliminado);
-	}
+            con.commit();
 
-	/**
-	 * Obtener cantidad registros.
-	 *
-	 * @return the int
-	 * @throws SQLException
-	 */
-	/*
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw new SQLException(UtilConexion.printSQLException(e).getMessage());
+        } finally {
+            if (cs != null) {
+                cs.close();
+            }
+        }
+
+        if (eliminado == 0) {
+            throw new SQLException("No se elimino");
+        }
+
+        return String.valueOf(eliminado);
+    }
+
+    /**
+     * Obtener cantidad registros.
+     *
+     * @return the int
+     * @throws SQLException
+     */
+    /*
 	 * (non-Javadoc)
 	 * 
 	 * @see framework.HelperDaoI#obtenerCantidadRegistros()
-	 */
-	public int obtenerCantidadRegistros() throws SQLException {
+     */
+    public int obtenerCantidadRegistros() throws SQLException {
 
-		Timestamp inicio = getTimestamp();
+        Timestamp inicio = getTimestamp();
 
-		int cantidad = 0;
-		Connection con = null;
-		CallableStatement cs = null;
+        int cantidad = 0;
+        Connection con = null;
+        CallableStatement cs = null;
 
-		try {
-			con = getConnection();
-			logger.info(consultaCantidad);
-			cs = con.prepareCall(consultaCantidad);
-			cs.registerOutParameter(1, Types.INTEGER);
+        try {
+            con = getConnection();
+            logger.info(consultaCantidad);
+            cs = con.prepareCall(consultaCantidad);
+            cs.registerOutParameter(1, Types.INTEGER);
 
-			cs.execute();
+            cs.execute();
 
-			// Ver si retorno clave
-			cantidad = cs.getInt(1);
+            // Ver si retorno clave
+            cantidad = cs.getInt(1);
 
-		} catch (SQLException e) {
-			e.printStackTrace();
-			throw new SQLException(UtilConexion.printSQLException(e).getMessage());
-		} finally {
-			try {
-				if (cs != null) {
-					cs.close();
-				}
-			} catch (SQLException e1) {
-				throw new SQLException(UtilConexion.printSQLException(e1).getMessage());
-			}
-		}
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw new SQLException(UtilConexion.printSQLException(e).getMessage());
+        } finally {
+            try {
+                if (cs != null) {
+                    cs.close();
+                }
+            } catch (SQLException e1) {
+                throw new SQLException(UtilConexion.printSQLException(e1).getMessage());
+            }
+        }
 
-		return cantidad;
-	}
+        return cantidad;
+    }
 
 }

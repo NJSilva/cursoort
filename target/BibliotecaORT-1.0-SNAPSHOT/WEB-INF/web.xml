@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    
+    
+    <servlet>
+        <description></description>
+        <display-name>ServletGrabarLibros</display-name>
+        <servlet-name>ServletGrabarLibros</servlet-name>
+        <servlet-class>servlets.ServletGrabarLibros</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletGrabarLibros</servlet-name>
+        <url-pattern>/ServletGrabarLibros</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <description></description>
+        <display-name>ServletObtenerLibros</display-name>
+        <servlet-name>ServletObtenerLibros</servlet-name>
+        <servlet-class>servlets.ServletObtenerLibros</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletObtenerLibros</servlet-name>
+        <url-pattern>/ServletObtenerLibros</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <description></description>
+        <display-name>ServletGrabarLogin</display-name>
+        <servlet-name>ServletGrabarLogin</servlet-name>
+        <servlet-class>servlets.ServletGrabarLogin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletGrabarLogin</servlet-name>
+        <url-pattern>/ServletGrabarLogin</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <description></description>
+        <display-name>ServletObtenerLogin</display-name>
+        <servlet-name>ServletObtenerLogin</servlet-name>
+        <servlet-class>servlets.ServletObtenerLogin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletObtenerLogin</servlet-name>
+        <url-pattern>/ServletObtenerLogin</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <description></description>
+        <display-name>ServletGrabarPersonas</display-name>
+        <servlet-name>ServletGrabarPersonas</servlet-name>
+        <servlet-class>servlets.ServletGrabarPersonas</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletGrabarPersonas</servlet-name>
+        <url-pattern>/ServletGrabarPersonas</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <description></description>
+        <display-name>ServletObtenerPersonas</display-name>
+        <servlet-name>ServletObtenerPersonas</servlet-name>
+        <servlet-class>servlets.ServletObtenerPersonas</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletObtenerPersonas</servlet-name>
+        <url-pattern>/ServletObtenerPersonas</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <description></description>
+        <display-name>ServletGrabarPrestamos</display-name>
+        <servlet-name>ServletGrabarPrestamos</servlet-name>
+        <servlet-class>servlets.ServletGrabarPrestamos</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletGrabarPrestamos</servlet-name>
+        <url-pattern>/ServletGrabarPrestamos</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <description></description>
+        <display-name>ServletObtenerPrestamos</display-name>
+        <servlet-name>ServletObtenerPrestamos</servlet-name>
+        <servlet-class>servlets.ServletObtenerPrestamos</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletObtenerPrestamos</servlet-name>
+        <url-pattern>/ServletObtenerPrestamos</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <description></description>
+        <display-name>ServletGrabarReservas</display-name>
+        <servlet-name>ServletGrabarReservas</servlet-name>
+        <servlet-class>servlets.ServletGrabarReservas</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletGrabarReservas</servlet-name>
+        <url-pattern>/ServletGrabarReservas</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <description></description>
+        <display-name>ServletObtenerReservas</display-name>
+        <servlet-name>ServletObtenerReservas</servlet-name>
+        <servlet-class>servlets.ServletObtenerReservas</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletObtenerReservas</servlet-name>
+        <url-pattern>/ServletObtenerReservas</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <description></description>
+        <display-name>ServletGrabarTipos</display-name>
+        <servlet-name>ServletGrabarTipos</servlet-name>
+        <servlet-class>servlets.ServletGrabarTipos</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletGrabarTipos</servlet-name>
+        <url-pattern>/ServletGrabarTipos</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <description></description>
+        <display-name>ServletObtenerTipos</display-name>
+        <servlet-name>ServletObtenerTipos</servlet-name>
+        <servlet-class>servlets.ServletObtenerTipos</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletObtenerTipos</servlet-name>
+        <url-pattern>/ServletObtenerTipos</url-pattern>
+    </servlet-mapping>
+
+</web-app>
