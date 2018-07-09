@@ -14,9 +14,8 @@ import src.facade.FacadeCliente;
 import src.framework.valueobject.MensajesError;
 import src.framework.valueobject.UtilMensajesError;
 import src.validadores.ValidadorReservas;
-import src.entidades.Libros;
-import src.entidades.Personas;
-import src.entidades.Reservas;
+import src.vo.LibrosVO;
+import src.vo.PersonasVO;
 import src.vo.ReservasVO;
 
 public class ServletGrabarReservas extends HttpServlet {
@@ -40,9 +39,9 @@ public class ServletGrabarReservas extends HttpServlet {
             String PERSONAS_MAIL = request.getParameter("personas.personas_mail");
             String LIBROS_TITULO = request.getParameter("libros.libros_titulo");
             
-            Personas personas = (Personas) fc.buscar(PERSONAS_CEDULA, "Personas");
+            PersonasVO personas = (PersonasVO) fc.buscar(PERSONAS_MAIL, "Personas").get(0);
             reservas.setPersonas(personas);
-            Libros libros = (Libros) fc.buscar(LIBROS_CODIGO, "Libros");
+            LibrosVO libros = (LibrosVO) fc.buscar(LIBROS_CODIGO, "Libros").get(0);
             reservas.setLibros(libros);
             
             reservas.setPersonas(personas);

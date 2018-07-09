@@ -46,4 +46,21 @@
 			<item value="false" key="RunOptions.RunOptions.GatherTraceInformation"/>
 		</section>
 	</section>
+	<section name="SP_PERSONAS_OBTENERPK">
+		<section name="SP_PERSONAS_OBTENERPK_VARCHAR">
+			<item value="false" key="RunOptions.RunOptions.GatherPerformanceInformation"/>
+			<item value="true" key="RunOptions.RunOptions.CommitChanges"/>
+			<item value=";" key="RunOptions.RunRoutineConfiguration.BeforeRunStmtTerminator"/>
+			<item value=";" key="RunOptions.RunRoutineConfiguration.AfterRunStmtTerminator"/>
+			<item value="&lt;![CDATA[]]&gt;" key="RunOptions.RunRoutineConfiguration.AfterRunScript"/>
+			<item value="&lt;![CDATA[]]&gt;" key="RunOptions.RunRoutineConfiguration.BeforeRunScript"/>
+			<item value="false" key="RunOptions.RunOptions.CollectActuals"/>
+			<item value="false" key="RunOptions.RunOptions.GatherTraceInformation"/>
+			<list key="@PERSONAS_CEDULA">
+				<item value="VARCHAR"/>
+				<item value="19716428"/>
+				<item value="false"/>
+			</list>
+		</section>
+	</section>
 </section>
