@@ -20,8 +20,9 @@ public class Reservas extends ReservasVO implements EntidadesI {
 
     public Object[] generarPK() {
         Object[] datos = {
-            getPersonas().getPersonas_cedula(),
-            getLibros().getLibros_codigo()};
+            getLibros().getLibros_codigo(),
+            getPersonas().getPersonas_cedula()
+            };
         return datos;
     }
 }
