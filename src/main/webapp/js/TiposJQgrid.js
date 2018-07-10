@@ -1,45 +1,58 @@
 //* Archivo generado automaticamente por Generador_JQgrid_Js *//> 
-function mantenimientoTipos(){
+function mantenimientoTipos() {
 
-jQuery("#listaTipos").jqGrid({
-url : '/cursoort/src/ServletObtenerTipos',
-editurl : '/cursoort/src/ServletGrabarTipos',
-datatype : "json",
-type : "POST",
-autowidth : false,
-height : 'auto',
-regional : 'es',
-shrinkToFit : true,
-cellsubmit : 'remote',
-rowNum : 10,
-rowList : [ 10, 20, 30 ,40 , 50],
-pager : '#pagerListaTipos',
-viewrecords : true,
-sortorder : "asc",
-loadonce : true,
-hidegrid : true,
-caption : "Tipos",
-colNames : [ 'TIPOS_CODIGO',
-'TIPOS_NOMBRE'],
+    jQuery("#listaTipos").jqGrid({
+        url: '/cursoort/src/ServletObtenerTipos',
+        editurl: '/cursoort/src/ServletGrabarTipos',
+        datatype: "json",
+        type: "POST",
+        autowidth: false,
+        height: 'auto',
+        regional: 'es',
+        shrinkToFit: true,
+        cellsubmit: 'remote',
+        rowNum: 10,
+        rowList: [10, 20, 30, 40, 50],
+        pager: '#pagerListaTipos',
+        viewrecords: true,
+        sortorder: "asc",
+        loadonce: true,
+        hidegrid: true,
+        caption: "Tipos",
+        colNames: ['TIPOS_CODIGO',
+            'TIPOS_NOMBRE'],
 
-colModel : [ {
-name : 'tipos_codigo',
-index : 'tipos_codigo',
-editoptions : {size :5,
-maxlength :5},
-align : 'right',
-formatter: 'integer',
-editable : true,
-search:true,
-editrules : {required : true}},
-{
-name : 'tipos_nombre',
-index : 'tipos_nombre',
-editoptions : {size :50,
-maxlength :50},
-editable : true,
-search:true,
-editrules : {required : true}}]});
+        colModel: [{
+                name: 'tipos_codigo',
+                index: 'tipos_codigo',
+                editoptions: {size: 5,
+                    maxlength: 5},
+                align: 'right',
+                formatter: 'integer',
+                editable: true,
+                search: true,
+                editrules: {required: true}},
+            {
+                name: 'tipos_nombre',
+                index: 'tipos_nombre',
+                editoptions: {size: 50,
+                    maxlength: 50},
+                editable: true,
+                search: true,
+                editrules: {required: true}}]});
 
+    	jQuery("#listaTipos").jqGrid('navGrid', '#pagerListaTipos', {
+
+		reloadGridOptions : {
+			fromServer : true
+		},
+
+		edit : true,
+		add : true,
+		del : true,
+		search : true,
+		refresh : true,
+		view : true
+	});
 
 }
