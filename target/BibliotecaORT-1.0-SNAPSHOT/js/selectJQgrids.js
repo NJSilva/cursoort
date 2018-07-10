@@ -1,4 +1,3 @@
-//* Archivo generado automaticamente por Generador_Select_Js *//>
 function getSelectLibros() {
     var selectLibros = '';
     $.ajax({
@@ -11,7 +10,7 @@ function getSelectLibros() {
         success: function (data) {
             $.each(data, function (i, obj) {
                 selectLibros = selectLibros + data[i].libros_codigo + ':' +
-                        data[i].libros_titulo + ';';
+                data[i].libros_titulo + ';';
             });
         },
         error: function (request, textStatus, errorThrown) {
@@ -75,7 +74,7 @@ function getSelectLogin() {
         success: function (data) {
             $.each(data, function (i, obj) {
                 selectLogin = selectLogin + data[i].login_clave + ':' +
-                        data[i].personas_cedula + ';';
+                data[i].personas_cedula + ';';
             });
         },
         error: function (request, textStatus, errorThrown) {
@@ -139,7 +138,7 @@ function getSelectPersonas() {
         success: function (data) {
             $.each(data, function (i, obj) {
                 selectPersonas = selectPersonas + data[i].personas_cedula + ':' +
-                        data[i].personas_mail + ';';
+                data[i].personas_mail + ';';
             });
         },
         error: function (request, textStatus, errorThrown) {
@@ -203,7 +202,7 @@ function getSelectPrestamos() {
         success: function (data) {
             $.each(data, function (i, obj) {
                 selectPrestamos = selectPrestamos + data[i].libros_codigo + ':' +
-                        data[i].personas_cedula + ';';
+                data[i].personas_cedula + ';';
             });
         },
         error: function (request, textStatus, errorThrown) {
@@ -267,7 +266,7 @@ function getSelectReservas() {
         success: function (data) {
             $.each(data, function (i, obj) {
                 selectReservas = selectReservas + data[i].personas_cedula + ':' +
-                        data[i].libros_codigo + ';';
+                data[i].libros_codigo + ';';
             });
         },
         error: function (request, textStatus, errorThrown) {
@@ -331,7 +330,7 @@ function getSelectTipos() {
         success: function (data) {
             $.each(data, function (i, obj) {
                 selectTipos = selectTipos + data[i].tipos_codigo + ':' +
-                        data[i].tipos_nombre + ';';
+                data[i].tipos_nombre + ';';
             });
         },
         error: function (request, textStatus, errorThrown) {

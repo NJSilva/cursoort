@@ -2,7 +2,7 @@
 function grabarLogin(){
 // envio al servlet
 $.ajax({
-url : '/BibliotecaORT/ServletGrabarLogin',
+url : '/cursoort/src/ServletGrabarLogin',
 dataType : 'json',
 type : 'POST',
 cache : false,
