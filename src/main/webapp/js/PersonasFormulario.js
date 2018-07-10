@@ -2,7 +2,7 @@
 function grabarPersonas(){
 // envio al servlet
 $.ajax({
-url : '/cursoort/src/ServletGrabarPersonas',
+url : '/BibliotecaORT/ServletGrabarPersonas',
 dataType : 'json',
 type : 'POST',
 cache : false,

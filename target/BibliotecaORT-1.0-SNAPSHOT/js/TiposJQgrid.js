@@ -2,8 +2,8 @@
 function mantenimientoTipos() {
 
     jQuery("#listaTipos").jqGrid({
-        url: '/cursoort/src/ServletObtenerTipos',
-        editurl: '/cursoort/src/ServletGrabarTipos',
+        url: '/BibliotecaORT/ServletObtenerTipos',
+        editurl: '/BibliotecaORT/ServletGrabarTipos',
         datatype: "json",
         type: "POST",
         autowidth: false,

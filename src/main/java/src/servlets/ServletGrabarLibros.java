@@ -14,8 +14,6 @@ import src.facade.FacadeCliente;
 import src.framework.valueobject.MensajesError;
 import src.framework.valueobject.UtilMensajesError;
 import src.validadores.ValidadorLibros;
-import src.entidades.Libros;
-import src.entidades.Tipos;
 import src.vo.LibrosVO;
 import src.vo.TiposVO;
 

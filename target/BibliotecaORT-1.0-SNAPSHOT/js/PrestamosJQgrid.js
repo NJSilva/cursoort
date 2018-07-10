@@ -4,8 +4,8 @@ function mantenimientoPrestamos() {
     var seleccionPersonas = getSelectPersonas();
 
     jQuery("#listaPrestamos").jqGrid({
-        url: '/cursoort/src/ServletObtenerPrestamos',
-        editurl: '/cursoort/src/ServletGrabarPrestamos',
+        url: '/BibliotecaORT/ServletObtenerPrestamos',
+        editurl: '/BibliotecaORT/ServletGrabarPrestamos',
         datatype: "json",
         type: "POST",
         autowidth: false,

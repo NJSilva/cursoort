@@ -2,7 +2,7 @@
 function grabarLibros(){
 // envio al servlet
 $.ajax({
-url : '/cursoort/src/ServletGrabarLibros',
+url : '/BibliotecaORT/ServletGrabarLibros',
 dataType : 'json',
 type : 'POST',
 cache : false,

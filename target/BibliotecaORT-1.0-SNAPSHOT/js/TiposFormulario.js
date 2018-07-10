@@ -2,7 +2,7 @@
 function grabarTipos(){
 // envio al servlet
 $.ajax({
-url : '/cursoort/src/ServletGrabarTipos',
+url : '/BibliotecaORT/ServletGrabarTipos',
 dataType : 'json',
 type : 'POST',
 cache : false,

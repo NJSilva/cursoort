@@ -2,8 +2,8 @@
 function mantenimientoPersonas() {
 
     jQuery("#listaPersonas").jqGrid({
-        url: '/cursoort/src/ServletObtenerPersonas',
-        editurl: '/cursoort/src/ServletGrabarPersonas',
+        url: '/BibliotecaORT/ServletObtenerPersonas',
+        editurl: '/BibliotecaORT/ServletGrabarPersonas',
         datatype: "json",
         type: "POST",
         autowidth: false,

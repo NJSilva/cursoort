@@ -3,8 +3,8 @@ function mantenimientoLibros() {
     var seleccionTipos = getSelectTipos();
 
     jQuery("#listaLibros").jqGrid({
-        url: '/cursoort/src/ServletObtenerLibros',
-        editurl: '/cursoort/src/ServletGrabarLibros',
+        url: '/BibliotecaORT/ServletObtenerLibros',
+        editurl: '/BibliotecaORT/ServletGrabarLibros',
         datatype: "json",
         type: "POST",
         autowidth: false,

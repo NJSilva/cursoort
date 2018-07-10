@@ -2,7 +2,7 @@
 function grabarPrestamos(){
 // envio al servlet
 $.ajax({
-url : '/cursoort/src/ServletGrabarPrestamos',
+url : '/BibliotecaORT/ServletGrabarPrestamos',
 dataType : 'json',
 type : 'POST',
 cache : false,

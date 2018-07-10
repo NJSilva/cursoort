@@ -3,8 +3,8 @@ function mantenimientoLogin() {
     var seleccionPersonas = getSelectPersonas();
 
     jQuery("#listaLogin").jqGrid({
-        url: '/cursoort/src/ServletObtenerLogin',
-        editurl: '/cursoort/src/ServletGrabarLogin',
+        url: '/BibliotecaORT/ServletObtenerLogin',
+        editurl: '/BibliotecaORT/ServletGrabarLogin',
         datatype: "json",
         type: "POST",
         autowidth: false,

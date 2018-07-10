@@ -2,7 +2,7 @@
 function grabarReservas(){
 // envio al servlet
 $.ajax({
-url : '/cursoort/src/ServletGrabarReservas',
+url : '/BibliotecaORT/ServletGrabarReservas',
 dataType : 'json',
 type : 'POST',
 cache : false,

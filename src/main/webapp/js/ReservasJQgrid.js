@@ -4,8 +4,8 @@ function mantenimientoReservas() {
     var seleccionLibros = getSelectLibros();
 
     jQuery("#listaReservas").jqGrid({
-        url: '/cursoort/src/ServletObtenerReservas',
-        editurl: '/cursoort/src/ServletGrabarReservas',
+        url: '/BibliotecaORT/ServletObtenerReservas',
+        editurl: '/BibliotecaORT/ServletGrabarReservas',
         datatype: "json",
         type: "POST",
         autowidth: false,
