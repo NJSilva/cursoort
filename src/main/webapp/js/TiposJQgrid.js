@@ -41,18 +41,18 @@ function mantenimientoTipos() {
                 search: true,
                 editrules: {required: true}}]});
 
-    	jQuery("#listaTipos").jqGrid('navGrid', '#pagerListaTipos', {
+    jQuery("#listaTipos").jqGrid('navGrid', '#pagerListaTipos', {
 
-		reloadGridOptions : {
-			fromServer : true
-		},
+        reloadGridOptions: {
+            fromServer: true
+        },
 
-		edit : true,
-		add : true,
-		del : true,
-		search : true,
-		refresh : true,
-		view : true
-	});
+        edit: true,
+        add: true,
+        del: true,
+        search: true,
+        refresh: true,
+        view: true
+    });
 
 }

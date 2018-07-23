@@ -38,14 +38,14 @@ public class TestFacadeClienteTiposVO {
         
         /* TIPOS */
         TiposVO tiposvo = new TiposVO();
-        tiposvo.setTipos_codigo(10);
+        tiposvo.setTipos_codigo(12);
         tiposvo.setTipos_nombre("Nombre diez");
         
         try {
             fc.eliminar(tiposvo, FacadeCliente.TIPOS);
             fc.grabar(tiposvo, FacadeCliente.TIPOS);
             
-            tiposvo.setTipos_nombre("Nombre nuevo del tipo 10");
+            tiposvo.setTipos_nombre("Nombre 10");
             fc.actualizar(tiposvo, FacadeCliente.TIPOS);
         } catch (SQLException ex) {
             Logger.getLogger(TestFacadeClienteTiposVO.class.getName()).log(Level.SEVERE, null, ex);
