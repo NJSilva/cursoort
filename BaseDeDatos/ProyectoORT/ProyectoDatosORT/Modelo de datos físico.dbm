@@ -37,6 +37,9 @@
             <children xsi:type="notation:Shape" xmi:id="__d35QI6eEeijQLEnesDOew" type="Column" element="__cn8EI6eEeijQLEnesDOew" fontName="Segoe UI">
               <layoutConstraint xsi:type="notation:Bounds" xmi:id="__d35QY6eEeijQLEnesDOew"/>
             </children>
+            <children xsi:type="notation:Shape" xmi:id="_FPKgUJA9EeiEyLoE3vD3vA" type="Column" element="_FN-0kJA9EeiEyLoE3vD3vA" fontName="Segoe UI">
+              <layoutConstraint xsi:type="notation:Bounds" xmi:id="_FPKgUZA9EeiEyLoE3vD3vA"/>
+            </children>
             <children xsi:type="notation:Shape" xmi:id="_2-HLsn5YEeiaGZiZDjQaCw" type="Column" element="_2-HLsH5YEeiaGZiZDjQaCw" fontName="Segoe UI">
               <layoutConstraint xsi:type="notation:Bounds" xmi:id="_2-HLs35YEeiaGZiZDjQaCw"/>
             </children>
@@ -327,6 +330,9 @@
     </columns>
     <columns xsi:type="LUW:LUWColumn" xmi:id="__cn8EI6eEeijQLEnesDOew" name="Libros_imagen">
       <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_BRqLEI6fEeijQLEnesDOew" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="100"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_FN-0kJA9EeiEyLoE3vD3vA" name="Libros_Autor" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_G7PnoJA9EeiEyLoE3vD3vA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="100"/>
     </columns>
     <columns xsi:type="LUW:LUWColumn" xmi:id="_2-HLsH5YEeiaGZiZDjQaCw" name="Tipos_id" nullable="false">
       <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" xmi:id="_2-HLsX5YEeiaGZiZDjQaCw" name="NUMERIC" primitiveType="NUMERIC" precision="5"/>
