@@ -66,5 +66,5 @@ generateDDLOptionDB2\ UDBV11.1LUWDatabaseUSE_DOMAIN_IF_EXIST=false
 generateDDLOptionDB2\ UDBV11.1LUWDatabaseXMLSCHEMA_CONNECTION_NAME=CURSOORT
 generateDDLOptionDB2\ UDBV11.1LUWDatabaseXMLSCHEMA_DIRECTORY=
 generateDDLOptionDB2\ UDBV11.1LUWDatabaseopenDDLFileForEditing=true
-generateDDLOptionDB2\ UDBV11.1LUWDatabaserunDDLOnServer=false
+generateDDLOptionDB2\ UDBV11.1LUWDatabaserunDDLOnServer=true
 generateDDLOptionDB2\ UDBV11.1LUWDatabaseterminator=;

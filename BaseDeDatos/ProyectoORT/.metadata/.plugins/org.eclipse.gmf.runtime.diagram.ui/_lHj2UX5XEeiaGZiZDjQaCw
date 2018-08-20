@@ -1,5 +1,5 @@
-#Mon Jul 23 19:10:27 UYT 2018
-zoom=1.35
+#Sun Aug 19 10:02:27 UYT 2018
+zoom=1.07
 print.margin.right=0.25
 rulergrid.rulerunit=1
 print.useWorkspaceSettings=false
@@ -17,3 +17,4 @@ print.margin.top=0.25
 print.useLandscape=true
 print.useMillim=true
 print.usePortrait=false
+viewport.y=84

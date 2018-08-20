@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_BQ9V0IQ-EeilqIM0A_sNeg" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_BQ9V0YQ-EeilqIM0A_sNeg" bindingContexts="_BQ9aEoQ-EeilqIM0A_sNeg">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.ibm.datatools.uom.ui.migration.internal.objadmin.editor.physicalmodel.CMPhysicalModelEditor&quot; name=&quot;Modelo de datos f&#xed;sico.dbm&quot; tooltip=&quot;ProyectoDatosORT/Modelo de datos f&#xed;sico.dbm&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProyectoDatosORT/Modelo de datos f&#xed;sico.dbm&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_RESERVAS_OBTENERPK.spsql&quot; tooltip=&quot;ProyectoStoredORT/SP_RESERVAS_OBTENERPK.spsql&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProyectoStoredORT/SP_RESERVAS_OBTENERPK.spsql&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_RESERVAS_INSERT.spsql&quot; tooltip=&quot;ProyectoStoredORT/SP_RESERVAS_INSERT.spsql&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProyectoStoredORT/SP_RESERVAS_INSERT.spsql&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_PRESTAMOS_OBTENERPK.spsql&quot; tooltip=&quot;ProyectoStoredORT/SP_PRESTAMOS_OBTENERPK.spsql&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProyectoStoredORT/SP_PRESTAMOS_OBTENERPK.spsql&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_PERSONAS_OBTENERPK.spsql&quot; tooltip=&quot;ProyectoStoredORT/SP_PERSONAS_OBTENERPK.spsql&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProyectoStoredORT/SP_PERSONAS_OBTENERPK.spsql&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_LOGIN_OBTENERPK.spsql&quot; tooltip=&quot;ProyectoStoredORT/SP_LOGIN_OBTENERPK.spsql&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProyectoStoredORT/SP_LOGIN_OBTENERPK.spsql&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_LIBROS_OBTENERPK.spsql&quot; tooltip=&quot;ProyectoStoredORT/SP_LIBROS_OBTENERPK.spsql&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProyectoStoredORT/SP_LIBROS_OBTENERPK.spsql&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_LIBROS_UPDATE.spsql&quot; tooltip=&quot;ProyectoStoredORT/SP_LIBROS_UPDATE.spsql&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProyectoStoredORT/SP_LIBROS_UPDATE.spsql&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_LIBROS_OBTENER.spsql&quot; tooltip=&quot;ProyectoStoredORT/SP_LIBROS_OBTENER.spsql&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProyectoStoredORT/SP_LIBROS_OBTENER.spsql&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_LIBROS_INSERT.spsql&quot; tooltip=&quot;ProyectoStoredORT/SP_LIBROS_INSERT.spsql&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProyectoStoredORT/SP_LIBROS_INSERT.spsql&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_LIBROS_DELETE.spsql&quot; tooltip=&quot;ProyectoStoredORT/SP_LIBROS_DELETE.spsql&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProyectoStoredORT/SP_LIBROS_DELETE.spsql&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_PRESTAMOS_INSERT.spsql&quot; tooltip=&quot;ProyectoStoredORT/SP_PRESTAMOS_INSERT.spsql&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProyectoStoredORT/SP_PRESTAMOS_INSERT.spsql&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_PRESTAMOS_UPDATE.spsql&quot; tooltip=&quot;ProyectoStoredORT/SP_PRESTAMOS_UPDATE.spsql&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProyectoStoredORT/SP_PRESTAMOS_UPDATE.spsql&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_PRESTAMOS_OBTENER.spsql&quot; tooltip=&quot;ProyectoStoredORT/SP_PRESTAMOS_OBTENER.spsql&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProyectoStoredORT/SP_PRESTAMOS_OBTENER.spsql&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_PRESTAMOS_DELETE.spsql&quot; tooltip=&quot;ProyectoStoredORT/SP_PRESTAMOS_DELETE.spsql&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProyectoStoredORT/SP_PRESTAMOS_DELETE.spsql&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_LIBROS_OBTENER.spsql&quot; tooltip=&quot;ProyectoStoredORT/SP_LIBROS_OBTENER.spsql&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProyectoStoredORT/SP_LIBROS_OBTENER.spsql&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_PRESTAMOS_DELETE.spsql&quot; tooltip=&quot;ProyectoStoredORT/SP_PRESTAMOS_DELETE.spsql&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProyectoStoredORT/SP_PRESTAMOS_DELETE.spsql&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.ibm.datatools.uom.ui.migration.internal.objadmin.editor.physicalmodel.CMPhysicalModelEditor&quot; name=&quot;Modelo de datos f&#xed;sico.dbm&quot; tooltip=&quot;ProyectoDatosORT/Modelo de datos f&#xed;sico.dbm&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProyectoDatosORT/Modelo de datos f&#xed;sico.dbm&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_LOGIN_UPDATE.spsql&quot; tooltip=&quot;ProyectoStoredORT/SP_LOGIN_UPDATE.spsql&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProyectoStoredORT/SP_LOGIN_UPDATE.spsql&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_LOGIN_OBTENERPK.spsql&quot; tooltip=&quot;ProyectoStoredORT/SP_LOGIN_OBTENERPK.spsql&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProyectoStoredORT/SP_LOGIN_OBTENERPK.spsql&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_LIBROS_DELETE.spsql&quot; tooltip=&quot;ProyectoStoredORT/SP_LIBROS_DELETE.spsql&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProyectoStoredORT/SP_LIBROS_DELETE.spsql&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_LOGIN_OBTENER.spsql&quot; tooltip=&quot;ProyectoStoredORT/SP_LOGIN_OBTENER.spsql&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProyectoStoredORT/SP_LOGIN_OBTENER.spsql&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_LOGIN_INSERT.spsql&quot; tooltip=&quot;ProyectoStoredORT/SP_LOGIN_INSERT.spsql&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProyectoStoredORT/SP_LOGIN_INSERT.spsql&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_LOGIN_DELETE.spsql&quot; tooltip=&quot;ProyectoStoredORT/SP_LOGIN_DELETE.spsql&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProyectoStoredORT/SP_LOGIN_DELETE.spsql&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_LIBROS_INSERT.spsql&quot; tooltip=&quot;ProyectoStoredORT/SP_LIBROS_INSERT.spsql&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProyectoStoredORT/SP_LIBROS_INSERT.spsql&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart&quot; name=&quot;.project&quot; tooltip=&quot;C:\SoftwareJava\CJPB\BibliotecaORT\BaseDeDatos\ProyectoORT\ProyectoDatosORT\.project&quot;>&#xD;&#xA;&lt;persistable uri=&quot;file:/C:/SoftwareJava/CJPB/BibliotecaORT/BaseDeDatos/ProyectoORT/ProyectoDatosORT/.project&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_RESERVAS_OBTENERPK.spsql&quot; tooltip=&quot;ProyectoStoredORT/SP_RESERVAS_OBTENERPK.spsql&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProyectoStoredORT/SP_RESERVAS_OBTENERPK.spsql&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_RESERVAS_INSERT.spsql&quot; tooltip=&quot;ProyectoStoredORT/SP_RESERVAS_INSERT.spsql&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProyectoStoredORT/SP_RESERVAS_INSERT.spsql&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_PRESTAMOS_OBTENERPK.spsql&quot; tooltip=&quot;ProyectoStoredORT/SP_PRESTAMOS_OBTENERPK.spsql&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProyectoStoredORT/SP_PRESTAMOS_OBTENERPK.spsql&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_PERSONAS_OBTENERPK.spsql&quot; tooltip=&quot;ProyectoStoredORT/SP_PERSONAS_OBTENERPK.spsql&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProyectoStoredORT/SP_PERSONAS_OBTENERPK.spsql&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_BQ9V0YQ-EeilqIM0A_sNeg" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_BQ9V0oQ-EeilqIM0A_sNeg" label="%trimmedwindow.label.eclipseSDK" x="0" y="0" width="1024" height="768">
@@ -114,20 +114,20 @@
           <tags>persp.perspSC:org.eclipse.debug.ui.DebugPerspective</tags>
           <tags>persp.perspSC:org.eclipse.jdt.ui.JavaPerspective</tags>
           <children xsi:type="basic:PartSashContainer" xmi:id="_BQ9V44Q-EeilqIM0A_sNeg" selectedElement="_BQ9V6oQ-EeilqIM0A_sNeg" horizontal="true">
-            <children xsi:type="basic:PartSashContainer" xmi:id="_BQ9V5IQ-EeilqIM0A_sNeg" containerData="1614" selectedElement="_BQ9V5YQ-EeilqIM0A_sNeg">
-              <children xsi:type="basic:PartStack" xmi:id="_BQ9V5YQ-EeilqIM0A_sNeg" elementId="com.ibm.datatools.developer.perspective.LeftFolder" containerData="7985" selectedElement="_BQ9V5oQ-EeilqIM0A_sNeg">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_BQ9V5IQ-EeilqIM0A_sNeg" containerData="2268" selectedElement="_BQ9V5YQ-EeilqIM0A_sNeg">
+              <children xsi:type="basic:PartStack" xmi:id="_BQ9V5YQ-EeilqIM0A_sNeg" elementId="com.ibm.datatools.developer.perspective.LeftFolder" containerData="5055" selectedElement="_BQ9V5oQ-EeilqIM0A_sNeg">
                 <children xsi:type="advanced:Placeholder" xmi:id="_BQ9V5oQ-EeilqIM0A_sNeg" elementId="com.ibm.datatools.project.ui.projectExplorer" ref="_BQ9XVIQ-EeilqIM0A_sNeg">
                   <tags>NoClose</tags>
                 </children>
               </children>
-              <children xsi:type="basic:PartStack" xmi:id="_BQ9V54Q-EeilqIM0A_sNeg" elementId="com.ibm.datatools.developer.perspective.BottomLeftFolder" containerData="2015" selectedElement="_BQ9V6IQ-EeilqIM0A_sNeg">
+              <children xsi:type="basic:PartStack" xmi:id="_BQ9V54Q-EeilqIM0A_sNeg" elementId="com.ibm.datatools.developer.perspective.BottomLeftFolder" containerData="4945" selectedElement="_BQ9V6IQ-EeilqIM0A_sNeg">
                 <children xsi:type="advanced:Placeholder" xmi:id="_BQ9V6IQ-EeilqIM0A_sNeg" elementId="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" ref="_BQ9XbYQ-EeilqIM0A_sNeg"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_BQ9V6YQ-EeilqIM0A_sNeg" elementId="com.ibm.datatools.server.profile.framework.ui.view.serverProfileManagerView" ref="_BQ9XlIQ-EeilqIM0A_sNeg"/>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_BQ9V6oQ-EeilqIM0A_sNeg" containerData="8386" selectedElement="_BQ9V64Q-EeilqIM0A_sNeg">
-              <children xsi:type="advanced:Placeholder" xmi:id="_BQ9V64Q-EeilqIM0A_sNeg" elementId="org.eclipse.ui.editorss" containerData="9000" ref="_BQ9XFYQ-EeilqIM0A_sNeg"/>
-              <children xsi:type="basic:PartStack" xmi:id="_BQ9V7IQ-EeilqIM0A_sNeg" elementId="com.ibm.datatools.developer.perspective.BottomRightFolder" containerData="1000" selectedElement="_BQ9V7YQ-EeilqIM0A_sNeg">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_BQ9V6oQ-EeilqIM0A_sNeg" containerData="7732" selectedElement="_BQ9V64Q-EeilqIM0A_sNeg">
+              <children xsi:type="advanced:Placeholder" xmi:id="_BQ9V64Q-EeilqIM0A_sNeg" elementId="org.eclipse.ui.editorss" containerData="7026" ref="_BQ9XFYQ-EeilqIM0A_sNeg"/>
+              <children xsi:type="basic:PartStack" xmi:id="_BQ9V7IQ-EeilqIM0A_sNeg" elementId="com.ibm.datatools.developer.perspective.BottomRightFolder" containerData="2974" selectedElement="_BQ9V7YQ-EeilqIM0A_sNeg">
                 <tags>General</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_BQ9V7YQ-EeilqIM0A_sNeg" elementId="org.eclipse.ui.views.PropertySheet" ref="_BQ9XMoQ-EeilqIM0A_sNeg"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_BQ9V7oQ-EeilqIM0A_sNeg" elementId="com.ibm.datatools.sqltools2.sqlResultsView2" ref="_BQ9XSoQ-EeilqIM0A_sNeg"/>
@@ -162,149 +162,78 @@
       <tags>categoryTag:Ayuda</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_BQ9XFYQ-EeilqIM0A_sNeg" elementId="org.eclipse.ui.editorss" selectedElement="_BQ9XFoQ-EeilqIM0A_sNeg">
-      <children xsi:type="basic:PartStack" xmi:id="_BQ9XFoQ-EeilqIM0A_sNeg" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_BQ9XF4Q-EeilqIM0A_sNeg">
+      <children xsi:type="basic:PartStack" xmi:id="_BQ9XFoQ-EeilqIM0A_sNeg" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_DRRc0KOwEeieovftq4tNTA">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <tags>active</tags>
-        <children xsi:type="basic:Part" xmi:id="_BQ9XF4Q-EeilqIM0A_sNeg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="SP_LIBROS_OBTENERPK" iconURI="platform:/plugin/com.ibm.datatools.routines.ui/icons/tv_ec_sp.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_LIBROS_OBTENERPK.spsql&quot; partName=&quot;SP_LIBROS_OBTENERPK&quot; title=&quot;SP_LIBROS_OBTENERPK&quot; tooltip=&quot;ProyectoStoredORT/SP_LIBROS_OBTENERPK.spsql&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProyectoStoredORT/SP_LIBROS_OBTENERPK.spsql&quot;/>&#xD;&#xA;&lt;/editor>"/>
+        <children xsi:type="basic:Part" xmi:id="_xqElsJBgEeih1cA7uSq6sw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Modelo de datos f&#xed;sico.dbm" iconURI="platform:/plugin/org.eclipse.datatools.connectivity.sqm.core.ui/icons/database.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.ibm.datatools.uom.ui.migration.internal.objadmin.editor.physicalmodel.CMPhysicalModelEditor&quot; name=&quot;Modelo de datos f&#xed;sico.dbm&quot; partName=&quot;Modelo de datos f&#xed;sico.dbm&quot; title=&quot;Modelo de datos f&#xed;sico.dbm&quot; tooltip=&quot;\ProyectoDatosORT\Modelo de datos f&#xed;sico.dbm&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProyectoDatosORT/Modelo de datos f&#xed;sico.dbm&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>com.ibm.datatools.uom.ui.migration.internal.objadmin.editor.physicalmodel.CMPhysicalModelEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_moSRYKJ2EeiM04_PwKyraA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="SP_LIBROS_OBTENER" iconURI="platform:/plugin/com.ibm.datatools.routines.ui/icons/tv_ec_sp.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_LIBROS_OBTENER.spsql&quot; partName=&quot;SP_LIBROS_OBTENER&quot; title=&quot;SP_LIBROS_OBTENER&quot; tooltip=&quot;ProyectoStoredORT/SP_LIBROS_OBTENER.spsql&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProyectoStoredORT/SP_LIBROS_OBTENER.spsql&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_m-VZ4KJ2EeiM04_PwKyraA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="SP_LIBROS_INSERT" iconURI="platform:/plugin/com.ibm.datatools.routines.ui/icons/tv_ec_sp.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_LIBROS_INSERT.spsql&quot; partName=&quot;SP_LIBROS_INSERT&quot; title=&quot;SP_LIBROS_INSERT&quot; tooltip=&quot;ProyectoStoredORT/SP_LIBROS_INSERT.spsql&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProyectoStoredORT/SP_LIBROS_INSERT.spsql&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_tqReQKL2EeiK44SyYsBJUA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="SP_LOGIN_DELETE" iconURI="platform:/plugin/com.ibm.datatools.routines.ui/icons/tv_ec_sp.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_LOGIN_DELETE.spsql&quot; partName=&quot;SP_LOGIN_DELETE&quot; title=&quot;SP_LOGIN_DELETE&quot; tooltip=&quot;ProyectoStoredORT/SP_LOGIN_DELETE.spsql&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProyectoStoredORT/SP_LOGIN_DELETE.spsql&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_yVkIsKL2EeiK44SyYsBJUA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="SP_LOGIN_INSERT" iconURI="platform:/plugin/com.ibm.datatools.routines.ui/icons/tv_ec_sp.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_LOGIN_INSERT.spsql&quot; partName=&quot;SP_LOGIN_INSERT&quot; title=&quot;SP_LOGIN_INSERT&quot; tooltip=&quot;ProyectoStoredORT/SP_LOGIN_INSERT.spsql&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProyectoStoredORT/SP_LOGIN_INSERT.spsql&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_2svkUKL2EeiK44SyYsBJUA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="SP_LOGIN_OBTENER" iconURI="platform:/plugin/com.ibm.datatools.routines.ui/icons/tv_ec_sp.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_LOGIN_OBTENER.spsql&quot; partName=&quot;SP_LOGIN_OBTENER&quot; title=&quot;SP_LOGIN_OBTENER&quot; tooltip=&quot;ProyectoStoredORT/SP_LOGIN_OBTENER.spsql&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProyectoStoredORT/SP_LOGIN_OBTENER.spsql&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_5qiyMKL2EeiK44SyYsBJUA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="SP_LOGIN_OBTENERPK" iconURI="platform:/plugin/com.ibm.datatools.routines.ui/icons/tv_ec_sp.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_LOGIN_OBTENERPK.spsql&quot; partName=&quot;SP_LOGIN_OBTENERPK&quot; title=&quot;SP_LOGIN_OBTENERPK&quot; tooltip=&quot;ProyectoStoredORT/SP_LOGIN_OBTENERPK.spsql&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProyectoStoredORT/SP_LOGIN_OBTENERPK.spsql&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_BRyQYKL3EeiK44SyYsBJUA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="SP_LIBROS_DELETE" iconURI="platform:/plugin/com.ibm.datatools.routines.ui/icons/tv_ec_sp.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_LIBROS_DELETE.spsql&quot; partName=&quot;SP_LIBROS_DELETE&quot; title=&quot;SP_LIBROS_DELETE&quot; tooltip=&quot;ProyectoStoredORT/SP_LIBROS_DELETE.spsql&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProyectoStoredORT/SP_LIBROS_DELETE.spsql&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_onNXkKL3EeiK44SyYsBJUA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="SP_LOGIN_UPDATE" iconURI="platform:/plugin/com.ibm.datatools.routines.ui/icons/tv_ec_sp.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_LOGIN_UPDATE.spsql&quot; partName=&quot;SP_LOGIN_UPDATE&quot; title=&quot;SP_LOGIN_UPDATE&quot; tooltip=&quot;ProyectoStoredORT/SP_LOGIN_UPDATE.spsql&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProyectoStoredORT/SP_LOGIN_UPDATE.spsql&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_s6bgQKL3EeiK44SyYsBJUA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="SP_PRESTAMOS_DELETE" iconURI="platform:/plugin/com.ibm.datatools.routines.ui/icons/tv_ec_sp.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_PRESTAMOS_DELETE.spsql&quot; partName=&quot;SP_PRESTAMOS_DELETE&quot; title=&quot;SP_PRESTAMOS_DELETE&quot; tooltip=&quot;ProyectoStoredORT/SP_PRESTAMOS_DELETE.spsql&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProyectoStoredORT/SP_PRESTAMOS_DELETE.spsql&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor</tags>
+          <tags>removeOnHide</tags>
+          <tags>activeOnClose</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_DRRc0KOwEeieovftq4tNTA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="SP_LIBROS_OBTENER" iconURI="platform:/plugin/com.ibm.datatools.routines.ui/icons/tv_ec_sp.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_LIBROS_OBTENER.spsql&quot; partName=&quot;SP_LIBROS_OBTENER&quot; title=&quot;SP_LIBROS_OBTENER&quot; tooltip=&quot;ProyectoStoredORT/SP_LIBROS_OBTENER.spsql&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProyectoStoredORT/SP_LIBROS_OBTENER.spsql&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor</tags>
           <tags>removeOnHide</tags>
           <tags>active</tags>
           <tags>activeOnClose</tags>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_BQ9XGIQ-EeilqIM0A_sNeg" elementId="com.ibm.datatools.sqlxeditor">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:com.ibm.datatools.sqlxeditor</tags>
-            <tags>popup:com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_BQ9XGYQ-EeilqIM0A_sNeg" elementId="#RulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#RulerContext</tags>
-            <tags>popup:com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_BQ9XGoQ-EeilqIM0A_sNeg" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_BQ9XG4Q-EeilqIM0A_sNeg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="SP_LOGIN_OBTENERPK" iconURI="platform:/plugin/com.ibm.datatools.routines.ui/icons/tv_ec_sp.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_LOGIN_OBTENERPK.spsql&quot; partName=&quot;SP_LOGIN_OBTENERPK&quot; title=&quot;SP_LOGIN_OBTENERPK&quot; tooltip=&quot;ProyectoStoredORT/SP_LOGIN_OBTENERPK.spsql&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProyectoStoredORT/SP_LOGIN_OBTENERPK.spsql&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor</tags>
-          <tags>removeOnHide</tags>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_BQ9XHIQ-EeilqIM0A_sNeg" elementId="com.ibm.datatools.sqlxeditor">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:com.ibm.datatools.sqlxeditor</tags>
-            <tags>popup:com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_BQ9XHYQ-EeilqIM0A_sNeg" elementId="#RulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#RulerContext</tags>
-            <tags>popup:com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_BQ9XHoQ-EeilqIM0A_sNeg" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_BQ9XH4Q-EeilqIM0A_sNeg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="SP_PRESTAMOS_OBTENERPK" iconURI="platform:/plugin/com.ibm.datatools.routines.ui/icons/tv_ec_sp.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_PRESTAMOS_OBTENERPK.spsql&quot; partName=&quot;SP_PRESTAMOS_OBTENERPK&quot; title=&quot;SP_PRESTAMOS_OBTENERPK&quot; tooltip=&quot;ProyectoStoredORT/SP_PRESTAMOS_OBTENERPK.spsql&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProyectoStoredORT/SP_PRESTAMOS_OBTENERPK.spsql&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor</tags>
-          <tags>removeOnHide</tags>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_BQ9XIIQ-EeilqIM0A_sNeg" elementId="com.ibm.datatools.sqlxeditor">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:com.ibm.datatools.sqlxeditor</tags>
-            <tags>popup:com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_BQ9XIYQ-EeilqIM0A_sNeg" elementId="#RulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#RulerContext</tags>
-            <tags>popup:com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_BQ9XIoQ-EeilqIM0A_sNeg" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_BQ9XI4Q-EeilqIM0A_sNeg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="SP_PERSONAS_OBTENERPK" iconURI="platform:/plugin/com.ibm.datatools.routines.ui/icons/tv_ec_sp.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_PERSONAS_OBTENERPK.spsql&quot; partName=&quot;SP_PERSONAS_OBTENERPK&quot; title=&quot;SP_PERSONAS_OBTENERPK&quot; tooltip=&quot;ProyectoStoredORT/SP_PERSONAS_OBTENERPK.spsql&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProyectoStoredORT/SP_PERSONAS_OBTENERPK.spsql&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor</tags>
-          <tags>removeOnHide</tags>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_BQ9XJIQ-EeilqIM0A_sNeg" elementId="com.ibm.datatools.sqlxeditor">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:com.ibm.datatools.sqlxeditor</tags>
-            <tags>popup:com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_BQ9XJYQ-EeilqIM0A_sNeg" elementId="#RulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#RulerContext</tags>
-            <tags>popup:com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_BQ9XJoQ-EeilqIM0A_sNeg" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_BQ9XJ4Q-EeilqIM0A_sNeg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="SP_RESERVAS_OBTENERPK" iconURI="platform:/plugin/com.ibm.datatools.routines.ui/icons/tv_ec_sp.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_RESERVAS_OBTENERPK.spsql&quot; partName=&quot;SP_RESERVAS_OBTENERPK&quot; title=&quot;SP_RESERVAS_OBTENERPK&quot; tooltip=&quot;ProyectoStoredORT/SP_RESERVAS_OBTENERPK.spsql&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProyectoStoredORT/SP_RESERVAS_OBTENERPK.spsql&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor</tags>
-          <tags>removeOnHide</tags>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_BQ9XKIQ-EeilqIM0A_sNeg" elementId="com.ibm.datatools.sqlxeditor">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:com.ibm.datatools.sqlxeditor</tags>
-            <tags>popup:com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_BQ9XKYQ-EeilqIM0A_sNeg" elementId="#RulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#RulerContext</tags>
-            <tags>popup:com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_BQ9XKoQ-EeilqIM0A_sNeg" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_BQ9XK4Q-EeilqIM0A_sNeg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="SP_RESERVAS_INSERT" iconURI="platform:/plugin/com.ibm.datatools.routines.ui/icons/tv_ec_sp.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_RESERVAS_INSERT.spsql&quot; partName=&quot;SP_RESERVAS_INSERT&quot; title=&quot;SP_RESERVAS_INSERT&quot; tooltip=&quot;ProyectoStoredORT/SP_RESERVAS_INSERT.spsql&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProyectoStoredORT/SP_RESERVAS_INSERT.spsql&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor</tags>
-          <tags>removeOnHide</tags>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_BQ9XLIQ-EeilqIM0A_sNeg" elementId="com.ibm.datatools.sqlxeditor">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:com.ibm.datatools.sqlxeditor</tags>
-            <tags>popup:com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_BQ9XLYQ-EeilqIM0A_sNeg" elementId="#RulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#RulerContext</tags>
-            <tags>popup:com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_BQ9XLoQ-EeilqIM0A_sNeg" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_36hckI6eEeijQLEnesDOew" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Modelo de datos f&#xed;sico.dbm" iconURI="platform:/plugin/org.eclipse.datatools.connectivity.sqm.core.ui/icons/database.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.ibm.datatools.uom.ui.migration.internal.objadmin.editor.physicalmodel.CMPhysicalModelEditor&quot; name=&quot;Modelo de datos f&#xed;sico.dbm&quot; partName=&quot;Modelo de datos f&#xed;sico.dbm&quot; title=&quot;Modelo de datos f&#xed;sico.dbm&quot; tooltip=&quot;\ProyectoDatosORT\Modelo de datos f&#xed;sico.dbm&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProyectoDatosORT/Modelo de datos f&#xed;sico.dbm&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>com.ibm.datatools.uom.ui.migration.internal.objadmin.editor.physicalmodel.CMPhysicalModelEditor</tags>
-          <tags>removeOnHide</tags>
         </children>
       </children>
     </sharedElements>
@@ -335,7 +264,7 @@
     <sharedElements xsi:type="basic:Part" xmi:id="_BQ9XSoQ-EeilqIM0A_sNeg" elementId="com.ibm.datatools.sqltools2.sqlResultsView2" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Resultados de SQL" iconURI="platform:/plugin/com.ibm.datatools.sqltools2/icons/sqlresult.gif" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="com.ibm.datatols.sqltools2.view.ResultsView2"/>
       <persistedState key="originalCompatibilityViewBundle" value="com.ibm.datatools.sqltools2"/>
-      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view columnWidth0=&quot;200&quot; columnWidth1=&quot;374&quot; columnWidth2=&quot;200&quot; columnWidth3=&quot;200&quot;/>"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view columnWidth0=&quot;200&quot; columnWidth1=&quot;628&quot; columnWidth2=&quot;200&quot; columnWidth3=&quot;200&quot;/>"/>
       <tags>View</tags>
       <tags>categoryTag:Data Management</tags>
       <tags>activeOnClose</tags>
@@ -415,7 +344,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_BQ9XmIQ-EeilqIM0A_sNeg" elementId="org.eclipse.ui.workbench.file" visible="false">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_09_aAI6eEeijQLEnesDOew" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Imprimir" command="_BQ9gXoQ-EeilqIM0A_sNeg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_4UC6R6OvEeieovftq4tNTA" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Imprimir" command="_BQ9gXoQ-EeilqIM0A_sNeg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_BQ9XpYQ-EeilqIM0A_sNeg" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -445,7 +374,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_BQ9X34Q-EeilqIM0A_sNeg" elementId="org.eclipse.ui.workbench.navigate" visible="false">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_0-CdUI6eEeijQLEnesDOew" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Adherir editor" type="Check" command="_BQ9gDoQ-EeilqIM0A_sNeg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_4UV1NaOvEeieovftq4tNTA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Adherir editor" type="Check" command="_BQ9gDoQ-EeilqIM0A_sNeg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_BQ9X7IQ-EeilqIM0A_sNeg" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -992,7 +921,9 @@
   <bindingTables xmi:id="_BQ9ZwIQ-EeilqIM0A_sNeg" elementId="com.ibm.datatools.metadata.mapping.ui.editorScope" bindingContext="_BQ9aRYQ-EeilqIM0A_sNeg">
     <bindings xmi:id="_BQ9ZwYQ-EeilqIM0A_sNeg" keySequence="CTRL+F10" command="_BQ9gZoQ-EeilqIM0A_sNeg"/>
   </bindingTables>
-  <bindingTables xmi:id="_BQ9ZwoQ-EeilqIM0A_sNeg" elementId="com.ibm.datatools.aqt.acceleditor.context" bindingContext="_BQ9aFoQ-EeilqIM0A_sNeg"/>
+  <bindingTables xmi:id="_BQ9ZwoQ-EeilqIM0A_sNeg" elementId="com.ibm.datatools.aqt.acceleditor.context" bindingContext="_BQ9aFoQ-EeilqIM0A_sNeg">
+    <bindings xmi:id="_XvM_IZBgEeih1cA7uSq6sw" keySequence="F5" command="_BQ9eLoQ-EeilqIM0A_sNeg"/>
+  </bindingTables>
   <bindingTables xmi:id="_BQ9ZxIQ-EeilqIM0A_sNeg" elementId="org.eclipse.gmf.ecore.ui.diagramContext" bindingContext="_BQ9aQYQ-EeilqIM0A_sNeg">
     <bindings xmi:id="_BQ9ZxYQ-EeilqIM0A_sNeg" keySequence="F5" command="_BQ9dZoQ-EeilqIM0A_sNeg"/>
   </bindingTables>

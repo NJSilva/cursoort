@@ -12,17 +12,15 @@
 		<list key="textArray">
 		</list>
 	</section>
+	<section name="NewWizardAction">
+	</section>
 	<section name="ImportExportAction">
-		<item value="org.eclipse.ui.wizards.import.FileSystem" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
+		<item value="org.eclipse.ui.wizards.import.ExternalProject" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
 		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
 			<item value="org.eclipse.ui.Basic"/>
+			<item value="org.eclipse.team.cvs.ui.importWizards"/>
 			<item value="org.eclipse.jst.ejb.ui"/>
 			<item value="org.eclipse.debug.ui"/>
-			<item value="org.eclipse.team.ui.importWizards"/>
-			<item value="com.ibm.datatools.aqt.acceleditor.ImportCategory"/>
-			<item value="org.eclipse.equinox.p2.category"/>
-			<item value="com.ibm.xtools.modeling.import"/>
-			<item value="com.ibm.datatools.dsoe.importVE"/>
 		</list>
 	</section>
 	<section name="FileSystemImportWizard">
