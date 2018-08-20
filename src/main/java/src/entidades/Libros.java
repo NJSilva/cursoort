@@ -17,16 +17,16 @@ public class Libros extends LibrosVO implements EntidadesI {
             getLibros_codigo(),
             getLibros_titulo(),
             getLibros_isbn(),
-            Integer.valueOf(getLibros_anio()),
+            getLibros_anio(),
             getLibros_descripcion(),
-            Integer.valueOf(getLibros_disponible()),
-            getTiposVO().getTipos_codigo()};
+            getLibros_disponible(),
+            getTiposVO().getTipos_id()};
         return datos;
     }
 
     public Object[] generarPK() {
         Object[] datos = {
-            getLibros_codigo()};
+            getLibros_id()};
         return datos;
     }
 }

@@ -29,7 +29,7 @@ public class TestFacadeClienteTiposVO {
             
             for (Iterator<VOI> iterator = tipos.iterator(); iterator.hasNext();) {
                 TiposVO next = (TiposVO) iterator.next();
-                System.out.println(next.getTipos_codigo());
+                System.out.println(next.getTipos_id());
                 System.out.println(next.getTipos_nombre());
             }
         } catch (SQLException ex) {
@@ -38,7 +38,7 @@ public class TestFacadeClienteTiposVO {
         
         /* TIPOS */
         TiposVO tiposvo = new TiposVO();
-        tiposvo.setTipos_codigo(12);
+        tiposvo.setTipos_id(12);
         tiposvo.setTipos_nombre("Nombre diez");
         
         try {

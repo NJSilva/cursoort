@@ -13,7 +13,6 @@ import java.util.logging.Logger;
 import src.facade.FacadeCliente;
 import src.framework.valueobject.VOI;
 import src.vo.LibrosVO;
-import src.vo.LibrosVO;
 import src.vo.TiposVO;
 
 /**

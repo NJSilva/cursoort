@@ -29,7 +29,7 @@ public class FactoryEntidadesI {
 
         if (tipo instanceof TiposVO) {
             Tipos tipos = new Tipos();
-            tipos.setTipos_codigo(((TiposVO) tipo).getTipos_codigo());
+            tipos.setTipos_id(((TiposVO) tipo).getTipos_id());
             tipos.setTipos_nombre(((TiposVO) tipo).getTipos_nombre());
 
             return tipos;

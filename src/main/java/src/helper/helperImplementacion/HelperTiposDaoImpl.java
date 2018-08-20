@@ -21,7 +21,7 @@ public class HelperTiposDaoImpl extends HelperAbstractDao implements HelperTipos
 
     public VOI procesarResultSet(ResultSet rs) throws SQLException {
         TiposVO tipos = new TiposVO();
-        tipos.setTipos_codigo(rs.getInt("TIPOS_CODIGO"));
+        tipos.setTipos_id(rs.getInt("TIPOS_ID"));
         tipos.setTipos_nombre(rs.getString("TIPOS_NOMBRE"));
         return tipos;
     }

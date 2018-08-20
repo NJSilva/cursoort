@@ -5,6 +5,7 @@ import src.framework.valueobject.VOI;
 
 public class LibrosVO implements VOI {
 
+    private int libros_id;
     private String libros_codigo;
     private String libros_titulo;
     private String libros_isbn;
@@ -70,6 +71,20 @@ public class LibrosVO implements VOI {
 
     public void setTiposVO(TiposVO _tipos) {
         this.tipos = _tipos;
+    }
+
+    /**
+     * @return the libros_id
+     */
+    public int getLibros_id() {
+        return libros_id;
+    }
+
+    /**
+     * @param libros_id the libros_id to set
+     */
+    public void setLibros_id(int libros_id) {
+        this.libros_id = libros_id;
     }
 
 }

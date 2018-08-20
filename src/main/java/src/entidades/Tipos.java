@@ -12,13 +12,13 @@ public class Tipos extends TiposVO implements EntidadesI , VOI {
 
     public Object[] generarCampos() {
         Object[] datos = {
-            getTipos_codigo(),
+            getTipos_id(),
             getTipos_nombre()};
         return datos;
     }
 
     public Object[] generarPK() {
-        Object[] datos = {getTipos_codigo()}
+        Object[] datos = {getTipos_id()}
     ;
     return datos ;
 }

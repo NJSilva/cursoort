@@ -5,6 +5,7 @@ import src.framework.valueobject.VOI;
 
 public class PersonasVO implements VOI{
 
+    private int personas_id;
     private String personas_cedula;
     private String personas_mail;
     private String personas_nombre;
@@ -34,6 +35,20 @@ public class PersonasVO implements VOI{
 
     public void setPersonas_nombre(String _personas_nombre) {
         this.personas_nombre = _personas_nombre;
+    }
+
+    /**
+     * @return the personas_id
+     */
+    public int getPersonas_id() {
+        return personas_id;
+    }
+
+    /**
+     * @param personas_id the personas_id to set
+     */
+    public void setPersonas_id(int personas_id) {
+        this.personas_id = personas_id;
     }
 
 }

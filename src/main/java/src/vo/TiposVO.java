@@ -5,7 +5,7 @@ import src.framework.valueobject.VOI;
 
 public class TiposVO implements VOI{
 
-    private Integer tipos_codigo;
+    private int tipos_id;
     private String tipos_nombre;
 
     public TiposVO() {
@@ -20,18 +20,20 @@ public class TiposVO implements VOI{
     }
 
     /**
-     * @return the tipos_codigo
+     * @return the tipos_id
      */
-    public Integer getTipos_codigo() {
-        return tipos_codigo;
+    public int getTipos_id() {
+        return tipos_id;
     }
 
     /**
-     * @param tipos_codigo the tipos_codigo to set
+     * @param tipos_id the tipos_id to set
      */
-    public void setTipos_codigo(Integer tipos_codigo) {
-        this.tipos_codigo = tipos_codigo;
+    public void setTipos_id(int tipos_id) {
+        this.tipos_id = tipos_id;
     }
+
+
     
     
 

@@ -33,7 +33,7 @@ public class ServletGrabarTipos extends HttpServlet {
             String TIPOS_CODIGO = request.getParameter("tipos_codigo");
             String TIPOS_NOMBRE = request.getParameter("tipos_nombre");
             
-            tipos.setTipos_codigo(Integer.valueOf(TIPOS_CODIGO));
+            tipos.setTipos_id(Integer.valueOf(TIPOS_CODIGO));
             tipos.setTipos_nombre((TIPOS_NOMBRE != null) ? TIPOS_NOMBRE : "");
 
             String operacion = request.getParameter("oper");
