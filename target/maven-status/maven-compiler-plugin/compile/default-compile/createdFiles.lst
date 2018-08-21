@@ -1,6 +1,7 @@
 src\validadores\ValidadorTipos.class
 src\test\TestFacadeClienteLibrosVO.class
 src\framework\AbstractFacade.class
+org\netbeans\rest\application\config\ApplicationConfig.class
 src\entidades\Personas.class
 src\framework\validador\ValidacionException.class
 src\servlets\ServletObtenerLogin.class
@@ -47,6 +48,7 @@ src\servlets\ServletGrabarPrestamos.class
 src\validadores\ValidadorReservas.class
 src\entidades\Libros.class
 src\framework\valueobject\UtilMensajesError.class
+services\LibrosRest.class
 src\helper\helperInterfaces\HelperLibrosDaoI.class
 src\helper\helperInterfaces\HelperPersonasDaoI.class
 src\servlets\ServletObtenerPersonas.class
@@ -66,5 +68,4 @@ src\helper\helperInterfaces\HelperLoginDaoI.class
 src\conexion\ConnectionException.class
 src\helper\helperImplementacion\HelperPersonasDaoImpl.class
 src\servlets\ServletObtenerReservas.class
-src\entidades\Reservas.class
 src\framework\HelperAbstractDao.class

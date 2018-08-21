@@ -24,4 +24,12 @@ public class Login extends LoginVO implements EntidadesI {
             getPersonas().getPersonas_cedula()};
         return datos;
     }
+
+    @Override
+    public Object[] generarCamposPK() {
+        Object[] datos = {
+            getLogin_clave(),
+            getPersonas().getPersonas_cedula()};
+        return datos;
+    }
 }

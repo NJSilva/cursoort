@@ -1,7 +1,7 @@
 Create or Replace Procedure ESQUEMA.SP_Login_Insert(
 --Campos de la tabla 
 IN @LOGIN_CLAVE VARCHAR(10),
-IN @PERSONAS_ID VARCHAR(10)
+IN @PERSONAS_ID DECIMAL(5,0)
 )
 P1:Begin
 

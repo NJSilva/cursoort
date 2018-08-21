@@ -6,11 +6,21 @@ import src.vo.LibrosVO;
 
 public class Libros extends LibrosVO implements EntidadesI {
 
-
     public Libros() {
     }
 
-
+    public Object[] generarCamposPK() {
+        Object[] datos = {
+            getLibros_id(),
+            getLibros_codigo(),
+            getLibros_titulo(),
+            getLibros_isbn(),
+            getLibros_anio(),
+            getLibros_descripcion(),
+            getLibros_disponible(),
+            getTiposVO().getTipos_id()};
+        return datos;
+    }
 
     public Object[] generarCampos() {
         Object[] datos = {

@@ -14,20 +14,27 @@ import java.io.Serializable;
 /**
  * The Interface EntidadesI.
  */
-public interface EntidadesI extends VOI ,Serializable {
+public interface EntidadesI extends VOI, Serializable {
 
-	/**
-	 * Generar campos.
-	 *
-	 * @return the object[]
-	 */
-	public Object[] generarCampos();
-	
-	/**
-	 * Generar pk.
-	 *
-	 * @return the object[]
-	 */
-	public Object[] generarPK();
-	
+    /**
+     * Generar campos.
+     *
+     * @return the object[]
+     */
+    public Object[] generarCampos();
+
+    /**
+     * Generar campos.
+     *
+     * @return the object[]
+     */
+    public Object[] generarCamposPK();
+
+    /**
+     * Generar pk.
+     *
+     * @return the object[]
+     */
+    public Object[] generarPK();
+
 }

@@ -22,4 +22,14 @@ public class Personas extends PersonasVO implements EntidadesI {
             getPersonas_cedula()};
         return datos;
     }
+
+    @Override
+    public Object[] generarCamposPK() {
+        Object[] datos = {
+            getPersonas_id(),
+            getPersonas_cedula(),
+            getPersonas_mail(),
+            getPersonas_nombre()};
+        return datos;
+    }
 }

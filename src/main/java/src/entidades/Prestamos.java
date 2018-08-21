@@ -13,7 +13,18 @@ public class Prestamos extends PrestamosVO implements EntidadesI {
 
     public Object[] generarCampos() {
         Object[] datos = {
-            getLibros().getLibros_codigo(),
+            getLibros().getLibros_id(),
+            getPersonas().getPersonas_cedula(),
+            new java.sql.Date(getPrestamos_fecha_desde().getTime()),
+            (null != getPrestamos_fecha_hasta() ? new java.sql.Date(getPrestamos_fecha_hasta().getTime()) : null)
+        };
+        return datos;
+    }
+
+    @Override
+    public Object[] generarCamposPK() {
+        Object[] datos = {
+            getLibros().getLibros_id(),
             getPersonas().getPersonas_cedula(),
             new java.sql.Date(getPrestamos_fecha_desde().getTime()),
             (null != getPrestamos_fecha_hasta() ? new java.sql.Date(getPrestamos_fecha_hasta().getTime()) : null)
