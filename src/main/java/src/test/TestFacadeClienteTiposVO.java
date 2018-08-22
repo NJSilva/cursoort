@@ -12,7 +12,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import src.facade.FacadeCliente;
 import src.framework.valueobject.VOI;
-import src.vo.LibrosVO;
 import src.vo.TiposVO;
 
 /**
@@ -24,18 +23,18 @@ public class TestFacadeClienteTiposVO {
 
         FacadeCliente fc = new FacadeCliente();
 
-//        try {
-//            List<VOI> tipos = fc.obtener(FacadeCliente.TIPOS);
-//            
-//            for (Iterator<VOI> iterator = tipos.iterator(); iterator.hasNext();) {
-//                TiposVO next = (TiposVO) iterator.next();
-//                System.out.println(next.getTipos_id());
-//                System.out.println(next.getTipos_nombre());
-//            }
-//        } catch (SQLException ex) {
-//            Logger.getLogger(TestFacadeClienteTiposVO.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//        
+        try {
+            List<VOI> tipos = fc.obtener(FacadeCliente.TIPOS);
+            
+            for (Iterator<VOI> iterator = tipos.iterator(); iterator.hasNext();) {
+                TiposVO next = (TiposVO) iterator.next();
+                System.out.println(next.getTipos_id());
+                System.out.println(next.getTipos_nombre());
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(TestFacadeClienteTiposVO.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
         /* TIPOS */
         TiposVO tiposvo = new TiposVO();
 //        tiposvo.setTipos_id(12);

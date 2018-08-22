@@ -53,7 +53,7 @@ public class TestFacadeClienteLibrosVO {
         VOI tiposvo = fc.obtener(FacadeCliente.TIPOS).get(0);
         librosvo.setTiposVO((TiposVO) tiposvo);
         
-            fc.eliminar(librosvo, FacadeCliente.LIBROS);
+//            fc.eliminar(librosvo, FacadeCliente.LIBROS);
             fc.grabar(librosvo, FacadeCliente.LIBROS);
 
             librosvo.setLibros_titulo("El principito modificado");
