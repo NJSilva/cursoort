@@ -113,14 +113,15 @@
           <tags>persp.perspSC:com.ibm.xtools.modeler.internal.ui.perspectives.ModelingPerspective</tags>
           <tags>persp.perspSC:org.eclipse.debug.ui.DebugPerspective</tags>
           <tags>persp.perspSC:org.eclipse.jdt.ui.JavaPerspective</tags>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_XlHDE6RsEei6YvmuGSN8YA" selectedElement="_XlHDGqRsEei6YvmuGSN8YA" horizontal="true">
-            <children xsi:type="basic:PartSashContainer" xmi:id="_XlHDFKRsEei6YvmuGSN8YA" containerData="2268" selectedElement="_XlHDFaRsEei6YvmuGSN8YA">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_XlHDE6RsEei6YvmuGSN8YA" selectedElement="_XlHDFKRsEei6YvmuGSN8YA" horizontal="true">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_XlHDFKRsEei6YvmuGSN8YA" containerData="2268" selectedElement="_XlHDF6RsEei6YvmuGSN8YA">
               <children xsi:type="basic:PartStack" xmi:id="_XlHDFaRsEei6YvmuGSN8YA" elementId="com.ibm.datatools.developer.perspective.LeftFolder" containerData="5055" selectedElement="_XlHDFqRsEei6YvmuGSN8YA">
                 <children xsi:type="advanced:Placeholder" xmi:id="_XlHDFqRsEei6YvmuGSN8YA" elementId="com.ibm.datatools.project.ui.projectExplorer" ref="_XlHEd6RsEei6YvmuGSN8YA">
                   <tags>NoClose</tags>
                 </children>
               </children>
               <children xsi:type="basic:PartStack" xmi:id="_XlHDF6RsEei6YvmuGSN8YA" elementId="com.ibm.datatools.developer.perspective.BottomLeftFolder" containerData="4945" selectedElement="_XlHDGKRsEei6YvmuGSN8YA">
+                <tags>active</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_XlHDGKRsEei6YvmuGSN8YA" elementId="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" ref="_XlHEkaRsEei6YvmuGSN8YA"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_XlHDGaRsEei6YvmuGSN8YA" elementId="com.ibm.datatools.server.profile.framework.ui.view.serverProfileManagerView" ref="_XlHEuaRsEei6YvmuGSN8YA"/>
               </children>
@@ -162,105 +163,10 @@
       <tags>categoryTag:Ayuda</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_XlHERqRsEei6YvmuGSN8YA" elementId="org.eclipse.ui.editorss" selectedElement="_XlHER6RsEei6YvmuGSN8YA">
-      <children xsi:type="basic:PartStack" xmi:id="_XlHER6RsEei6YvmuGSN8YA" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_XlHEVqRsEei6YvmuGSN8YA">
+      <children xsi:type="basic:PartStack" xmi:id="_XlHER6RsEei6YvmuGSN8YA" elementId="org.eclipse.e4.primaryDataStack">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
-        <tags>active</tags>
         <tags>noFocus</tags>
-        <children xsi:type="basic:Part" xmi:id="_XlHESKRsEei6YvmuGSN8YA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Modelo de datos f&#xed;sico.dbm" iconURI="platform:/plugin/org.eclipse.datatools.connectivity.sqm.core.ui/icons/database.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.ibm.datatools.uom.ui.migration.internal.objadmin.editor.physicalmodel.CMPhysicalModelEditor&quot; name=&quot;Modelo de datos f&#xed;sico.dbm&quot; partName=&quot;Modelo de datos f&#xed;sico.dbm&quot; title=&quot;Modelo de datos f&#xed;sico.dbm&quot; tooltip=&quot;\ProyectoDatosORT\Modelo de datos f&#xed;sico.dbm&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProyectoDatosORT/Modelo de datos f&#xed;sico.dbm&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>com.ibm.datatools.uom.ui.migration.internal.objadmin.editor.physicalmodel.CMPhysicalModelEditor</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_XlHESaRsEei6YvmuGSN8YA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="SP_LIBROS_OBTENER" iconURI="platform:/plugin/com.ibm.datatools.routines.ui/icons/tv_ec_sp.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_LIBROS_OBTENER.spsql&quot; partName=&quot;SP_LIBROS_OBTENER&quot; title=&quot;SP_LIBROS_OBTENER&quot; tooltip=&quot;ProyectoStoredORT/SP_LIBROS_OBTENER.spsql&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProyectoStoredORT/SP_LIBROS_OBTENER.spsql&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_XlHESqRsEei6YvmuGSN8YA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="SP_LIBROS_INSERT" iconURI="platform:/plugin/com.ibm.datatools.routines.ui/icons/tv_ec_sp.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_LIBROS_INSERT.spsql&quot; partName=&quot;SP_LIBROS_INSERT&quot; title=&quot;SP_LIBROS_INSERT&quot; tooltip=&quot;ProyectoStoredORT/SP_LIBROS_INSERT.spsql&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProyectoStoredORT/SP_LIBROS_INSERT.spsql&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_XlHES6RsEei6YvmuGSN8YA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="SP_LOGIN_DELETE" iconURI="platform:/plugin/com.ibm.datatools.routines.ui/icons/tv_ec_sp.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_LOGIN_DELETE.spsql&quot; partName=&quot;SP_LOGIN_DELETE&quot; title=&quot;SP_LOGIN_DELETE&quot; tooltip=&quot;ProyectoStoredORT/SP_LOGIN_DELETE.spsql&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProyectoStoredORT/SP_LOGIN_DELETE.spsql&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_XlHETKRsEei6YvmuGSN8YA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="SP_LOGIN_INSERT" iconURI="platform:/plugin/com.ibm.datatools.routines.ui/icons/tv_ec_sp.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_LOGIN_INSERT.spsql&quot; partName=&quot;SP_LOGIN_INSERT&quot; title=&quot;SP_LOGIN_INSERT&quot; tooltip=&quot;ProyectoStoredORT/SP_LOGIN_INSERT.spsql&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProyectoStoredORT/SP_LOGIN_INSERT.spsql&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_XlHETaRsEei6YvmuGSN8YA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="SP_LOGIN_OBTENER" iconURI="platform:/plugin/com.ibm.datatools.routines.ui/icons/tv_ec_sp.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_LOGIN_OBTENER.spsql&quot; partName=&quot;SP_LOGIN_OBTENER&quot; title=&quot;SP_LOGIN_OBTENER&quot; tooltip=&quot;ProyectoStoredORT/SP_LOGIN_OBTENER.spsql&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProyectoStoredORT/SP_LOGIN_OBTENER.spsql&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_XlHETqRsEei6YvmuGSN8YA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="SP_LOGIN_OBTENERPK" iconURI="platform:/plugin/com.ibm.datatools.routines.ui/icons/tv_ec_sp.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_LOGIN_OBTENERPK.spsql&quot; partName=&quot;SP_LOGIN_OBTENERPK&quot; title=&quot;SP_LOGIN_OBTENERPK&quot; tooltip=&quot;ProyectoStoredORT/SP_LOGIN_OBTENERPK.spsql&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProyectoStoredORT/SP_LOGIN_OBTENERPK.spsql&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_XlHET6RsEei6YvmuGSN8YA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="SP_LIBROS_DELETE" iconURI="platform:/plugin/com.ibm.datatools.routines.ui/icons/tv_ec_sp.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_LIBROS_DELETE.spsql&quot; partName=&quot;SP_LIBROS_DELETE&quot; title=&quot;SP_LIBROS_DELETE&quot; tooltip=&quot;ProyectoStoredORT/SP_LIBROS_DELETE.spsql&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProyectoStoredORT/SP_LIBROS_DELETE.spsql&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_XlHEUKRsEei6YvmuGSN8YA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="SP_LOGIN_UPDATE" iconURI="platform:/plugin/com.ibm.datatools.routines.ui/icons/tv_ec_sp.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_LOGIN_UPDATE.spsql&quot; partName=&quot;SP_LOGIN_UPDATE&quot; title=&quot;SP_LOGIN_UPDATE&quot; tooltip=&quot;ProyectoStoredORT/SP_LOGIN_UPDATE.spsql&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProyectoStoredORT/SP_LOGIN_UPDATE.spsql&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_XlHEUaRsEei6YvmuGSN8YA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="SP_PRESTAMOS_DELETE" iconURI="platform:/plugin/com.ibm.datatools.routines.ui/icons/tv_ec_sp.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_PRESTAMOS_DELETE.spsql&quot; partName=&quot;SP_PRESTAMOS_DELETE&quot; title=&quot;SP_PRESTAMOS_DELETE&quot; tooltip=&quot;ProyectoStoredORT/SP_PRESTAMOS_DELETE.spsql&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProyectoStoredORT/SP_PRESTAMOS_DELETE.spsql&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor</tags>
-          <tags>removeOnHide</tags>
-          <tags>activeOnClose</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_XlHEUqRsEei6YvmuGSN8YA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="SP_LIBROS_OBTENER" iconURI="platform:/plugin/com.ibm.datatools.routines.ui/icons/tv_ec_sp.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor&quot; name=&quot;SP_LIBROS_OBTENER.spsql&quot; partName=&quot;SP_LIBROS_OBTENER&quot; title=&quot;SP_LIBROS_OBTENER&quot; tooltip=&quot;ProyectoStoredORT/SP_LIBROS_OBTENER.spsql&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProyectoStoredORT/SP_LIBROS_OBTENER.spsql&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor</tags>
-          <tags>removeOnHide</tags>
-          <tags>activeOnClose</tags>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_XlHEU6RsEei6YvmuGSN8YA" elementId="com.ibm.datatools.sqlxeditor">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:com.ibm.datatools.sqlxeditor</tags>
-            <tags>popup:com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_XlHEVKRsEei6YvmuGSN8YA" elementId="#RulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#RulerContext</tags>
-            <tags>popup:com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_XlHEVaRsEei6YvmuGSN8YA" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_XlHEVqRsEei6YvmuGSN8YA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Diagrama1" iconURI="platform:/plugin/com.ibm.datatools.diagram.er.ui/icons/erdiagram.gif" closeable="true">
-          <tags>Editor</tags>
-          <tags>ERPhysicalDiagramEditor</tags>
-          <tags>removeOnHide</tags>
-          <tags>active</tags>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_XlHEV6RsEei6YvmuGSN8YA" elementId="org.eclipse.gmf.runtime.diagram.ui.DiagramEditorContextMenu">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:org.eclipse.gmf.runtime.diagram.ui.DiagramEditorContextMenu</tags>
-          </menus>
-        </children>
       </children>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_XlHEWKRsEei6YvmuGSN8YA" elementId="com.ibm.datatools.admin.explorer" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Explorador de administraci&#xf3;n" iconURI="platform:/plugin/com.ibm.datatools.adm.explorer.ui/icons/AEView.gif" tooltip="" closeable="true">
@@ -306,7 +212,6 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;0&quot;/>"/>
       <tags>View</tags>
       <tags>categoryTag:Data Management</tags>
-      <tags>activeOnClose</tags>
       <menus xmi:id="_XlHEeKRsEei6YvmuGSN8YA" elementId="com.ibm.datatools.project.ui.projectExplorer">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -351,6 +256,8 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;0&quot; showCategories=&quot;true&quot;/>"/>
       <tags>View</tags>
       <tags>categoryTag:Data Management</tags>
+      <tags>active</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_XlHEkqRsEei6YvmuGSN8YA" elementId="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -378,40 +285,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_XlHEvaRsEei6YvmuGSN8YA" elementId="org.eclipse.ui.workbench.file" visible="false">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHEvqRsEei6YvmuGSN8YA" elementId="new.group">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHEv6RsEei6YvmuGSN8YA" elementId="newWizardDropDown">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHEwKRsEei6YvmuGSN8YA" elementId="new.ext" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHEwaRsEei6YvmuGSN8YA" elementId="save.group" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHEwqRsEei6YvmuGSN8YA" elementId="save">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHEw6RsEei6YvmuGSN8YA" elementId="saveAll">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHExKRsEei6YvmuGSN8YA" elementId="save.ext" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_XlHExaRsEei6YvmuGSN8YA" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Imprimir" command="_XlHNmKRsEei6YvmuGSN8YA"/>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHExqRsEei6YvmuGSN8YA" elementId="print.ext" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHEx6RsEei6YvmuGSN8YA" elementId="build.group">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHEyKRsEei6YvmuGSN8YA" elementId="build.ext" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHEyaRsEei6YvmuGSN8YA" elementId="additions">
-          <tags>Opaque</tags>
-        </children>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_conwcKbuEeiSHNjINzodIA" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Imprimir" command="_XlHNmKRsEei6YvmuGSN8YA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_XlHEyqRsEei6YvmuGSN8YA" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -419,57 +293,21 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_XlHE8KRsEei6YvmuGSN8YA" elementId="com.ibm.datatools.core.http.actionSet" visible="false">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHE8aRsEei6YvmuGSN8YA" elementId="databridgeGroup">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHE8qRsEei6YvmuGSN8YA" elementId="com.ibm.datatools.core.http.actions.StartupServerAction">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_XlHE86RsEei6YvmuGSN8YA" elementId="com.ibm.datatools.optim.activity.actionSet">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHE9KRsEei6YvmuGSN8YA" elementId="taskLaunch">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHE9aRsEei6YvmuGSN8YA" elementId="com.ibm.datatools.optim.solutions.actions.taskLaunch">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_XlHE9qRsEei6YvmuGSN8YA" elementId="com.ibm.datatools.oslc.client.ui.actionSet" visible="false">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHE96RsEei6YvmuGSN8YA" elementId="com.ibm.datatools.oslc.client.ui.menubar">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHE-KRsEei6YvmuGSN8YA" elementId="com.ibm.datatools.oslc.client.ui.oslcPreferences">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_XlHE-aRsEei6YvmuGSN8YA" elementId="com.ibm.datatools.runsql.perspective.actionSet" visible="false">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHE-qRsEei6YvmuGSN8YA" elementId="new">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHE-6RsEei6YvmuGSN8YA" elementId="com.ibm.datatools.runsql.perspective.newSQLScriptAction">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_XlHE_KRsEei6YvmuGSN8YA" elementId="org.eclipse.debug.ui.launchActionSet" visible="false">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHE_aRsEei6YvmuGSN8YA" elementId="debug">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHE_qRsEei6YvmuGSN8YA" elementId="org.eclipse.ui.externaltools.ExternalToolMenuDelegateToolbar">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_XlHE_6RsEei6YvmuGSN8YA" elementId="org.eclipse.search.searchActionSet" visible="false">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHFAKRsEei6YvmuGSN8YA" elementId="Search">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHFAaRsEei6YvmuGSN8YA" elementId="org.eclipse.search.OpenSearchDialogPage">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_XlHFAqRsEei6YvmuGSN8YA" elementId="group.nav" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -477,109 +315,13 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_XlHFBKRsEei6YvmuGSN8YA" elementId="org.eclipse.ui.workbench.navigate" visible="false">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHFBaRsEei6YvmuGSN8YA" elementId="history.group">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHFBqRsEei6YvmuGSN8YA" elementId="group.application" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHFB6RsEei6YvmuGSN8YA" elementId="backardHistory">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHFCKRsEei6YvmuGSN8YA" elementId="forwardHistory">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHFCaRsEei6YvmuGSN8YA" elementId="pin.group">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_XlHFCqRsEei6YvmuGSN8YA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Adherir editor" type="Check" command="_XlHNSKRsEei6YvmuGSN8YA"/>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHFC6RsEei6YvmuGSN8YA" elementId="org.eclipse.ui.edit.text.gotoNextAnnotation">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHFDKRsEei6YvmuGSN8YA" elementId="org.eclipse.ui.edit.text.gotoPreviousAnnotation">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHFDaRsEei6YvmuGSN8YA" elementId="org.eclipse.ui.edit.text.gotoLastEditPosition">
-          <tags>Opaque</tags>
-        </children>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_coploKbuEeiSHNjINzodIA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Adherir editor" type="Check" command="_XlHNSKRsEei6YvmuGSN8YA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_XlHFDqRsEei6YvmuGSN8YA" elementId="com.ibm.datatools.routines.ui.editors.MultiPageRoutineEditor" visible="false">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHFD6RsEei6YvmuGSN8YA" elementId="query-settings">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHFEKRsEei6YvmuGSN8YA" elementId="query-additions">
-          <tags>Opaque</tags>
-        </children>
       </children>
-      <children xsi:type="menu:ToolBar" xmi:id="_XlHFEaRsEei6YvmuGSN8YA" elementId="ERPhysicalDiagramEditor">
+      <children xsi:type="menu:ToolBar" xmi:id="_XlHFEaRsEei6YvmuGSN8YA" elementId="ERPhysicalDiagramEditor" visible="false">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHFEqRsEei6YvmuGSN8YA" elementId="toolbarFontGroup">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHFE6RsEei6YvmuGSN8YA" elementId="fontNameContributionItem">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHFFKRsEei6YvmuGSN8YA" elementId="fontSizeContributionItem">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHFFaRsEei6YvmuGSN8YA" elementId="fontBoldAction">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHFFqRsEei6YvmuGSN8YA" elementId="fontItalicAction">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHFF6RsEei6YvmuGSN8YA" elementId="toolbarColorLineGroup">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHFGKRsEei6YvmuGSN8YA" elementId="fontColorContributionItem">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHFGaRsEei6YvmuGSN8YA" elementId="fillColorContributionItem">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHFGqRsEei6YvmuGSN8YA" elementId="lineColorContributionItem">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHFG6RsEei6YvmuGSN8YA" elementId="toolbarCopyAppearanceGroup">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHFHKRsEei6YvmuGSN8YA" elementId="copyAppearancePropertiesAction">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHFHaRsEei6YvmuGSN8YA" elementId="toolBarViewGroup">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHFHqRsEei6YvmuGSN8YA" elementId="toolbarEditGroup">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHFH6RsEei6YvmuGSN8YA" elementId="toolbarFormatGroup">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHFIKRsEei6YvmuGSN8YA" elementId="autoSizeAction">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHFIaRsEei6YvmuGSN8YA" elementId="toolbarFilterGroup">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHFIqRsEei6YvmuGSN8YA" elementId="showConnectorLabels">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHFI6RsEei6YvmuGSN8YA" elementId="hideConnectorLabels">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHFJKRsEei6YvmuGSN8YA" elementId="toolbarNavigateGroup">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHFJaRsEei6YvmuGSN8YA" elementId="zoomContributionItem">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHFJqRsEei6YvmuGSN8YA" elementId="toolbarRestGroup">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHFJ6RsEei6YvmuGSN8YA" elementId="toolbarAdditions">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_XlHFKKRsEei6YvmuGSN8YA" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -591,12 +333,6 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_XlHFL6RsEei6YvmuGSN8YA" elementId="org.eclipse.ui.workbench.help" visible="false">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHFMKRsEei6YvmuGSN8YA" elementId="group.help">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_XlHFMaRsEei6YvmuGSN8YA" elementId="group.application" visible="false">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolControl" xmi:id="_XlHFMqRsEei6YvmuGSN8YA" elementId="PerspectiveSpacer" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
         <tags>stretch</tags>
@@ -1132,9 +868,7 @@
   <bindingTables xmi:id="_XlHG_KRsEei6YvmuGSN8YA" elementId="com.ibm.datatools.metadata.mapping.ui.editorScope" bindingContext="_XlHHgaRsEei6YvmuGSN8YA">
     <bindings xmi:id="_XlHG_aRsEei6YvmuGSN8YA" keySequence="CTRL+F10" command="_XlHNoKRsEei6YvmuGSN8YA"/>
   </bindingTables>
-  <bindingTables xmi:id="_XlHG_qRsEei6YvmuGSN8YA" elementId="com.ibm.datatools.aqt.acceleditor.context" bindingContext="_XlHHUqRsEei6YvmuGSN8YA">
-    <bindings xmi:id="_XlHG_6RsEei6YvmuGSN8YA" keySequence="F5" command="_XlHLaKRsEei6YvmuGSN8YA"/>
-  </bindingTables>
+  <bindingTables xmi:id="_XlHG_qRsEei6YvmuGSN8YA" elementId="com.ibm.datatools.aqt.acceleditor.context" bindingContext="_XlHHUqRsEei6YvmuGSN8YA"/>
   <bindingTables xmi:id="_XlHHAKRsEei6YvmuGSN8YA" elementId="org.eclipse.gmf.ecore.ui.diagramContext" bindingContext="_XlHHfaRsEei6YvmuGSN8YA">
     <bindings xmi:id="_XlHHAaRsEei6YvmuGSN8YA" keySequence="F5" command="_XlHKoKRsEei6YvmuGSN8YA"/>
   </bindingTables>
@@ -1951,6 +1685,23 @@
     <tags>View</tags>
     <tags>categoryTag:XML</tags>
   </descriptors>
+  <trimContributions xmi:id="_2r10UF9tEeO-yojH_y4TJA" elementId="org.eclipse.ui.ide.application.trimcontribution.QuickAccess" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" toBeRendered="false" parentId="org.eclipse.ui.main.toolbar" positionInParent="last">
+    <children xsi:type="menu:ToolControl" xmi:id="_76uUAF9tEeO-yojH_y4TJA" elementId="Spacer Glue" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
+      <tags>glue</tags>
+      <tags>move_after:PerspectiveSpacer</tags>
+      <tags>SHOW_RESTORE_MENU</tags>
+    </children>
+    <children xsi:type="menu:ToolControl" xmi:id="_8tJPcF9tEeO-yojH_y4TJA" elementId="SearchField" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.quickaccess.SearchField">
+      <tags>move_after:Spacer Glue</tags>
+      <tags>HIDEABLE</tags>
+      <tags>SHOW_RESTORE_MENU</tags>
+    </children>
+    <children xsi:type="menu:ToolControl" xmi:id="_9LgmcF9tEeO-yojH_y4TJA" elementId="Search-PS Glue" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
+      <tags>glue</tags>
+      <tags>move_after:SearchField</tags>
+      <tags>SHOW_RESTORE_MENU</tags>
+    </children>
+  </trimContributions>
   <commands xmi:id="_XlHKmqRsEei6YvmuGSN8YA" elementId="org.eclipse.ui.window.customizePerspective" contributorURI="platform:/plugin/org.eclipse.platform"/>
   <commands xmi:id="_XlHKm6RsEei6YvmuGSN8YA" elementId="org.eclipse.jdt.ui.correction.inlineLocal.assist" commandName="Asistencia r&#xe1;pida: Incorporar en l&#xed;nea variable local" description="Invoca la asistencia r&#xe1;pida y selecciona 'Incorporar en l&#xed;nea variable local'" category="_XlHPWaRsEei6YvmuGSN8YA"/>
   <commands xmi:id="_XlHKnKRsEei6YvmuGSN8YA" elementId="org.eclipse.ui.edit.text.select.pageUp" commandName="Seleccionar hasta el inicio de p&#xe1;gina" description="Seleccionar hasta el principio de la p&#xe1;gina" category="_XlHPOKRsEei6YvmuGSN8YA"/>

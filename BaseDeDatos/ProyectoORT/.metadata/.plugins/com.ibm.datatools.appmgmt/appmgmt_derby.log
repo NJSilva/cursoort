@@ -1,6 +1,6 @@
 ----------------------------------------------------------------
-2018-08-20 11:20:21.502 GMT
- Arrancando Derby versi??n The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instancia a816c00e-0165-5710-7682-00000140cc50
-en el directorio de base de datos C:\SoftwareJava\CJPB\BibliotecaORT\BaseDeDatos\ProyectoORT\.metadata\.plugins\com.ibm.datatools.appmgmt.common\TOOLSDB  
+2018-08-23 16:43:02.146 GMT
+ Arrancando Derby versi??n The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instancia a816c00e-0165-67aa-f66d-00000151b4b0
+en el directorio de base de datos C:\CursoORT\cursoort\BaseDeDatos\ProyectoORT\.metadata\.plugins\com.ibm.datatools.appmgmt.common\TOOLSDB  
 
 Cargador de clases de base de datos iniciado - derby.database.classpath=''
