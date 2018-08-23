@@ -49,6 +49,8 @@ public class TestFacadeClienteLibrosVO {
         librosvo.setLibros_disponible(12);
         librosvo.setLibros_isbn("225413358");
         librosvo.setLibros_titulo("El principito");
+        librosvo.setLibros_imagen("ruta a imagen");
+        librosvo.setLibros_autor("Antoine de Saint");
         
         VOI tiposvo = fc.obtener(FacadeCliente.TIPOS).get(0);
         librosvo.setTiposVO((TiposVO) tiposvo);
@@ -66,7 +68,11 @@ public class TestFacadeClienteLibrosVO {
         /* LIBROS */
         LibrosVO libro = new LibrosVO();
         libro.setLibros_anio(2018);
-        //fc.grabar(objetoVO, nombreClase)
+        try {
+            fc.grabar(libro, FacadeCliente.LIBROS);
+        } catch (SQLException ex) {
+            Logger.getLogger(TestFacadeClienteLibrosVO.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
 }

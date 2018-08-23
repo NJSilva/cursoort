@@ -235,7 +235,7 @@ public abstract class HelperAbstractDao extends HelperAbstractConnectionDao {
             con.commit();
 
         } catch (SQLException e) {
-            e.printStackTrace();
+//            e.printStackTrace();
             throw new SQLException(UtilConexion.printSQLException(e).getMessage());
         } finally {
             try {

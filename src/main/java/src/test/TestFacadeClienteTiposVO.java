@@ -43,10 +43,10 @@ public class TestFacadeClienteTiposVO {
         try {
             fc.grabar(tiposvo, FacadeCliente.TIPOS);
 //            fc.eliminar(tiposvo, FacadeCliente.TIPOS);
-//            fc.grabar(tiposvo, FacadeCliente.TIPOS);
 
-//            tiposvo.setTipos_nombre("Nombre 10");
-//            fc.actualizar(tiposvo, FacadeCliente.TIPOS);
+
+            tiposvo.setTipos_nombre("Nombre 10");
+            fc.actualizar(tiposvo, FacadeCliente.TIPOS);
         } catch (SQLException ex) {
             Logger.getLogger(TestFacadeClienteTiposVO.class.getName()).log(Level.SEVERE, null, ex);
         }

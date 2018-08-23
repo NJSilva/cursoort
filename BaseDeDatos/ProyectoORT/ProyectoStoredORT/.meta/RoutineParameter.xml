@@ -22,6 +22,108 @@
 			</list>
 		</section>
 	</section>
+	<section name="SP_LIBROS_INSERT">
+		<section name="SP_LIBROS_INSERT_VARCHAR_VARCHAR_VARCHAR_DECIMAL_VARCHAR_DECIMAL_VARCHAR_VARCHAR_DECIMAL">
+			<item value="false" key="RunOptions.RunOptions.GatherPerformanceInformation"/>
+			<item value="true" key="RunOptions.RunOptions.CommitChanges"/>
+			<item value=";" key="RunOptions.RunRoutineConfiguration.BeforeRunStmtTerminator"/>
+			<item value=";" key="RunOptions.RunRoutineConfiguration.AfterRunStmtTerminator"/>
+			<item value="&lt;![CDATA[]]&gt;" key="RunOptions.RunRoutineConfiguration.AfterRunScript"/>
+			<item value="&lt;![CDATA[]]&gt;" key="RunOptions.RunRoutineConfiguration.BeforeRunScript"/>
+			<item value="false" key="RunOptions.RunOptions.CollectActuals"/>
+			<item value="false" key="RunOptions.RunOptions.GatherTraceInformation"/>
+			<list key="@TIPOS_ID">
+				<item value="DECIMAL"/>
+				<item value="1"/>
+				<item value="false"/>
+			</list>
+			<list key="@LIBROS_ISBN">
+				<item value="VARCHAR"/>
+				<item value="444rr44"/>
+				<item value="false"/>
+			</list>
+			<list key="@LIBROS_DISPONIBLE">
+				<item value="DECIMAL"/>
+				<item value="4"/>
+				<item value="false"/>
+			</list>
+			<list key="@LIBROS_TITULO">
+				<item value="VARCHAR"/>
+				<item value="123123123"/>
+				<item value="false"/>
+			</list>
+			<list key="@LIBROS_DESCRIPCION">
+				<item value="VARCHAR"/>
+				<item value="qerqe"/>
+				<item value="false"/>
+			</list>
+			<list key="@LIBROS_IMAGEN">
+				<item value="VARCHAR"/>
+				<item value="13412341"/>
+				<item value="false"/>
+			</list>
+			<list key="@LIBROS_CODIGO">
+				<item value="VARCHAR"/>
+				<item value="1234"/>
+				<item value="false"/>
+			</list>
+			<list key="@LIBROS_ANIO">
+				<item value="DECIMAL"/>
+				<item value="2015"/>
+				<item value="false"/>
+			</list>
+			<list key="@LIBROS_AUTOR">
+				<item value="VARCHAR"/>
+				<item value="34523452"/>
+				<item value="false"/>
+			</list>
+		</section>
+		<section name="SP_LIBROS_INSERT_VARCHAR_VARCHAR_VARCHAR_DECIMAL_VARCHAR_DECIMAL_DECIMAL">
+			<item value="false" key="RunOptions.RunOptions.GatherPerformanceInformation"/>
+			<item value="true" key="RunOptions.RunOptions.CommitChanges"/>
+			<item value=";" key="RunOptions.RunRoutineConfiguration.BeforeRunStmtTerminator"/>
+			<item value=";" key="RunOptions.RunRoutineConfiguration.AfterRunStmtTerminator"/>
+			<item value="&lt;![CDATA[]]&gt;" key="RunOptions.RunRoutineConfiguration.AfterRunScript"/>
+			<item value="&lt;![CDATA[]]&gt;" key="RunOptions.RunRoutineConfiguration.BeforeRunScript"/>
+			<item value="false" key="RunOptions.RunOptions.CollectActuals"/>
+			<item value="false" key="RunOptions.RunOptions.GatherTraceInformation"/>
+			<list key="@TIPOS_ID">
+				<item value="DECIMAL"/>
+				<item value="1"/>
+				<item value="false"/>
+			</list>
+			<list key="@LIBROS_ISBN">
+				<item value="VARCHAR"/>
+				<item value="444rr44"/>
+				<item value="false"/>
+			</list>
+			<list key="@LIBROS_DISPONIBLE">
+				<item value="DECIMAL"/>
+				<item value="4"/>
+				<item value="false"/>
+			</list>
+			<list key="@LIBROS_TITULO">
+				<item value="VARCHAR"/>
+				<item value="123123123"/>
+				<item value="false"/>
+			</list>
+			<list key="@LIBROS_DESCRIPCION">
+				<item value="VARCHAR"/>
+				<item value="qerqe"/>
+				<item value="false"/>
+			</list>
+			<list key="@LIBROS_CODIGO">
+				<item value="VARCHAR"/>
+				<item value="1234"/>
+				<item value="false"/>
+			</list>
+			<list key="@LIBROS_ANIO">
+				<item value="DECIMAL"/>
+				<item value="2015"/>
+				<item value="false"/>
+			</list>
+		</section>
+	</section>
 	<section name="SP_LIBROS_OBTENER">
 		<section name="SP_LIBROS_OBTENER">
 			<item value="false" key="RunOptions.RunOptions.GatherPerformanceInformation"/>
