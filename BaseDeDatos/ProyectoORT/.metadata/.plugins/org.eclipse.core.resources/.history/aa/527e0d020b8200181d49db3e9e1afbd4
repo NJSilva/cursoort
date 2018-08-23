@@ -1,5 +1,0 @@
-#Sat Jul 07 14:27:22 UYT 2018
-ConnectionName=CURSOORT
-useridCurrentSchema=false
-currentSchema=ESQUEMA
-ProjectAnnotation=CURSOORT\:jdbc\:db2\://localhost\:50000/CURSOORT\:retrieveMessagesFromServerOnGetMessage\=true;
