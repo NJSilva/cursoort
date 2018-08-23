@@ -19,12 +19,12 @@ function mantenimientoTipos() {
         loadonce: true,
         hidegrid: true,
         caption: "Tipos",
-        colNames: ['TIPOS_CODIGO',
+        colNames: ['TIPOS_ID',
             'TIPOS_NOMBRE'],
 
         colModel: [{
-                name: 'tipos_codigo',
-                index: 'tipos_codigo',
+                name: 'tipos_id',
+                index: 'tipos_id',
                 editoptions: {size: 5,
                     maxlength: 5},
                 align: 'right',

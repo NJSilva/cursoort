@@ -15,7 +15,7 @@
 				<item value="TIPO UNO"/>
 				<item value="false"/>
 			</list>
-			<list key="P_TIPOS_CODIGO">
+			<list key="P_TIPOS_ID">
 				<item value="DECIMAL"/>
 				<item value="1"/>
 				<item value="false"/>

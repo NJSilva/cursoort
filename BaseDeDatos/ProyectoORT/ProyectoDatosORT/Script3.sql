@@ -41,7 +41,7 @@ CREATE TABLE Esquema.Libros (
 		Libros_Anio NUMERIC(4 , 0) NOT NULL, 
 		Libros_Descripcion VARCHAR(300), 
 		Libros_Disponible NUMERIC(5 , 0) NOT NULL, 
-		Tipos_Codigo NUMERIC(5 , 0) NOT NULL
+		Tipos_id NUMERIC(5 , 0) NOT NULL
 	)
 	DATA CAPTURE NONE 
 	COMPRESS NO;
@@ -78,7 +78,7 @@ CREATE TABLE Esquema.Reservas (
 	COMPRESS NO;
 
 CREATE TABLE Esquema.Tipos (
-		Tipos_Codigo NUMERIC(5 , 0) NOT NULL, 
+		Tipos_id NUMERIC(5 , 0) NOT NULL, 
 		Tipos_Nombre VARCHAR(50) NOT NULL
 	)
 	DATA CAPTURE NONE 
@@ -91,12 +91,12 @@ ALTER TABLE Esquema.Personas ADD CONSTRAINT Personas_PK PRIMARY KEY
 	(Personas_Cedula);
 
 ALTER TABLE Esquema.Tipos ADD CONSTRAINT Tipos_PK PRIMARY KEY
-	(Tipos_Codigo);
+	(Tipos_id);
 
 ALTER TABLE Esquema.Libros ADD CONSTRAINT Libros_Tipos_FK FOREIGN KEY
-	(Tipos_Codigo)
+	(Tipos_id)
 	REFERENCES Esquema.Tipos
-	(Tipos_Codigo)
+	(Tipos_id)
 	ON DELETE RESTRICT;
 
 ALTER TABLE Esquema.Login ADD CONSTRAINT Login_Personas_FK FOREIGN KEY

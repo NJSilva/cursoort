@@ -10,7 +10,7 @@ function getSelectLibros() {
         success: function (data) {
             $.each(data, function (i, obj) {
                 selectLibros = selectLibros + data[i].libros_codigo + ':' +
-                data[i].libros_titulo + ';';
+                        data[i].libros_titulo + ';';
             });
         },
         error: function (request, textStatus, errorThrown) {
@@ -74,7 +74,7 @@ function getSelectLogin() {
         success: function (data) {
             $.each(data, function (i, obj) {
                 selectLogin = selectLogin + data[i].login_clave + ':' +
-                data[i].personas_cedula + ';';
+                        data[i].personas_cedula + ';';
             });
         },
         error: function (request, textStatus, errorThrown) {
@@ -138,7 +138,7 @@ function getSelectPersonas() {
         success: function (data) {
             $.each(data, function (i, obj) {
                 selectPersonas = selectPersonas + data[i].personas_cedula + ':' +
-                data[i].personas_mail + ';';
+                        data[i].personas_mail + ';';
             });
         },
         error: function (request, textStatus, errorThrown) {
@@ -202,7 +202,7 @@ function getSelectPrestamos() {
         success: function (data) {
             $.each(data, function (i, obj) {
                 selectPrestamos = selectPrestamos + data[i].libros_codigo + ':' +
-                data[i].personas_cedula + ';';
+                        data[i].personas_cedula + ';';
             });
         },
         error: function (request, textStatus, errorThrown) {
@@ -266,7 +266,7 @@ function getSelectReservas() {
         success: function (data) {
             $.each(data, function (i, obj) {
                 selectReservas = selectReservas + data[i].personas_cedula + ':' +
-                data[i].libros_codigo + ';';
+                        data[i].libros_codigo + ';';
             });
         },
         error: function (request, textStatus, errorThrown) {
@@ -329,8 +329,8 @@ function getSelectTipos() {
         data: {},
         success: function (data) {
             $.each(data, function (i, obj) {
-                selectTipos = selectTipos + data[i].tipos_codigo + ':' +
-                data[i].tipos_nombre + ';';
+                selectTipos = selectTipos + data[i].tipos_id + ':' +
+                        data[i].tipos_nombre + ';';
             });
         },
         error: function (request, textStatus, errorThrown) {
@@ -340,8 +340,8 @@ function getSelectTipos() {
     });
     return selectTipos;
 }
-function getSelectCodigoTipos() {
-    var selectCodigoTipos = [];
+function getSelectCodigoIds() {
+    var selectCodigoIds = [];
     $.ajax({
         url: '/BibliotecaORT/ServletObtenerTipos',
         dataType: 'json',
@@ -351,7 +351,7 @@ function getSelectCodigoTipos() {
         data: {},
         success: function (data) {
             $.each(data, function (i, obj) {
-                selectCodigoTipos.push(data[i].tipos_codigo);
+                selectCodigoIds.push(data[i].tipos_id);
             })
         },
         error: function (request, textStatus, errorThrown) {
@@ -359,7 +359,7 @@ function getSelectCodigoTipos() {
             console.log($.parseJSON(request));
         }
     });
-    return selectCodigoTipos;
+    return selectCodigoIds;
 }
 function getSelectNombreTipos() {
     var selectNombreTipos = [];

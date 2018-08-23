@@ -37,7 +37,7 @@ public class ServletGrabarLibros extends HttpServlet {
             String LIBROS_ANIO = request.getParameter("libros_anio");
             String LIBROS_DESCRIPCION = request.getParameter("libros_descripcion");
             String LIBROS_DISPONIBLE = request.getParameter("libros_disponible");
-            String TIPOS_CODIGO = request.getParameter("tipos_codigo");
+            String TIPOS_ID = request.getParameter("tipos.tipos_id");
             String TIPOS_NOMBRE = request.getParameter("tipos.tipos_nombre");
             
             libros.setLibros_codigo((LIBROS_CODIGO != null) ? LIBROS_CODIGO : "");
@@ -47,7 +47,7 @@ public class ServletGrabarLibros extends HttpServlet {
             libros.setLibros_descripcion((LIBROS_DESCRIPCION != null) ? LIBROS_DESCRIPCION : "");
             libros.setLibros_disponible((LIBROS_DISPONIBLE.length() != 0) ? Integer.parseInt(LIBROS_DISPONIBLE) : 0);
 
-            TiposVO tipos = (TiposVO) fc.buscar(TIPOS_CODIGO, "Tipos");
+            TiposVO tipos = (TiposVO) fc.buscar(TIPOS_NOMBRE, "Tipos");
             libros.setTiposVO(tipos);
 
             String operacion = request.getParameter("oper");

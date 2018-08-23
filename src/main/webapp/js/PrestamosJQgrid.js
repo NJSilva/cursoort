@@ -64,20 +64,20 @@ function mantenimientoPrestamos() {
                 editable: true,
                 search: true,
                 editrules: {required: false}}]});
-    
-        	jQuery("#listaPrestamos").jqGrid('navGrid', '#pagerListaPrestamos', {
 
-		reloadGridOptions : {
-			fromServer : true
-		},
+    jQuery("#listaPrestamos").jqGrid('navGrid', '#pagerListaPrestamos', {
 
-		edit : true,
-		add : true,
-		del : true,
-		search : true,
-		refresh : true,
-		view : true
-	});
+        reloadGridOptions: {
+            fromServer: true
+        },
+
+        edit: true,
+        add: true,
+        del: true,
+        search: true,
+        refresh: true,
+        view: true
+    });
 
 
 }
