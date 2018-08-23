@@ -35,21 +35,21 @@ public class TestFacadeClienteTiposVO {
             Logger.getLogger(TestFacadeClienteTiposVO.class.getName()).log(Level.SEVERE, null, ex);
         }
         
-//        /* TIPOS */
-//        TiposVO tiposvo = new TiposVO();
-////        tiposvo.setTipos_id(12);
-//        tiposvo.setTipos_nombre("Nombre diez");
-//
-//        try {
-//            fc.grabar(tiposvo, FacadeCliente.TIPOS);
-////            fc.eliminar(tiposvo, FacadeCliente.TIPOS);
-//
-//
-//            tiposvo.setTipos_nombre("Nombre 10");
-//            fc.actualizar(tiposvo, FacadeCliente.TIPOS);
-//        } catch (SQLException ex) {
-//            Logger.getLogger(TestFacadeClienteTiposVO.class.getName()).log(Level.SEVERE, null, ex);
-//        }
+        /* TIPOS */
+        TiposVO tiposvo = new TiposVO();
+        tiposvo.setTipos_nombre("Nombre diez");
+
+        try {
+            fc.grabar(tiposvo, FacadeCliente.TIPOS);
+//            fc.eliminar(tiposvo, FacadeCliente.TIPOS);
+
+
+            tiposvo.setTipos_nombre("Nombre 10");
+            fc.actualizar(tiposvo, FacadeCliente.TIPOS);
+        } catch (SQLException ex) {
+            Logger.getLogger(TestFacadeClienteTiposVO.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
         
         /* TIPOS */
 //        TiposVO tiposvo = new TiposVO();

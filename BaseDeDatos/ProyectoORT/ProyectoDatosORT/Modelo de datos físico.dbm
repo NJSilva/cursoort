@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--xtools2_universal_type_manager-->
 <xmi:XMI xmlns:datamodelversion="http://www.ibm.com/com.ibm.datatools.core/model/data/1.9.0.0" xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DB2Model="http:///com/ibm/db/models/db2/db2.ecore" xmlns:LUW="http:///com/ibm/db/models/db2/luw.ecore" xmlns:SQLAccessControl="http:///org/eclipse/datatools/modelbase/sql/accesscontrol.ecore" xmlns:SQLConstraints="http:///org/eclipse/datatools/modelbase/sql/constraints.ecore" xmlns:SQLDataTypes="http:///org/eclipse/datatools/modelbase/sql/datatypes.ecore" xmlns:datanotation="http:///datanotation.ecore" xmlns:ilvglnotation="http://www.ilog.com/views/8.5.0/LayoutNotationExtensionDefinition" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
-  <LUW:LUWDatabase xmi:id="_kuHbkH5XEeiaGZiZDjQaCw" name="CursoORT" vendor="DB2 UDB" version="V11.1" schemas="_k0phYH5XEeiaGZiZDjQaCw" authorizationIds="_PGxxwKZOEeiN5vM04ct7hA _PGxx2qZOEeiN5vM04ct7hA" groups="_PGxx4KZOEeiN5vM04ct7hA" bufferpools="_PGyY0aZOEeiN5vM04ct7hA" tablespaces="_PGxx3qZOEeiN5vM04ct7hA" storageGroups="_PGyY0qZOEeiN5vM04ct7hA" defaultStorageGroup="_PGyY0qZOEeiN5vM04ct7hA">
-    <eAnnotations xmi:id="_OtK-8KZOEeiN5vM04ct7hA" source="ConnectionURI">
-      <details xmi:id="_OtSTsKZOEeiN5vM04ct7hA" key="ConnectionKey" value="CURSOORT"/>
+  <LUW:LUWDatabase xmi:id="_kuHbkH5XEeiaGZiZDjQaCw" name="CursoORT" vendor="DB2 UDB" version="V11.1" schemas="_k0phYH5XEeiaGZiZDjQaCw" authorizationIds="_-gmBaab3EeiaPsuge4c3bg _-gmocab3EeiaPsuge4c3bg" groups="_-gmod6b3EeiaPsuge4c3bg" bufferpools="_-gmoeab3EeiaPsuge4c3bg" tablespaces="_-gmodab3EeiaPsuge4c3bg" storageGroups="_-gmoeqb3EeiaPsuge4c3bg" defaultStorageGroup="_-gmoeqb3EeiaPsuge4c3bg">
+    <eAnnotations xmi:id="_-LbpsKb3EeiaPsuge4c3bg" source="ConnectionURI">
+      <details xmi:id="_-LsIYKb3EeiaPsuge4c3bg" key="ConnectionKey" value="CURSOORT"/>
     </eAnnotations>
   </LUW:LUWDatabase>
-  <DB2Model:DB2Schema xmi:id="_k0phYH5XEeiaGZiZDjQaCw" name="Esquema" tables="_4JlVwH5XEeiaGZiZDjQaCw _6Q4ZcH5XEeiaGZiZDjQaCw _8gsf8H5XEeiaGZiZDjQaCw _9bt9wH5XEeiaGZiZDjQaCw _AApYoH5YEeiaGZiZDjQaCw _PGxKsKZOEeiN5vM04ct7hA" database="_kuHbkH5XEeiaGZiZDjQaCw">
+  <DB2Model:DB2Schema xmi:id="_k0phYH5XEeiaGZiZDjQaCw" name="Esquema" tables="_4JlVwH5XEeiaGZiZDjQaCw _6Q4ZcH5XEeiaGZiZDjQaCw _8gsf8H5XEeiaGZiZDjQaCw _9bt9wH5XEeiaGZiZDjQaCw _AApYoH5YEeiaGZiZDjQaCw _-gmBYKb3EeiaPsuge4c3bg" database="_kuHbkH5XEeiaGZiZDjQaCw">
     <eAnnotations xmi:id="_lHj2UH5XEeiaGZiZDjQaCw" source="diagram">
       <contents xsi:type="datanotation:DataDiagram" xmi:id="_lHj2UX5XEeiaGZiZDjQaCw" type="IE_CrowFoot" name="Diagrama1" viewKind="ProjectExplorer" notation="IE_CrowFoot" kind="Physical">
         <children xmi:id="_4JlVwX5XEeiaGZiZDjQaCw" element="_4JlVwH5XEeiaGZiZDjQaCw">
@@ -515,89 +515,79 @@
       </eAnnotations>
     </constraints>
   </LUW:LUWTable>
-  <LUW:LUWTable xmi:id="_PGxKsKZOEeiN5vM04ct7hA" name="RESERVAS" privileges="_PGxx0KZOEeiN5vM04ct7hA _PGxx06ZOEeiN5vM04ct7hA _PGxxwaZOEeiN5vM04ct7hA _PGxxxKZOEeiN5vM04ct7hA _PGxxyqZOEeiN5vM04ct7hA _PGxx1qZOEeiN5vM04ct7hA _PGxxzaZOEeiN5vM04ct7hA _PGxxx6ZOEeiN5vM04ct7hA" schema="_k0phYH5XEeiaGZiZDjQaCw" organizeBy="ROW" rowCompressionEmpty="false" regularDataTableSpace="_PGxx3qZOEeiN5vM04ct7hA" partitionMode=" ">
-    <columns xsi:type="LUW:LUWColumn" xmi:id="_TCGX0KZOEeiN5vM04ct7hA" name="Personas_id" nullable="false">
-      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" xmi:id="_TCGX0aZOEeiN5vM04ct7hA" name="NUMERIC" primitiveType="NUMERIC" precision="5"/>
+  <LUW:LUWTable xmi:id="_-gmBYKb3EeiaPsuge4c3bg" name="Reservas" privileges="_-gmBf6b3EeiaPsuge4c3bg _-gmBeab3EeiaPsuge4c3bg _-gmBc6b3EeiaPsuge4c3bg _-gmBfKb3EeiaPsuge4c3bg _-gmBbab3EeiaPsuge4c3bg _-gmBaqb3EeiaPsuge4c3bg _-gmBdqb3EeiaPsuge4c3bg _-gmBcKb3EeiaPsuge4c3bg" schema="_k0phYH5XEeiaGZiZDjQaCw" organizeBy="ROW" rowCompressionEmpty="false" regularDataTableSpace="_-gmodab3EeiaPsuge4c3bg" partitionMode=" ">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_-gmBYab3EeiaPsuge4c3bg" name="PERSONAS_ID" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_-gmBYqb3EeiaPsuge4c3bg" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="10">
+        <eAnnotations xmi:id="_-gmBY6b3EeiaPsuge4c3bg" source="LENGTH_SEMANTIC">
+          <details xmi:id="_-gmBZKb3EeiaPsuge4c3bg" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
     </columns>
-    <columns xsi:type="LUW:LUWColumn" xmi:id="_XOVuwKZOEeiN5vM04ct7hA" name="Libros_id" nullable="false">
-      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" xmi:id="_XOVuwaZOEeiN5vM04ct7hA" name="NUMERIC" primitiveType="NUMERIC" precision="5"/>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_-gmBZab3EeiaPsuge4c3bg" name="LIBROS_ID" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_-gmBZqb3EeiaPsuge4c3bg" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="12">
+        <eAnnotations xmi:id="_-gmBZ6b3EeiaPsuge4c3bg" source="LENGTH_SEMANTIC">
+          <details xmi:id="_-gmBaKb3EeiaPsuge4c3bg" key="LENGTH_SEMANTIC_TYPE" value="OCTETS"/>
+        </eAnnotations>
+      </containedType>
     </columns>
-    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_TCARMKZOEeiN5vM04ct7hA" name="RESERVAS_Personas_FK" members="_TCGX0KZOEeiN5vM04ct7hA" onDelete="RESTRICT" uniqueConstraint="_-N6aQH5YEeiaGZiZDjQaCw" referencedTable="_9bt9wH5XEeiaGZiZDjQaCw">
-      <eAnnotations xmi:id="_TCARMaZOEeiN5vM04ct7hA" source="FK_MODELING_RELATIONSHIP">
-        <details xmi:id="_TCARMqZOEeiN5vM04ct7hA" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="false"/>
-        <details xmi:id="_TCARM6ZOEeiN5vM04ct7hA" key="FK_CHILD_MULTIPLICITY" value="*"/>
-        <details xmi:id="_TCARNKZOEeiN5vM04ct7hA" key="FK_CHILD_ROLE_NAME" value="Verbo1"/>
-        <details xmi:id="_TCA4QKZOEeiN5vM04ct7hA" key="FK_PARENT_MULTIPLICITY" value="1"/>
-        <details xmi:id="_TCA4QaZOEeiN5vM04ct7hA" key="FK_PARENT_ROLE_NAME" value=""/>
-      </eAnnotations>
-    </constraints>
-    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_XOPoIKZOEeiN5vM04ct7hA" name="RESERVAS_Libros_FK" members="_XOVuwKZOEeiN5vM04ct7hA" onDelete="RESTRICT" uniqueConstraint="_KKevYH5YEeiaGZiZDjQaCw" referencedTable="_4JlVwH5XEeiaGZiZDjQaCw">
-      <eAnnotations xmi:id="_XOPoIaZOEeiN5vM04ct7hA" source="FK_MODELING_RELATIONSHIP">
-        <details xmi:id="_XOPoIqZOEeiN5vM04ct7hA" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="false"/>
-        <details xmi:id="_XOPoI6ZOEeiN5vM04ct7hA" key="FK_CHILD_MULTIPLICITY" value="*"/>
-        <details xmi:id="_XOPoJKZOEeiN5vM04ct7hA" key="FK_CHILD_ROLE_NAME" value="Verbo1"/>
-        <details xmi:id="_XOPoJaZOEeiN5vM04ct7hA" key="FK_PARENT_MULTIPLICITY" value="1"/>
-        <details xmi:id="_XOPoJqZOEeiN5vM04ct7hA" key="FK_PARENT_ROLE_NAME" value=""/>
-      </eAnnotations>
-    </constraints>
   </LUW:LUWTable>
-  <SQLAccessControl:User xmi:id="_PGxxwKZOEeiN5vM04ct7hA" name="NICO" description="" Database="_kuHbkH5XEeiaGZiZDjQaCw">
-    <receivedPrivilege xmi:id="_PGxxwaZOEeiN5vM04ct7hA" grantable="true" action="DELETE" grantor="_PGxx2aZOEeiN5vM04ct7hA" object="_PGxKsKZOEeiN5vM04ct7hA">
-      <eAnnotations xmi:id="_PGxxwqZOEeiN5vM04ct7hA" source="PRIVILEGE_PROPERTY">
-        <details xmi:id="_PGxxw6ZOEeiN5vM04ct7hA" key="PRIVILEGE_SYSTEM_GRANT" value="true"/>
+  <SQLAccessControl:User xmi:id="_-gmBaab3EeiaPsuge4c3bg" name="NSILVA" description="" Database="_kuHbkH5XEeiaGZiZDjQaCw">
+    <receivedPrivilege xmi:id="_-gmBaqb3EeiaPsuge4c3bg" grantable="true" action="SELECT" grantor="_-gmocKb3EeiaPsuge4c3bg" object="_-gmBYKb3EeiaPsuge4c3bg">
+      <eAnnotations xmi:id="_-gmBa6b3EeiaPsuge4c3bg" source="PRIVILEGE_PROPERTY">
+        <details xmi:id="_-gmBbKb3EeiaPsuge4c3bg" key="PRIVILEGE_SYSTEM_GRANT" value="true"/>
       </eAnnotations>
     </receivedPrivilege>
-    <receivedPrivilege xmi:id="_PGxxxKZOEeiN5vM04ct7hA" grantable="true" action="INDEX" grantor="_PGxx2aZOEeiN5vM04ct7hA" object="_PGxKsKZOEeiN5vM04ct7hA">
-      <eAnnotations xmi:id="_PGxxxaZOEeiN5vM04ct7hA" source="PRIVILEGE_PROPERTY">
-        <details xmi:id="_PGxxxqZOEeiN5vM04ct7hA" key="PRIVILEGE_SYSTEM_GRANT" value="true"/>
+    <receivedPrivilege xmi:id="_-gmBbab3EeiaPsuge4c3bg" grantable="true" action="INSERT" grantor="_-gmocKb3EeiaPsuge4c3bg" object="_-gmBYKb3EeiaPsuge4c3bg">
+      <eAnnotations xmi:id="_-gmBbqb3EeiaPsuge4c3bg" source="PRIVILEGE_PROPERTY">
+        <details xmi:id="_-gmBb6b3EeiaPsuge4c3bg" key="PRIVILEGE_SYSTEM_GRANT" value="true"/>
       </eAnnotations>
     </receivedPrivilege>
-    <receivedPrivilege xmi:id="_PGxxx6ZOEeiN5vM04ct7hA" grantable="true" action="UPDATE" grantor="_PGxx2aZOEeiN5vM04ct7hA" object="_PGxKsKZOEeiN5vM04ct7hA">
-      <eAnnotations xmi:id="_PGxxyKZOEeiN5vM04ct7hA" source="PRIVILEGE_PROPERTY">
-        <details xmi:id="_PGxxyaZOEeiN5vM04ct7hA" key="PRIVILEGE_SYSTEM_GRANT" value="true"/>
+    <receivedPrivilege xmi:id="_-gmBcKb3EeiaPsuge4c3bg" grantable="true" action="UPDATE" grantor="_-gmocKb3EeiaPsuge4c3bg" object="_-gmBYKb3EeiaPsuge4c3bg">
+      <eAnnotations xmi:id="_-gmBcab3EeiaPsuge4c3bg" source="PRIVILEGE_PROPERTY">
+        <details xmi:id="_-gmBcqb3EeiaPsuge4c3bg" key="PRIVILEGE_SYSTEM_GRANT" value="true"/>
       </eAnnotations>
     </receivedPrivilege>
-    <receivedPrivilege xmi:id="_PGxxyqZOEeiN5vM04ct7hA" grantable="true" action="INSERT" grantor="_PGxx2aZOEeiN5vM04ct7hA" object="_PGxKsKZOEeiN5vM04ct7hA">
-      <eAnnotations xmi:id="_PGxxy6ZOEeiN5vM04ct7hA" source="PRIVILEGE_PROPERTY">
-        <details xmi:id="_PGxxzKZOEeiN5vM04ct7hA" key="PRIVILEGE_SYSTEM_GRANT" value="true"/>
+    <receivedPrivilege xmi:id="_-gmBc6b3EeiaPsuge4c3bg" grantable="true" action="DELETE" grantor="_-gmocKb3EeiaPsuge4c3bg" object="_-gmBYKb3EeiaPsuge4c3bg">
+      <eAnnotations xmi:id="_-gmBdKb3EeiaPsuge4c3bg" source="PRIVILEGE_PROPERTY">
+        <details xmi:id="_-gmBdab3EeiaPsuge4c3bg" key="PRIVILEGE_SYSTEM_GRANT" value="true"/>
       </eAnnotations>
     </receivedPrivilege>
-    <receivedPrivilege xmi:id="_PGxxzaZOEeiN5vM04ct7hA" grantable="true" action="REFERENCES" grantor="_PGxx2aZOEeiN5vM04ct7hA" object="_PGxKsKZOEeiN5vM04ct7hA">
-      <eAnnotations xmi:id="_PGxxzqZOEeiN5vM04ct7hA" source="PRIVILEGE_PROPERTY">
-        <details xmi:id="_PGxxz6ZOEeiN5vM04ct7hA" key="PRIVILEGE_SYSTEM_GRANT" value="true"/>
+    <receivedPrivilege xmi:id="_-gmBdqb3EeiaPsuge4c3bg" grantable="true" action="REFERENCES" grantor="_-gmocKb3EeiaPsuge4c3bg" object="_-gmBYKb3EeiaPsuge4c3bg">
+      <eAnnotations xmi:id="_-gmBd6b3EeiaPsuge4c3bg" source="PRIVILEGE_PROPERTY">
+        <details xmi:id="_-gmBeKb3EeiaPsuge4c3bg" key="PRIVILEGE_SYSTEM_GRANT" value="true"/>
       </eAnnotations>
     </receivedPrivilege>
-    <receivedPrivilege xmi:id="_PGxx0KZOEeiN5vM04ct7hA" action="CONTROL" grantor="_PGxx2aZOEeiN5vM04ct7hA" object="_PGxKsKZOEeiN5vM04ct7hA">
-      <eAnnotations xmi:id="_PGxx0aZOEeiN5vM04ct7hA" source="PRIVILEGE_PROPERTY">
-        <details xmi:id="_PGxx0qZOEeiN5vM04ct7hA" key="PRIVILEGE_SYSTEM_GRANT" value="true"/>
+    <receivedPrivilege xmi:id="_-gmBeab3EeiaPsuge4c3bg" grantable="true" action="ALTER" grantor="_-gmocKb3EeiaPsuge4c3bg" object="_-gmBYKb3EeiaPsuge4c3bg">
+      <eAnnotations xmi:id="_-gmBeqb3EeiaPsuge4c3bg" source="PRIVILEGE_PROPERTY">
+        <details xmi:id="_-gmBe6b3EeiaPsuge4c3bg" key="PRIVILEGE_SYSTEM_GRANT" value="true"/>
       </eAnnotations>
     </receivedPrivilege>
-    <receivedPrivilege xmi:id="_PGxx06ZOEeiN5vM04ct7hA" grantable="true" action="ALTER" grantor="_PGxx2aZOEeiN5vM04ct7hA" object="_PGxKsKZOEeiN5vM04ct7hA">
-      <eAnnotations xmi:id="_PGxx1KZOEeiN5vM04ct7hA" source="PRIVILEGE_PROPERTY">
-        <details xmi:id="_PGxx1aZOEeiN5vM04ct7hA" key="PRIVILEGE_SYSTEM_GRANT" value="true"/>
+    <receivedPrivilege xmi:id="_-gmBfKb3EeiaPsuge4c3bg" grantable="true" action="INDEX" grantor="_-gmocKb3EeiaPsuge4c3bg" object="_-gmBYKb3EeiaPsuge4c3bg">
+      <eAnnotations xmi:id="_-gmBfab3EeiaPsuge4c3bg" source="PRIVILEGE_PROPERTY">
+        <details xmi:id="_-gmBfqb3EeiaPsuge4c3bg" key="PRIVILEGE_SYSTEM_GRANT" value="true"/>
       </eAnnotations>
     </receivedPrivilege>
-    <receivedPrivilege xmi:id="_PGxx1qZOEeiN5vM04ct7hA" grantable="true" action="SELECT" grantor="_PGxx2aZOEeiN5vM04ct7hA" object="_PGxKsKZOEeiN5vM04ct7hA">
-      <eAnnotations xmi:id="_PGxx16ZOEeiN5vM04ct7hA" source="PRIVILEGE_PROPERTY">
-        <details xmi:id="_PGxx2KZOEeiN5vM04ct7hA" key="PRIVILEGE_SYSTEM_GRANT" value="true"/>
+    <receivedPrivilege xmi:id="_-gmBf6b3EeiaPsuge4c3bg" action="CONTROL" grantor="_-gmocKb3EeiaPsuge4c3bg" object="_-gmBYKb3EeiaPsuge4c3bg">
+      <eAnnotations xmi:id="_-gmBgKb3EeiaPsuge4c3bg" source="PRIVILEGE_PROPERTY">
+        <details xmi:id="_-gmBgab3EeiaPsuge4c3bg" key="PRIVILEGE_SYSTEM_GRANT" value="true"/>
       </eAnnotations>
     </receivedPrivilege>
   </SQLAccessControl:User>
-  <SQLAccessControl:User xmi:id="_PGxx2aZOEeiN5vM04ct7hA" name="SYSIBM" grantedPrivilege="_PGxxwaZOEeiN5vM04ct7hA _PGxxxKZOEeiN5vM04ct7hA _PGxxx6ZOEeiN5vM04ct7hA _PGxxyqZOEeiN5vM04ct7hA _PGxxzaZOEeiN5vM04ct7hA _PGxx0KZOEeiN5vM04ct7hA _PGxx26ZOEeiN5vM04ct7hA _PGxx06ZOEeiN5vM04ct7hA _PGxx1qZOEeiN5vM04ct7hA"/>
-  <SQLAccessControl:Group xmi:id="_PGxx2qZOEeiN5vM04ct7hA" name="PUBLIC" description="" Database="_kuHbkH5XEeiaGZiZDjQaCw">
-    <receivedPrivilege xmi:id="_PGxx26ZOEeiN5vM04ct7hA" action="USE" grantor="_PGxx2aZOEeiN5vM04ct7hA" object="_PGxx3qZOEeiN5vM04ct7hA">
-      <eAnnotations xmi:id="_PGxx3KZOEeiN5vM04ct7hA" source="PRIVILEGE_PROPERTY">
-        <details xmi:id="_PGxx3aZOEeiN5vM04ct7hA" key="PRIVILEGE_SYSTEM_GRANT" value="false"/>
+  <SQLAccessControl:User xmi:id="_-gmocKb3EeiaPsuge4c3bg" name="SYSIBM" grantedPrivilege="_-gmBaqb3EeiaPsuge4c3bg _-gmBbab3EeiaPsuge4c3bg _-gmBcKb3EeiaPsuge4c3bg _-gmBc6b3EeiaPsuge4c3bg _-gmBdqb3EeiaPsuge4c3bg _-gmBeab3EeiaPsuge4c3bg _-gmocqb3EeiaPsuge4c3bg _-gmBfKb3EeiaPsuge4c3bg _-gmBf6b3EeiaPsuge4c3bg"/>
+  <SQLAccessControl:Group xmi:id="_-gmocab3EeiaPsuge4c3bg" name="PUBLIC" description="" Database="_kuHbkH5XEeiaGZiZDjQaCw">
+    <receivedPrivilege xmi:id="_-gmocqb3EeiaPsuge4c3bg" action="USE" grantor="_-gmocKb3EeiaPsuge4c3bg" object="_-gmodab3EeiaPsuge4c3bg">
+      <eAnnotations xmi:id="_-gmoc6b3EeiaPsuge4c3bg" source="PRIVILEGE_PROPERTY">
+        <details xmi:id="_-gmodKb3EeiaPsuge4c3bg" key="PRIVILEGE_SYSTEM_GRANT" value="false"/>
       </eAnnotations>
     </receivedPrivilege>
   </SQLAccessControl:Group>
-  <LUW:LUWTableSpace xmi:id="_PGxx3qZOEeiN5vM04ct7hA" name="USERSPACE1" privileges="_PGxx26ZOEeiN5vM04ct7hA" tablespaceType="LARGE" managementType="AUTOMATIC_STORAGE" extentSize="32" preFetchSize="-1" overhead="-1.0" transferRate="-1.0" recoverDroppedTableOn="true" autoResize="true" inheritOverhead="true" inheritTransferate="true" dataTag="INHERIT" group="_PGxx4KZOEeiN5vM04ct7hA" bufferPool="_PGyY0aZOEeiN5vM04ct7hA" regularDataTables="_PGxKsKZOEeiN5vM04ct7hA" database="_kuHbkH5XEeiaGZiZDjQaCw" storageGroup="_PGyY0qZOEeiN5vM04ct7hA">
-    <containers xmi:id="_PGxx36ZOEeiN5vM04ct7hA" name="C:\DB2\NODE0000\CURSOORT\T0000002\C0000000.LRG" containerType="FILE" sizeInPages="8192" partitions="_PGyY0KZOEeiN5vM04ct7hA"/>
+  <LUW:LUWTableSpace xmi:id="_-gmodab3EeiaPsuge4c3bg" name="USERSPACE1" privileges="_-gmocqb3EeiaPsuge4c3bg" tablespaceType="LARGE" managementType="AUTOMATIC_STORAGE" extentSize="32" preFetchSize="-1" overhead="-1.0" transferRate="-1.0" recoverDroppedTableOn="true" autoResize="true" inheritOverhead="true" inheritTransferate="true" dataTag="INHERIT" group="_-gmod6b3EeiaPsuge4c3bg" bufferPool="_-gmoeab3EeiaPsuge4c3bg" regularDataTables="_-gmBYKb3EeiaPsuge4c3bg" database="_kuHbkH5XEeiaGZiZDjQaCw" storageGroup="_-gmoeqb3EeiaPsuge4c3bg">
+    <containers xmi:id="_-gmodqb3EeiaPsuge4c3bg" name="C:\DB2\NODE0000\CURSOORT\T0000002\C0000000.LRG" containerType="FILE" sizeInPages="8192" partitions="_-gmoeKb3EeiaPsuge4c3bg"/>
   </LUW:LUWTableSpace>
-  <LUW:LUWPartitionGroup xmi:id="_PGxx4KZOEeiN5vM04ct7hA" name="IBMDEFAULTGROUP" partitions="_PGyY0KZOEeiN5vM04ct7hA" tableSpaces="_PGxx3qZOEeiN5vM04ct7hA" database="_kuHbkH5XEeiaGZiZDjQaCw"/>
-  <LUW:LUWDatabasePartition xmi:id="_PGyY0KZOEeiN5vM04ct7hA" group="_PGxx4KZOEeiN5vM04ct7hA" containers="_PGxx36ZOEeiN5vM04ct7hA"/>
-  <LUW:LUWBufferPool xmi:id="_PGyY0aZOEeiN5vM04ct7hA" name="IBMDEFAULTBP" size="-2" blockSize="0" tableSpaces="_PGxx3qZOEeiN5vM04ct7hA" database="_kuHbkH5XEeiaGZiZDjQaCw"/>
-  <LUW:LUWStorageGroup xmi:id="_PGyY0qZOEeiN5vM04ct7hA" name="IBMSTOGROUP" overhead="6.725" deviceReadRate="100.0" dataTag="NONE" default="true" database="_kuHbkH5XEeiaGZiZDjQaCw" tableSpaces="_PGxx3qZOEeiN5vM04ct7hA">
+  <LUW:LUWPartitionGroup xmi:id="_-gmod6b3EeiaPsuge4c3bg" name="IBMDEFAULTGROUP" partitions="_-gmoeKb3EeiaPsuge4c3bg" tableSpaces="_-gmodab3EeiaPsuge4c3bg" database="_kuHbkH5XEeiaGZiZDjQaCw"/>
+  <LUW:LUWDatabasePartition xmi:id="_-gmoeKb3EeiaPsuge4c3bg" group="_-gmod6b3EeiaPsuge4c3bg" containers="_-gmodqb3EeiaPsuge4c3bg"/>
+  <LUW:LUWBufferPool xmi:id="_-gmoeab3EeiaPsuge4c3bg" name="IBMDEFAULTBP" size="-2" blockSize="0" tableSpaces="_-gmodab3EeiaPsuge4c3bg" database="_kuHbkH5XEeiaGZiZDjQaCw"/>
+  <LUW:LUWStorageGroup xmi:id="_-gmoeqb3EeiaPsuge4c3bg" name="IBMSTOGROUP" overhead="6.725" deviceReadRate="100.0" dataTag="NONE" default="true" database="_kuHbkH5XEeiaGZiZDjQaCw" tableSpaces="_-gmodab3EeiaPsuge4c3bg">
     <storagePaths>C:</storagePaths>
   </LUW:LUWStorageGroup>
 </xmi:XMI>
