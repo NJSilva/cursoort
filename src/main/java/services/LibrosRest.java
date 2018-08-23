@@ -31,7 +31,7 @@ public class LibrosRest {
     @Produces(MediaType.APPLICATION_JSON)
     public List<VOI> getLibros(@QueryParam("id") String id) throws Exception {
         FacadeCliente fc = new FacadeCliente();
-        List<VOI> name = (id != null) ? fc.buscar(FacadeCliente.LIBROS, id) : fc.obtener(FacadeCliente.LIBROS);
+        List<VOI> name = (id != null) ? fc.buscar(id,FacadeCliente.LIBROS) : fc.obtener(FacadeCliente.LIBROS);
         return name;
 
     }

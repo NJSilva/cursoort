@@ -10,9 +10,11 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import com.google.gson.Gson;
 import java.sql.SQLException;
+import java.util.List;
 import src.facade.FacadeCliente;
 import src.framework.valueobject.MensajesError;
 import src.framework.valueobject.UtilMensajesError;
+import src.framework.valueobject.VOI;
 import src.validadores.ValidadorLibros;
 import src.vo.LibrosVO;
 import src.vo.TiposVO;
@@ -47,8 +49,8 @@ public class ServletGrabarLibros extends HttpServlet {
             libros.setLibros_descripcion((LIBROS_DESCRIPCION != null) ? LIBROS_DESCRIPCION : "");
             libros.setLibros_disponible((LIBROS_DISPONIBLE.length() != 0) ? Integer.parseInt(LIBROS_DISPONIBLE) : 0);
 
-            TiposVO tipos = (TiposVO) fc.buscar(TIPOS_NOMBRE, "Tipos");
-            libros.setTiposVO(tipos);
+            List<VOI> tipos = fc.buscar(TIPOS_NOMBRE, "Tipos");
+            libros.setTiposVO((TiposVO) tipos.get(0));
 
             String operacion = request.getParameter("oper");
 // Validaciones del objeto

@@ -55,6 +55,7 @@ public class FactoryEntidadesI {
         
         if(tipo instanceof LibrosVO){
             Libros libro = new Libros();
+            libro.setLibros_id(((LibrosVO) tipo).getLibros_id());            
             libro.setLibros_anio(((LibrosVO) tipo).getLibros_anio());
             libro.setLibros_codigo(((LibrosVO) tipo).getLibros_codigo());
             libro.setLibros_descripcion(((LibrosVO) tipo).getLibros_descripcion());
