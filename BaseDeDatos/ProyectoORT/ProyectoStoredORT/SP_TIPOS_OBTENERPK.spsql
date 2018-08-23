@@ -1,4 +1,4 @@
-Create or Replace Procedure ESQUEMA.SP_Tipos_ObtenerPK(P_TIPOS_ID NUMERIC(5,0))
+Create or Replace Procedure ESQUEMA.SP_Tipos_ObtenerPK(P_TIPOS_ID DECIMAL(5,0))
 DYNAMIC RESULT SETS 1
 
 P1:Begin
