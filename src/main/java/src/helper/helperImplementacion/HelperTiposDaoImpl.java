@@ -13,7 +13,7 @@ public class HelperTiposDaoImpl extends HelperAbstractDao implements HelperTipos
     public HelperTiposDaoImpl() {
         super();
         consultaFindAll = "CALL ESQUEMA.SP_TIPOS_Obtener()";
-        consultaInsert = "CALL ESQUEMA.SP_TIPOS_Insert(?,?)";
+        consultaInsert = "CALL ESQUEMA.SP_TIPOS_Insert(?)";
         consultaUpdate = "CALL ESQUEMA.SP_TIPOS_Update(?,?)";
         consultaFindByPrimaryKey = "CALL ESQUEMA.SP_TIPOS_ObtenerPK(?)";
         consultaDelete = "CALL ESQUEMA.SP_TIPOS_Delete(?)";

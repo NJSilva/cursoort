@@ -38,7 +38,6 @@ public class TestFacadeClienteTiposVO {
         
         /* TIPOS */
         TiposVO tiposvo = new TiposVO();
-        tiposvo.setTipos_id(12);
         tiposvo.setTipos_nombre("Nombre diez");
         
         try {
