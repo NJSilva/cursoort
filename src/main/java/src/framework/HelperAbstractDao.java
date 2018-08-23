@@ -235,7 +235,7 @@ public abstract class HelperAbstractDao extends HelperAbstractConnectionDao {
             con.commit();
 
         } catch (SQLException e) {
-            e.printStackTrace();
+//            e.printStackTrace();
             throw new SQLException(UtilConexion.printSQLException(e).getMessage());
         } finally {
             try {
@@ -270,10 +270,10 @@ public abstract class HelperAbstractDao extends HelperAbstractConnectionDao {
         CallableStatement cs = null;
         try {
             EntidadesI entidadI = factoryEntidadesI.getTipo(objeto);
-            Object[] campos = entidadI.generarCampos();
+            Object[] campos = entidadI.generarCamposPK();
             con = getConnection();
             cs = con.prepareCall(consultaUpdate);
-
+            
             for (int i = 0; i < campos.length; i++) {
                 if (campos[i] != null) {
                     cs.setObject(i + 1, campos[i]);

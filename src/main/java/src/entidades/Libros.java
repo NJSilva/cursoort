@@ -6,11 +6,23 @@ import src.vo.LibrosVO;
 
 public class Libros extends LibrosVO implements EntidadesI {
 
-
     public Libros() {
     }
 
-
+    public Object[] generarCamposPK() {
+        Object[] datos = {
+            getLibros_id(),
+            getLibros_codigo(),
+            getLibros_titulo(),
+            getLibros_isbn(),
+            getLibros_anio(),
+            getLibros_descripcion(),
+            getLibros_disponible(),
+            getLibros_imagen(),
+            getLibros_autor(),
+            getTiposVO().getTipos_id()};
+        return datos;
+    }
 
     public Object[] generarCampos() {
         Object[] datos = {
@@ -20,6 +32,8 @@ public class Libros extends LibrosVO implements EntidadesI {
             getLibros_anio(),
             getLibros_descripcion(),
             getLibros_disponible(),
+            getLibros_imagen(),
+            getLibros_autor(),
             getTiposVO().getTipos_id()};
         return datos;
     }

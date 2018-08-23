@@ -1,9 +1,0 @@
-Create or Replace Procedure ESQUEMA.SP_Login_Delete
-)
-P1:Begin
-
-Delete ESQUEMA.LOGIN
-WH
-;
-
-End p1

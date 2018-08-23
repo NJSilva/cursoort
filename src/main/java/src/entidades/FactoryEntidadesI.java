@@ -11,7 +11,6 @@ import src.vo.LibrosVO;
 import src.vo.LoginVO;
 import src.vo.PersonasVO;
 import src.vo.PrestamosVO;
-import src.vo.ReservasVO;
 import src.vo.TiposVO;
 
 /**
@@ -84,18 +83,6 @@ public class FactoryEntidadesI {
             return prestamo;
         }
         
-        if(tipo instanceof ReservasVO){
-            Reservas reserva = new Reservas();
-            
-            Libros libros = (Libros) getTipo(((Prestamos) tipo).getLibros());
-            reserva.setLibros(libros);
-            
-            Personas persona = (Personas) getTipo(((LoginVO) tipo).getPersonas());
-            reserva.setPersonas(persona);
-            
-            return reserva;
-        }
-
        return null;
     }
 

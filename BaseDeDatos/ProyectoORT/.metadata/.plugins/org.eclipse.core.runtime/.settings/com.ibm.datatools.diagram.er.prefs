@@ -1,9 +1,0 @@
-diagram.er.compressDiagrams.changeColumnStyle.fontColorTolerance=0
-diagram.er.compressDiagrams.changeColumnStyle.fontSizeTolerance=0
-diagram.er.compressDiagrams.changeColumnStyle.similarFonts=Arial, Helvetica
-diagram.er.compressDiagrams.changeTableStyle.fromPrefrences=false
-diagram.er.compressDiagrams.changeTableStyle.fromTableName=false
-diagram.er.compressDiagramsOnSave=true
-diagram.er.updateDiagramOnDiagramOpen=true
-diagram.er.updateDiagramsOnSave=true
-eclipse.preferences.version=1
