@@ -18,6 +18,8 @@ public class Libros extends LibrosVO implements EntidadesI {
             getLibros_anio(),
             getLibros_descripcion(),
             getLibros_disponible(),
+            getLibros_imagen(),
+            getLibros_autor(),
             getTiposVO().getTipos_id()};
         return datos;
     }
@@ -30,6 +32,8 @@ public class Libros extends LibrosVO implements EntidadesI {
             getLibros_anio(),
             getLibros_descripcion(),
             getLibros_disponible(),
+            getLibros_imagen(),
+            getLibros_autor(),
             getTiposVO().getTipos_id()};
         return datos;
     }

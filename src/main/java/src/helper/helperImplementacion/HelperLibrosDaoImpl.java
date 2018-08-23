@@ -17,8 +17,8 @@ public class HelperLibrosDaoImpl extends HelperAbstractDao implements HelperLibr
     public HelperLibrosDaoImpl() {
         super();
         consultaFindAll = "CALL ESQUEMA.SP_LIBROS_Obtener()";
-        consultaInsert = "CALL ESQUEMA.SP_LIBROS_Insert(?,?,?,?,?,?,?)";
-        consultaUpdate = "CALL ESQUEMA.SP_LIBROS_Update(?,?,?,?,?,?,?)";
+        consultaInsert = "CALL ESQUEMA.SP_LIBROS_Insert(?,?,?,?,?,?,?,?,?)";
+        consultaUpdate = "CALL ESQUEMA.SP_LIBROS_Update(?,?,?,?,?,?,?,?,?,?)";
         consultaFindByPrimaryKey = "CALL ESQUEMA.SP_LIBROS_ObtenerPK(?)";
         consultaDelete = "CALL ESQUEMA.SP_LIBROS_Delete(?)";
     }
@@ -31,6 +31,8 @@ public class HelperLibrosDaoImpl extends HelperAbstractDao implements HelperLibr
         libros.setLibros_anio(rs.getInt("LIBROS_ANIO"));
         libros.setLibros_descripcion(rs.getString("LIBROS_DESCRIPCION"));
         libros.setLibros_disponible(rs.getInt("LIBROS_DISPONIBLE"));
+        libros.setLibros_imagen(rs.getString("LIBROS_IMAGEN"));
+        libros.setLibros_autor(rs.getString("LIBROS_AUTOR"));
         TiposVO tipos = (TiposVO) helperTipos.procesarResultSet(rs);
         libros.setTiposVO(tipos);
         return libros;

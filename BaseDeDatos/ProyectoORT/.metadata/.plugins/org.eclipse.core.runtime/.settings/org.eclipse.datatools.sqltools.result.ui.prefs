@@ -1,5 +1,0 @@
-eclipse.preferences.version=1
-org.eclipse.datatools.sqltools.result.preferences.display.usenewdesign=true
-org.eclipse.datatools.sqltools.result.preferences.results.defaulTDetailTab=tab_detail_result1
-org.eclipse.datatools.sqltools.result.preferences.results.defaultTab=tab_history
-org.eclipse.datatools.sqltools.result.preferences.resultsetviewer.viewername=IBM DB2 Result Set Viewer

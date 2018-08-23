@@ -12,6 +12,8 @@ public class LibrosVO implements VOI {
     private int libros_anio;
     private String libros_descripcion;
     private int libros_disponible;
+    private String libros_imagen;
+    private String libros_autor;
     private TiposVO tipos;
 
     public LibrosVO() {
@@ -85,6 +87,34 @@ public class LibrosVO implements VOI {
      */
     public void setLibros_id(int libros_id) {
         this.libros_id = libros_id;
+    }
+
+    /**
+     * @return the libros_imagen
+     */
+    public String getLibros_imagen() {
+        return libros_imagen;
+    }
+
+    /**
+     * @param libros_imagen the libros_imagen to set
+     */
+    public void setLibros_imagen(String libros_imagen) {
+        this.libros_imagen = libros_imagen;
+    }
+
+    /**
+     * @return the libros_autor
+     */
+    public String getLibros_autor() {
+        return libros_autor;
+    }
+
+    /**
+     * @param libros_autor the libros_autor to set
+     */
+    public void setLibros_autor(String libros_autor) {
+        this.libros_autor = libros_autor;
     }
 
 }

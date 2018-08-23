@@ -38,6 +38,10 @@ public class UtilConexion {
 				if(error.compareToIgnoreCase("23505")==0){
 					me.setMessage("El objeto esta duplicado");
 				}
+                                
+                                if(error.compareToIgnoreCase("23502")==0){
+					me.setMessage("El objeto esta duplicado");
+				}
 				
 				if(error.compareToIgnoreCase("23001")==0 || error.compareToIgnoreCase("23504")==0){
 					me.setMessage("El objeto es utilizado por otros");
