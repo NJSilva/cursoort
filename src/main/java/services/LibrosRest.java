@@ -31,7 +31,7 @@ public class LibrosRest {
     @Produces(MediaType.APPLICATION_JSON)
     public List<VOI> getLibros(@QueryParam("id") String id) throws Exception {
         FacadeCliente fc = new FacadeCliente();
-        List<VOI> name = (id != null) ? fc.buscar("Libros", id) : fc.obtener("Libros");
+        List<VOI> name = (id != null) ? fc.buscar(FacadeCliente.LIBROS, id) : fc.obtener(FacadeCliente.LIBROS);
         return name;
 
     }
@@ -41,7 +41,7 @@ public class LibrosRest {
     @Produces(MediaType.APPLICATION_JSON)
     public String createLibro(LibrosVO libro) throws Exception {
         FacadeCliente fc = new FacadeCliente();
-        String grabar = fc.grabar(libro, "Libro");
+        String grabar = fc.grabar(libro, FacadeCliente.LIBROS);
         return grabar;
 
     }
@@ -52,7 +52,7 @@ public class LibrosRest {
     public String update(LibrosVO libro) throws Exception {
         try {
             FacadeCliente fc = new FacadeCliente();
-            String grabar = fc.actualizar(libro, "Libro");
+            String grabar = fc.actualizar(libro, FacadeCliente.LIBROS);
             return grabar;
         } catch (Exception ex) {
             return Response.Status.INTERNAL_SERVER_ERROR.toString();
@@ -64,7 +64,7 @@ public class LibrosRest {
     @Produces(MediaType.APPLICATION_JSON)
     public String delete(LibrosVO libro) throws Exception {
         FacadeCliente fc = new FacadeCliente();
-        return fc.eliminar(libro, "Libro");
+        return fc.eliminar(libro, FacadeCliente.LIBROS);
 
     }
 }

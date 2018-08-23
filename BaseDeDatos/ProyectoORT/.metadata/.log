@@ -6509,3 +6509,6 @@ Caused by: org.eclipse.swt.SWTException: Widget is disposed
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	... 67 more
+
+!ENTRY com.ibm.datatools.core.http 1 0 2018-08-22 22:04:14.724
+!MESSAGE Servidor HTTP incorporado detenido
