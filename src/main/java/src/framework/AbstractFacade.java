@@ -18,6 +18,7 @@ import org.apache.log4j.Logger;
 import src.conexion.ConexionSql;
 import src.conexion.ConnectionException;
 import src.framework.valueobject.VOI;
+import src.vo.LoginVO;
 
 // TODO: Auto-generated Javadoc
 /**

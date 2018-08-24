@@ -36,6 +36,7 @@ public class FactoryEntidadesI {
 
         if (tipo instanceof PersonasVO) {
             Personas personas = new Personas();
+            personas.setPersonas_id(((PersonasVO) tipo).getPersonas_id());
             personas.setPersonas_cedula(((PersonasVO) tipo).getPersonas_cedula());
             personas.setPersonas_mail(((PersonasVO) tipo).getPersonas_mail());
             personas.setPersonas_nombre(((PersonasVO) tipo).getPersonas_nombre());

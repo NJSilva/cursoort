@@ -13,6 +13,7 @@ import java.util.List;
 
 import src.conexion.ConnectionException;
 import src.framework.valueobject.VOI;
+import src.vo.LoginVO;
 
 // TODO: Auto-generated Javadoc
 /**
