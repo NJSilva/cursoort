@@ -49,6 +49,7 @@ public class TestFacadeClienteTiposVO {
         } catch (SQLException ex) {
             Logger.getLogger(TestFacadeClienteTiposVO.class.getName()).log(Level.SEVERE, null, ex);
         }
+
         
         /* TIPOS */
 //        TiposVO tiposvo = new TiposVO();

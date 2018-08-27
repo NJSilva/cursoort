@@ -25,6 +25,7 @@ public class HelperLibrosDaoImpl extends HelperAbstractDao implements HelperLibr
 
     public VOI procesarResultSet(ResultSet rs) throws SQLException {
         LibrosVO libros = new LibrosVO();
+        libros.setLibros_id(rs.getInt("LIBROS_ID"));
         libros.setLibros_codigo(rs.getString("LIBROS_CODIGO"));
         libros.setLibros_titulo(rs.getString("LIBROS_TITULO"));
         libros.setLibros_isbn(rs.getString("LIBROS_ISBN"));

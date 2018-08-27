@@ -124,6 +124,58 @@
 			</list>
 		</section>
 	</section>
+	<section name="SP_LIBROS_UPDATE">
+		<section name="SP_LIBROS_UPDATE_DECIMAL_VARCHAR_VARCHAR_VARCHAR_DECIMAL_VARCHAR_DECIMAL_DECIMAL">
+			<item value="false" key="RunOptions.RunOptions.GatherPerformanceInformation"/>
+			<item value="true" key="RunOptions.RunOptions.CommitChanges"/>
+			<item value=";" key="RunOptions.RunRoutineConfiguration.BeforeRunStmtTerminator"/>
+			<item value=";" key="RunOptions.RunRoutineConfiguration.AfterRunStmtTerminator"/>
+			<item value="&lt;![CDATA[]]&gt;" key="RunOptions.RunRoutineConfiguration.AfterRunScript"/>
+			<item value="&lt;![CDATA[]]&gt;" key="RunOptions.RunRoutineConfiguration.BeforeRunScript"/>
+			<item value="false" key="RunOptions.RunOptions.CollectActuals"/>
+			<item value="false" key="RunOptions.RunOptions.GatherTraceInformation"/>
+			<list key="P_LIBROS_ISBN">
+				<item value="VARCHAR"/>
+				<item value="1234"/>
+				<item value="false"/>
+			</list>
+			<list key="P_LIBROS_ID">
+				<item value="DECIMAL"/>
+				<item value="1"/>
+				<item value="false"/>
+			</list>
+			<list key="P_LIBROS_ANIO">
+				<item value="DECIMAL"/>
+				<item value="2018"/>
+				<item value="false"/>
+			</list>
+			<list key="P_LIBROS_TITULO">
+				<item value="VARCHAR"/>
+				<item value="El principito"/>
+				<item value="false"/>
+			</list>
+			<list key="P_LIBROS_DESCRIPCION">
+				<item value="VARCHAR"/>
+				<item value="asdasd"/>
+				<item value="false"/>
+			</list>
+			<list key="P_TIPOS_ID">
+				<item value="DECIMAL"/>
+				<item value="23"/>
+				<item value="false"/>
+			</list>
+			<list key="P_LIBROS_DISPONIBLE">
+				<item value="DECIMAL"/>
+				<item value="2"/>
+				<item value="false"/>
+			</list>
+			<list key="P_LIBROS_CODIGO">
+				<item value="VARCHAR"/>
+				<item value="123"/>
+				<item value="false"/>
+			</list>
+		</section>
+	</section>
 	<section name="SP_LIBROS_OBTENER">
 		<section name="SP_LIBROS_OBTENER">
 			<item value="false" key="RunOptions.RunOptions.GatherPerformanceInformation"/>
@@ -158,6 +210,40 @@
 			<item value="&lt;![CDATA[]]&gt;" key="RunOptions.RunRoutineConfiguration.BeforeRunScript"/>
 			<item value="false" key="RunOptions.RunOptions.CollectActuals"/>
 			<item value="false" key="RunOptions.RunOptions.GatherTraceInformation"/>
+		</section>
+	</section>
+	<section name="SP_LIBROS_OBTENERPK">
+		<section name="SP_LIBROS_OBTENERPK_DECIMAL">
+			<item value="false" key="RunOptions.RunOptions.GatherPerformanceInformation"/>
+			<item value="true" key="RunOptions.RunOptions.CommitChanges"/>
+			<item value=";" key="RunOptions.RunRoutineConfiguration.BeforeRunStmtTerminator"/>
+			<item value=";" key="RunOptions.RunRoutineConfiguration.AfterRunStmtTerminator"/>
+			<item value="&lt;![CDATA[]]&gt;" key="RunOptions.RunRoutineConfiguration.AfterRunScript"/>
+			<item value="&lt;![CDATA[]]&gt;" key="RunOptions.RunRoutineConfiguration.BeforeRunScript"/>
+			<item value="false" key="RunOptions.RunOptions.CollectActuals"/>
+			<item value="false" key="RunOptions.RunOptions.GatherTraceInformation"/>
+			<list key="P_LIBROS_ID">
+				<item value="DECIMAL"/>
+				<item value="0.0"/>
+				<item value="false"/>
+			</list>
+		</section>
+	</section>
+	<section name="SP_TIPOS_OBTENERPK">
+		<section name="SP_TIPOS_OBTENERPK_DECIMAL">
+			<item value="false" key="RunOptions.RunOptions.GatherPerformanceInformation"/>
+			<item value="true" key="RunOptions.RunOptions.CommitChanges"/>
+			<item value=";" key="RunOptions.RunRoutineConfiguration.BeforeRunStmtTerminator"/>
+			<item value=";" key="RunOptions.RunRoutineConfiguration.AfterRunStmtTerminator"/>
+			<item value="&lt;![CDATA[]]&gt;" key="RunOptions.RunRoutineConfiguration.AfterRunScript"/>
+			<item value="&lt;![CDATA[]]&gt;" key="RunOptions.RunRoutineConfiguration.BeforeRunScript"/>
+			<item value="false" key="RunOptions.RunOptions.CollectActuals"/>
+			<item value="false" key="RunOptions.RunOptions.GatherTraceInformation"/>
+			<list key="P_TIPOS_ID">
+				<item value="DECIMAL"/>
+				<item value="23"/>
+				<item value="false"/>
+			</list>
 		</section>
 	</section>
 	<section name="SP_PERSONAS_OBTENERPK">

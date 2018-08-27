@@ -5,6 +5,7 @@
  */
 package services;
 
+import filters.Secured;
 import java.util.List;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
@@ -28,10 +29,11 @@ import src.vo.LibrosVO;
 public class LibrosRest {
 
     @GET
+    @Secured
     @Produces(MediaType.APPLICATION_JSON)
     public List<VOI> getLibros(@QueryParam("id") String id) throws Exception {
         FacadeCliente fc = new FacadeCliente();
-        List<VOI> name = (id != null) ? fc.buscar(FacadeCliente.LIBROS, id) : fc.obtener(FacadeCliente.LIBROS);
+        List<VOI> name = (id != null) ? fc.buscar(id,FacadeCliente.LIBROS) : fc.obtener(FacadeCliente.LIBROS);
         return name;
 
     }

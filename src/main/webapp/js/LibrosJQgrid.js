@@ -26,7 +26,7 @@ function mantenimientoLibros() {
             'LIBROS_ANIO',
             'LIBROS_DESCRIPCION',
             'LIBROS_DISPONIBLE',
-            'TIPOS_CODIGO'],
+            'TIPOS_ID'],
 
         colModel: [{
                 name: 'libros_codigo',
@@ -88,7 +88,7 @@ function mantenimientoLibros() {
                 editrules: {required: true}},
             {
                 name: 'tipos.tipos_nombre',
-                index: 'tipos_codigo',
+                index: 'tipos_id',
                 edittype: 'select',
                 editoptions: {value: seleccionTipos},
                 editable: true,
