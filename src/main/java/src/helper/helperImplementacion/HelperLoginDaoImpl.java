@@ -39,12 +39,14 @@ public class HelperLoginDaoImpl extends HelperAbstractDao implements HelperLogin
         return login;
     }
 
+    @Override
     public PersonasVO autenticar(LoginVO login) throws SQLException {
 
         VOI res = null;
         CallableStatement cs = null;
         ResultSet resultSet = null;
         Connection con = null;
+        VOI entidad = null;
         try {
 
             con = getConnection();
@@ -52,8 +54,10 @@ public class HelperLoginDaoImpl extends HelperAbstractDao implements HelperLogin
             cs.setObject(1, login.getPersonas().getPersonas_cedula());
             cs.setObject(2, login.getLogin_clave());
             resultSet = cs.executeQuery();
+            while (resultSet.next()) {
+                entidad = helperPersonas.procesarResultSet(resultSet);
 
-            res = helperPersonas.procesarResultSet(resultSet);
+            }
 
         } catch (SQLException e) {
             e.printStackTrace();
@@ -74,7 +78,7 @@ public class HelperLoginDaoImpl extends HelperAbstractDao implements HelperLogin
 
         }
 
-        return (PersonasVO) res;
+        return (PersonasVO) entidad;
 
     }
 }
