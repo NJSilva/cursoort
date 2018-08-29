@@ -87,10 +87,20 @@ table {
     color:white;
     padding-top: 12px;
     padding-bottom:12px;
-    padding-right:50px;
-    padding-left:50px;
+    padding-right:20px;
+    padding-left:20px;
     border-radius: 5px;
     margin-top: 15px;
+}
+
+#error img{
+    width: 15px;
+    float: left;
+}
+
+#error p{
+    float: left;
+    padding-left: 5px;
 }
 
 
