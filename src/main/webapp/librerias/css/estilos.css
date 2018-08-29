@@ -73,6 +73,7 @@ input, select {
 }
 
 /* #reset */
+/**************************************************************/
 
 body{
     display:block;
@@ -102,7 +103,7 @@ body{
 
 /* login */
 #error{
-    background-color: rgb(149,35,35,100);
+    background-color: rgba(149,35,35,100);
     color:white;
     padding-top: 12px;
     padding-bottom:12px;
