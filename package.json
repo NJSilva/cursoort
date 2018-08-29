@@ -1,0 +1,25 @@
+{
+  "name": "bibliotecaort",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "boostrap": "^2.0.0",
+    "jquery": "^3.3.1",
+    "popper": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://njsilva@github.com/NJSilva/cursoort.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NJSilva/cursoort/issues"
+  },
+  "homepage": "https://github.com/NJSilva/cursoort#readme"
+}

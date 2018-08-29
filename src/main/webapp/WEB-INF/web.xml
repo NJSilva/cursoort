@@ -10,6 +10,9 @@
         </session-timeout>
     </session-config>
     
+    <welcome-file-list>
+        <welcome-file>htmlmobile/index.html</welcome-file>
+    </welcome-file-list>
     
     <servlet>
         <description></description>
