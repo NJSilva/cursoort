@@ -28,11 +28,47 @@
 
         <div class="container-fluid">
 
-            <header class="row">
-                <div class="text-center">
-                <p>MIS RESERVAS</p>
-                </div>
+            <header class="row align-items-center">
+
+                    <div class="col-2" id="hamburger">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                          </div>
+
+                    <div class="col text-center">
+                        <p>MIS RESERVAS</p>
+                    </div>
             </header>
+
+            <!-- Aca se agrega por javascript las reservas que tenga el afilado-->
+
+            <section>
+
+                <div class="row reserva">
+                        <div class="col-3"><figure class="imagenlibro"><img src="libros/elprincipito_antoinedesaintexupery.png" alt="" srcset=""></figure></div>
+
+                        <div class="col">
+                            <p class="titulolibro">El principito</p>
+                            <p class="autorlibro">Antoine de Saint-Exupery</p>
+                            <p class="desde">Desde:</p>
+                            <p class="fechadesde">18/02/2018</p>
+                            
+                        </div>
+
+                        <div class="col-3">
+                            <p class="tipolibro">Novela</p>
+                        </div>
+                </div>
+
+            </section>
+
+            <footer class="row  fixed-bottom">
+                    <div class="col text-center">
+                    <button id="boton" type="submit" class="btn btn-block">VOLVER</button>
+                    </div>
+            </footer>
+
 
         </div>    
 
