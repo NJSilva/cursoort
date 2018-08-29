@@ -49,13 +49,56 @@ table {
 }
 /* fin reset */
 
-
-/* Mensaje presentacion */
-#mensajepresentacion{
+body{
+    display:block;
     background-color: rgba(31,104,34,100);
-    position: absolute;
-    width: 301px;
-    height: 243px;
-    left: 37px;
-    top: 73px;
+}
+
+
+/* logo */
+#logo figure img{
+    margin-top:35px;
+}
+
+#logo p{
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+#logo .nombre{
+    font-size: 19px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+/***************************/
+
+/* login */
+#error{
+    background-color: rgb(149,35,35,100);
+    color:white;
+    padding-top: 12px;
+    padding-bottom:12px;
+    padding-right:50px;
+    padding-left:50px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+
+#login{
+    margin-top: 60px;
+}
+
+#login p{
+    font-size: 12px;
+}
+
+#login #botonIngresar{
+    background-color: black;
+    color:white;
+    letter-spacing: 0.1em;
+    margin-top: 20px;
 }
