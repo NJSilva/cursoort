@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="RoutineParameter">
+	<section name="SP_PRESTAMOS_OBTENERPK">
+		<section name="SP_PRESTAMOS_OBTENERPK_DECIMAL_DECIMAL">
+			<item value="false" key="RunOptions.RunOptions.GatherPerformanceInformation"/>
+			<item value="true" key="RunOptions.RunOptions.CommitChanges"/>
+			<item value=";" key="RunOptions.RunRoutineConfiguration.BeforeRunStmtTerminator"/>
+			<item value=";" key="RunOptions.RunRoutineConfiguration.AfterRunStmtTerminator"/>
+			<item value="&lt;![CDATA[]]&gt;" key="RunOptions.RunRoutineConfiguration.AfterRunScript"/>
+			<item value="&lt;![CDATA[]]&gt;" key="RunOptions.RunRoutineConfiguration.BeforeRunScript"/>
+			<item value="false" key="RunOptions.RunOptions.CollectActuals"/>
+			<item value="false" key="RunOptions.RunOptions.GatherTraceInformation"/>
+			<list key="P_LIBROS_ID">
+				<item value="DECIMAL"/>
+				<item value="1"/>
+				<item value="false"/>
+			</list>
+			<list key="P_PERSONAS_ID">
+				<item value="DECIMAL"/>
+				<item value="1"/>
+				<item value="false"/>
+			</list>
+		</section>
+	</section>
 	<section name="SP_TIPOS_INSERT">
 		<section name="SP_TIPOS_INSERT_DECIMAL_VARCHAR">
 			<item value="false" key="RunOptions.RunOptions.GatherPerformanceInformation"/>
