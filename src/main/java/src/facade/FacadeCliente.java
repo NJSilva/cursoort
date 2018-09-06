@@ -2,6 +2,7 @@
 package src.facade;
 
 import java.sql.SQLException;
+import java.util.List;
 import src.helper.helperInterfaces.HelperLoginDaoI;
 import src.helper.helperInterfaces.HelperPersonasDaoI;
 import src.helper.helperInterfaces.HelperPrestamosDaoI;
@@ -16,6 +17,7 @@ import src.helper.helperImplementacion.HelperTiposDaoImpl;
 import src.helper.helperInterfaces.HelperLibrosDaoI;
 import src.vo.LoginVO;
 import src.vo.PersonasVO;
+import src.vo.PrestamosVO;
 
 public class FacadeCliente extends AbstractFacade {
 
@@ -41,5 +43,8 @@ public class FacadeCliente extends AbstractFacade {
 
     public PersonasVO autenticar(LoginVO login) throws SQLException {
         return (PersonasVO) helperLogin.autenticar(login);
+    }
+    public List<VOI> obtenerPorCedula(String cedula) throws SQLException {
+        return (List<VOI>) helperPrestamos.obtenerPorCedula(cedula);
     }
 }
