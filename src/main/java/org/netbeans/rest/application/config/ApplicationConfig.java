@@ -34,6 +34,7 @@ public class ApplicationConfig extends Application {
         resources.add(services.LibrosRest.class);
         resources.add(services.LoginRest.class);
         resources.add(services.PersonasRest.class);
+        resources.add(services.PrestamosRest.class);
         resources.add(services.TiposRest.class);
     }
     
