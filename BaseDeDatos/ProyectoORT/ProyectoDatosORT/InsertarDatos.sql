@@ -29,6 +29,7 @@ IN @TIPOS_ID DECIMAL(5,0)
 call esquema.sp_libros_insert('1','El principito','35859685214',1960,'Descripcion del libro',15,'elprincipito_antoinedesaintexupery.jpg','Antoine de Saint-Exupery',41);
 
 
+
 -- PERSONAS --
 /*
 Create or Replace Procedure ESQUEMA.SP_Personas_Insert(
@@ -54,7 +55,7 @@ IN P_PRESTAMOS_FECHA_HASTA DATE
 )
 */
 
-call esquema.sp_prestamos_insert(81,1,'2018-08-31',null);
+call esquema.sp_prestamos_insert(1,1,'2018-08-31',null);
 
 
 

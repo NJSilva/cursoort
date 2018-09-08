@@ -63,7 +63,7 @@
 
             </section>
 
-            <!-- Fin section -- >
+            <!-- Fin section -->
 
             <footer class="row  fixed-bottom">
                     <div class="col text-center">
@@ -73,6 +73,24 @@
 
 
         </div>    
+
+
+        <!-- Para cargar los prestamos de la persona -->
+        <script>
+            $( document ).ready(function() {
+                console.log( "ready!" );
+
+                $.ajax({
+                    url: 'http://localhost:8080/BibliotecaORT/webresources/prestamo?cedula=19716428',
+                    type : 'GET',
+                    cache: false,  
+                    success: function(data){
+                        console.log(data);
+                    }
+                });
+            });
+
+        </script>
 
 
            
