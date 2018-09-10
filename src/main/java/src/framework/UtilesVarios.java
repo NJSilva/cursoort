@@ -28,7 +28,7 @@ public class UtilesVarios {
 	 * @return the date
 	 */
 	public static Date formatearFecha(String _fecha) {
-		SimpleDateFormat formatoDeFecha = new SimpleDateFormat("dd/MM/yyyy");
+		SimpleDateFormat formatoDeFecha = new SimpleDateFormat("yyyy-MM-dd");
 		Date retorno = null;
 
 		try {

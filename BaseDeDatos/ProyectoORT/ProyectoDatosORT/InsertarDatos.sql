@@ -55,7 +55,12 @@ IN P_PRESTAMOS_FECHA_HASTA DATE
 )
 */
 
+select * from esquema.libros;
+select * from esquema.personas;
+
+
 call esquema.sp_prestamos_insert(1,1,'2018-08-31',null);
+call esquema.sp_prestamos_insert(1,2,'2018-05-15',null);
 
 
 
