@@ -137,6 +137,7 @@ header p{
 
 #hamburger {
     width:40px;
+    margin-left: 5px;
   }
   
 .line1, .line2, .line3 {
@@ -162,6 +163,10 @@ header p{
     margin-top:-10px;
   }
 
+
+section{
+    margin-top: 40px;
+}  
 
 /* MIS RESERVAS*/
 
@@ -208,6 +213,12 @@ header p{
     font-weight: bold;
     font-size: 12px;
     margin-top: 10px;
+}
+
+.separador{
+    width: 100%;
+    height: 1px;
+    background-color: black;
 }
 
 /* footer*/

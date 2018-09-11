@@ -28,7 +28,7 @@
 
         <div class="container-fluid">
 
-            <header class="row align-items-center">
+            <header class="row align-items-center fixed-top">
 
                     <div class="col-1" id="hamburger">
                             <div class="line1"></div>
@@ -99,7 +99,7 @@
                             console.log(libro.libros_titulo);
                             console.log(tipo.tipos_nombre);
 
-                            $('section').append('<div class="row reserva"><div class="col-3"><figure class="imagenlibro"><img src="libros/' + libro.libros_imagen +'" alt="" srcset=""></figure></div><div class="col"><p class="titulolibro">'+ libro.libros_titulo +'</p><p class="autorlibro">' + libro.libros_autor+'</p><p class="desde">Desde:</p><p class="fechadesde">' + data[i].prestamos_fecha_desde + ' </p></div><div class="col-3"><p class="tipolibro">' + tipo.tipos_nombre+ '</p></div></div>');
+                            $('section').append('<div class="row reserva"><div class="col-3"><figure class="imagenlibro"><img src="libros/' + libro.libros_imagen +'" alt="" srcset=""></figure></div><div class="col"><p class="titulolibro">'+ libro.libros_titulo +'</p><p class="autorlibro">' + libro.libros_autor+'</p><p class="desde">Desde:</p><p class="fechadesde">' + data[i].prestamos_fecha_desde + ' </p></div><div class="col-3"><p class="tipolibro">' + tipo.tipos_nombre+ '</p></div></div><div class="separador"></div>');
 
                         }
                     }
