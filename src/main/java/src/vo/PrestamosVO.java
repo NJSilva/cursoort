@@ -3,6 +3,7 @@ package src.vo;
 
 import src.entidades.*;
 import java.util.Date;
+import src.framework.UtilesVarios;
 import src.framework.valueobject.VOI;
 
 public class PrestamosVO implements VOI{
@@ -15,16 +16,16 @@ public class PrestamosVO implements VOI{
     public PrestamosVO() {
     }
 
-    public Date getPrestamos_fecha_desde() {
-        return this.prestamos_fecha_desde;
+    public String getPrestamos_fecha_desde(){
+        return UtilesVarios.formateoFecha(prestamos_fecha_desde);
     }
 
     public void setPrestamos_fecha_desde(Date _prestamos_fecha_desde) {
         this.prestamos_fecha_desde = _prestamos_fecha_desde;
     }
 
-    public Date getPrestamos_fecha_hasta() {
-        return this.prestamos_fecha_hasta;
+    public String getPrestamos_fecha_hasta() {
+        return UtilesVarios.formateoFecha(prestamos_fecha_hasta);
     }
 
     public void setPrestamos_fecha_hasta(Date _prestamos_fecha_hasta) {
