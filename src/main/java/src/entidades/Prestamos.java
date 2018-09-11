@@ -3,6 +3,7 @@ package src.entidades;
 
 import java.sql.Types;
 import java.util.Date;
+import src.framework.UtilesVarios;
 import src.framework.valueobject.EntidadesI;
 import src.vo.PrestamosVO;
 
@@ -15,8 +16,8 @@ public class Prestamos extends PrestamosVO implements EntidadesI {
         Object[] datos = {
             getLibros().getLibros_id(),
             getPersonas().getPersonas_cedula(),
-            new java.sql.Date(getPrestamos_fecha_desde().getTime()),
-            (null != getPrestamos_fecha_hasta() ? new java.sql.Date(getPrestamos_fecha_hasta().getTime()) : null)
+            new java.sql.Date(UtilesVarios.formatearFecha(getPrestamos_fecha_desde()).getTime()),
+            (null != getPrestamos_fecha_hasta() ? new java.sql.Date(UtilesVarios.formatearFecha(getPrestamos_fecha_hasta()).getTime()) : null)
         };
         return datos;
     }
@@ -26,8 +27,8 @@ public class Prestamos extends PrestamosVO implements EntidadesI {
         Object[] datos = {
             getLibros().getLibros_id(),
             getPersonas().getPersonas_cedula(),
-            new java.sql.Date(getPrestamos_fecha_desde().getTime()),
-            (null != getPrestamos_fecha_hasta() ? new java.sql.Date(getPrestamos_fecha_hasta().getTime()) : null)
+            new java.sql.Date(UtilesVarios.formatearFecha(getPrestamos_fecha_desde()).getTime()),
+            (null != getPrestamos_fecha_hasta() ? new java.sql.Date(UtilesVarios.formatearFecha(getPrestamos_fecha_hasta()).getTime()) : null)
         };
         return datos;
     }

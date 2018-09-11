@@ -5,6 +5,7 @@
  */
 package src.entidades;
 
+import src.framework.UtilesVarios;
 import src.framework.valueobject.EntidadesI;
 import src.framework.valueobject.VOI;
 import src.vo.LibrosVO;
@@ -79,8 +80,8 @@ public class FactoryEntidadesI {
             Personas persona = (Personas) getTipo(((PrestamosVO) tipo).getPersonas());
             prestamo.setPersonas(persona);
             
-            prestamo.setPrestamos_fecha_desde(((PrestamosVO) tipo).getPrestamos_fecha_desde());
-            prestamo.setPrestamos_fecha_hasta(((PrestamosVO) tipo).getPrestamos_fecha_hasta());
+            prestamo.setPrestamos_fecha_desde( UtilesVarios.formatearFecha(((PrestamosVO) tipo).getPrestamos_fecha_desde()));
+            prestamo.setPrestamos_fecha_hasta( UtilesVarios.formatearFecha(((PrestamosVO) tipo).getPrestamos_fecha_hasta()));
             
             return prestamo;
         }
