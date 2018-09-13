@@ -80,8 +80,10 @@ call esquema.sp_prestamos_insert(1,1,'2018-08-31',null);
 
 /* login */
 select * from esquema.personas;
+select * from esquema.login;
 
 call esquema.sp_login_insert('12345678',1);
+call esquema.sp_login_insert('12345678',2);
 
 
 

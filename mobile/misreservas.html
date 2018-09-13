@@ -22,45 +22,20 @@
         <!--script src="js/jquery-3.2.1.slim.min.js"></script-->
         <script src="node_modules/jquery/dist/jquery.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js" type="text/javascript"></script>
+        <script src="biblioteca.js"></script>
 
     </head>
     <body class="bodyBlanco">
 
         <div class="container-fluid">
 
-            <header class="row align-items-center fixed-top">
-
-                    <div class="col-1" id="hamburger">
-                            <div class="line1"></div>
-                            <div class="line2"></div>
-                            <div class="line3"></div>
-                          </div>
-
-                    <div class="col text-center">
-                        <p>MIS RESERVAS</p>
-                    </div>
+            <header>
             </header>
 
             <!-- Aca se agrega por javascript las reservas que tenga el afilado-->
 
             <section>
 
-            <!--
-                <div class="row reserva">
-                        <div class="col-3"><figure class="imagenlibro"><img src="libros/elprincipito_antoinedesaintexupery.png" alt="" srcset=""></figure></div>
-                        <div class="col">
-                            <p class="titulolibro">El principito</p>
-                            <p class="autorlibro">Antoine de Saint-Exupery</p>
-                            <p class="desde">Desde:</p>
-                            <p class="fechadesde">18/02/2018</p>
-                        </div>
-                        <div class="col-3">
-                            <p class="tipolibro">Novela</p>
-                        </div>
-                </div>
-
-            -->                
-            
             </section>
 
             <!-- Fin section -->
@@ -74,42 +49,18 @@
 
         </div>    
 
-
-        <!-- Para cargar los prestamos de la persona -->
-        <script>
-            $( document ).ready(function() {
-
-                /* 
-                    Ingresar la ip de la maquina y el parametro cedula 
-                    http://192.168.111.29:8080/BibliotecaORT/webresources/prestamo?cedula=19716428
-                
-                */
-
-                $.ajax({
-                    url: 'http://192.168.111.29:8080/BibliotecaORT/webresources/prestamo?cedula=19716428',
-                    type : 'GET',
-
-                    success: function(data){
-                        console.log(data);
-                        console.log('Cantidad de prestamos: ' + data.length);
-
-                        for (var i = 0; i < data.length; i++) {
-                            var libro = data[i].libros;
-                            var tipo = libro.tiposVO;
-                            console.log(libro.libros_titulo);
-                            console.log(tipo.tipos_nombre);
-
-                            $('section').append('<div class="row reserva"><div class="col-3"><figure class="imagenlibro"><img src="libros/' + libro.libros_imagen +'" alt="" srcset=""></figure></div><div class="col"><p class="titulolibro">'+ libro.libros_titulo +'</p><p class="autorlibro">' + libro.libros_autor+'</p><p class="desde">Desde:</p><p class="fechadesde">' + data[i].prestamos_fecha_desde + ' </p></div><div class="col-3"><p class="tipolibro">' + tipo.tipos_nombre+ '</p></div></div><div class="separador"></div>');
-
-                        }
-                    }
-                });
-            });
-
-        </script>
-
-
-           
     </body>
+
+    <script>
+
+        $( document ).ready(function() {
+            $('header').load('menu.html' ,  function(){
+                $('#tituloPantalla').text('Mis Reservas');
+            });
+        });
+
+
+    </script>
+
 
 </html>
