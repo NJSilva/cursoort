@@ -20,25 +20,23 @@ $( document ).ready(function() {
 $('#botonIngresar').click(function(){
 
     $.ajax(
-        {
+    {
         url: "http://localhost:8080/BibliotecaORT/webresources/login",
         async: true,
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "Authorization": "Bearer 2018-cjpb",
-          "Cache-Control": "no-cache"
-        },
+        dataType: "json",
+        Authorization: "Bearer 2018-cjpb",
         processData: false,
         data: '{"login_clave": 12345678,"personas": {"personas_cedula": "19716428"}}'
-      }).success(function(data) {
+        .success(function(data) {
             console.log( "La solicitud se ha completado correctamente." );
             console.log(data);
-    })
-    .error(function( jqXHR, textStatus, errorThrown ) {
+        })
+        .error(function(jqXHR, textStatus, errorThrown){
             console.log( "La solicitud a fallado: " +  textStatus);
             console.log(textStatus);
-   });
+        })
+    });
 
    console.log('fin');
       
@@ -98,14 +96,10 @@ function misReservas() {
         type : 'GET',
 
         success: function(data){
-            console.log(data);
-            console.log('Cantidad de prestamos: ' + data.length);
 
             for (var i = 0; i < data.length; i++) {
                 var libro = data[i].libros;
                 var tipo = libro.tiposVO;
-                console.log(libro.libros_titulo);
-                console.log(tipo.tipos_nombre);
 
                 $('section').append('<div class="row reserva"><div class="col-3"><figure class="imagenlibro"><img src="libros/' + libro.libros_imagen +'" alt="" srcset=""></figure></div><div class="col"><p class="titulolibro">'+ libro.libros_titulo +'</p><p class="autorlibro">' + libro.libros_autor+'</p><p class="desde">Desde:</p><p class="fechadesde">' + data[i].prestamos_fecha_desde + ' </p></div><div class="col-3"><p class="tipolibro">' + tipo.tipos_nombre+ '</p></div></div><div class="separador"></div>');
 
