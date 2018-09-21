@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+    <head>
+        <title>Mis Reservas</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8"/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- CSS -->
+        <!--Bootstrap CSS-->
+        <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+
+        <!--CSS Propio-->
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+
+        <!-- Fuentes -->
+        <link href="https://fonts.googleapis.com/css?family=Ruluko" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+        <!-- JavaScript -->
+        <!-- jQuery, Popper.js + Bootstrap JS o Boostrap con Popper inc. -->
+        <!--script src="js/jquery-3.2.1.slim.min.js"></script-->
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js" type="text/javascript"></script>
+        <script src="biblioteca.js"></script>
+
+    </head>
+    <body class="bodyBlanco">
+
+        <div class="container-fluid">
+
+            <header>
+            </header>
+
+            <!-- Aca se agrega por javascript las reservas que tenga el afilado-->
+
+            <section>
+
+            </section>
+
+            <!-- Fin section -->
+
+            <footer class="row  fixed-bottom">
+                    <div class="col text-center">
+                    <button id="boton" type="submit" class="btn btn-block">VOLVER</button>
+                    </div>
+            </footer>
+
+
+        </div>    
+
+    </body>
+
+    <script>
+
+        $( document ).ready(function() {
+            $('header').load('menu.html' ,  function(){
+                $('#tituloPantalla').text('Mis Reservas');
+            });
+        });
+
+
+    </script>
+
+
+</html>

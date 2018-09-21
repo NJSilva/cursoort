@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html ng-app='modulo_biblioteca'>
+<head>
+    
+    <title>Inicio del sistema</title>
+
+</head>
+<body ng-controller="controlador_login">
+
+        <section  class="bodyVerde">
+
+            <div id="logo" layout="row">
+                <div >
+                    <figure><img src="../../imagenes/logoSitioWp.png" alt=""/></figure>
+                    <br>
+                    <p>SERVICIOS AL AFILIADO</p>
+                    <br>
+                    <p class="nombre">Caja de Jubilaciones</p>
+                    <p class="nombre">y Pensiones Bancarias</p>
+                </div>
+            </div>
+
+            <div style="display:none">
+                <div id="error">
+                    <img src="../imagenes/warning.png" alt=""/><p>Credenciales incorrectas</p>
+                </div>
+            </div>
+
+            <form>
+                <md-input-container class="md-block">
+                    <label>Usuario</label>
+                    <input ng-model="user.name" type="text" placeholder="Ingrese su nombre">
+                </md-input-container>
+
+                <md-input-container class="md-block">
+                        <label>Clave</label>
+                        <input ng-model="user.clave" type="password" placeholder="">
+                </md-input-container>
+
+                <md-button class="md-primary md-raised" id="botonIngresar">Ingresar</md-button>
+
+        </form>
+                    <p>¿Olvido su contraseña?</p>
+
+         </section>         
+         
+         
+         <div>
+
+                <div layout="row">
+              
+                  <div flex="30">First item in row</div>
+                  <div flex="70">Second item in rowwertwertwert</div>
+              
+                </div>
+
+                <div layout="column">
+              
+                  <div flex="66">First item in column</div>
+                  <div flex="33">Second item in column</div>
+              
+                </div>
+              
+            </div>
+       
+</body>
+
+</html>
