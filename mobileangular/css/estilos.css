@@ -50,21 +50,26 @@ table {
 /* fin reset */
 
 .bodyVerde{
-    display:block;
     background-color: rgba(31,104,34,100);
 }
 
 .bodyBlanco{
-    display:block;
     background-color: white;
 }
 
-
-
 /* logo */
+#logo{
+    margin-bottom: 0px;
+}
 
-#logo figure img{
+#imagen{
+    width: 200px;; 
+    margin: 0 auto;
+}
+
+#logo img{
     margin-top:35px;
+    margin-bottom: 35px;
 }
 
 #logo p{
@@ -79,27 +84,34 @@ table {
     font-weight: 500;
     letter-spacing: 0.1em;
 }
+
+.separado{
+    letter-spacing: 0.1em;
+    margin-bottom: 5px;
+}
+
+.olvido{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
 /***************************/
 
 /* login */
 #error{
     background-color: rgb(149,35,35,100);
     color:white;
-    padding-top: 12px;
-    padding-bottom:12px;
-    padding-right:20px;
-    padding-left:20px;
     border-radius: 5px;
-    margin-top: 15px;
+    padding: 20px;
 }
 
 #error img{
-    width: 15px;
     float: left;
+    width: 15px;
+    margin-right: 10px;
 }
 
 #error p{
-    float: left;
     padding-left: 5px;
 }
 
@@ -112,11 +124,14 @@ table {
     font-size: 12px;
 }
 
-#login #botonIngresar{
-    background-color: black;
+#botonIngresar{
+    background-color: black !important;
     color:white;
     letter-spacing: 0.1em;
-    margin-top: 20px;
+}
+
+#formulario label , #formulario input{
+    color:white !important;
 }
 
 /* header */

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app='app'>
+<html>
 <head>
     <base href="/">
     <meta charset="UTF-8">
@@ -25,7 +25,10 @@
     <title>Index</title>
 
 </head>
-<body ng-controller='controlador_index'>
-    <div ng-view>{{mensaje}}</div>
+<body ng-app='modbiblioteca' ng-controller='ctlindex'>
+    <div ng-view>
+        <p>Pagina index</p>
+        {{mensaje}}
+    </div>
 </body>
 </html>

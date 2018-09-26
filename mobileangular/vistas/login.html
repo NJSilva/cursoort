@@ -1,68 +1,78 @@
 <!DOCTYPE html>
-<html ng-app='modulo_biblioteca'>
+<html>
+
 <head>
     
     <title>Inicio del sistema</title>
 
 </head>
-<body ng-controller="controlador_login">
+<body ng-app="modbiblioteca" ng-controller="ctllogin" class="bodyVerde">
 
         <section  class="bodyVerde">
 
-            <div id="logo" layout="row">
-                <div >
-                    <figure><img src="../../imagenes/logoSitioWp.png" alt=""/></figure>
-                    <br>
-                    <p>SERVICIOS AL AFILIADO</p>
-                    <br>
-                    <p class="nombre">Caja de Jubilaciones</p>
-                    <p class="nombre">y Pensiones Bancarias</p>
+            <div layout="column" id="logo" layout-align="center center">
+                <div id="imagen">
+                    <img src="../../imagenes/logoSitioWp.png" alt=""/>
                 </div>
             </div>
 
-            <div style="display:none">
-                <div id="error">
-                    <img src="../imagenes/warning.png" alt=""/><p>Credenciales incorrectas</p>
-                </div>
+            <div layout="column" layout-align="center center">
+                <p class="separado">SERVICIOS AL AFILIADO</p>
             </div>
-
-            <form>
-                <md-input-container class="md-block">
-                    <label>Usuario</label>
-                    <input ng-model="user.name" type="text" placeholder="Ingrese su nombre">
-                </md-input-container>
-
-                <md-input-container class="md-block">
+            <br>
+            <div layout="column" layout-align="center center">
+                <p class="nombre">Caja de Jubilaciones</p>
+            </div>
+            <div layout="column" layout-align="center center">
+                <p class="nombre">y Pensiones Bancarias</p>
+            </div>
+            
+            
+            <form id="formulario">
+                <div>
+                    <md-input-container class="md-block">
+                        <label>Usuario</label>
+                        <input ng-model="user.name" type="text">
+                    </md-input-container>
+                </div>
+                <div>
+                    <md-input-container class="md-block">
                         <label>Clave</label>
-                        <input ng-model="user.clave" type="password" placeholder="">
-                </md-input-container>
+                        <input ng-model="user.clave" type="password">
+                    </md-input-container>
+                </div>
 
-                <md-button class="md-primary md-raised" id="botonIngresar">Ingresar</md-button>
+                <div id="error" layout="col" layout-align="center" style="display:none">
+                    <img src="../imagenes/warning.png" alt=""/>
+                    <p>Credenciales incorrectas</p>
+                </div>
+                <div layout="column" layout-align="center">                    
+                    
+                </div>
+        
+                <div layout="column" layout-align="center center">
+                    <p class="olvido">¿Olvido su contraseña?</p>
+                </div>
 
-        </form>
-                    <p>¿Olvido su contraseña?</p>
+                <div layout="column" style="max-height:100%">
+                    <md-button ng-click="clicked()" id="botonIngresar">Ingresar</md-button>
+                </div>
+
+            </form>
+
+            {{user.name}}
+            {{hola}}
+                    
+            <button ng-click="count = count + 1" ng-init="count=-1500">
+                Increment
+              </button>
+              <span>
+                count: {{count}}
+              </span>
 
          </section>         
          
-         
-         <div>
-
-                <div layout="row">
-              
-                  <div flex="30">First item in row</div>
-                  <div flex="70">Second item in rowwertwertwert</div>
-              
-                </div>
-
-                <div layout="column">
-              
-                  <div flex="66">First item in column</div>
-                  <div flex="33">Second item in column</div>
-              
-                </div>
-              
-            </div>
-       
+      
 </body>
 
 </html>
