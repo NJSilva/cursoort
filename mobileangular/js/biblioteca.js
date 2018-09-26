@@ -39,14 +39,6 @@ modbiblioteca.controller("ctllogin" , function($scope , $http){
         console.log($scope.user.password);
         $scope.user.valid = 'si';
 
-        // Hacer la llamada al servidor y validar el usuario
-        /*
-        {	"login_clave": 12345678,
-            "personas": {
-                "personas_cedula": "19716428"
-	        }
-        }
-        */
         $http({
             method : 'POST',
             crossDomain: true,
