@@ -10,7 +10,8 @@ modbiblioteca.config(function($locationProvider,$routeProvider){
     $locationProvider.html5Mode(true);
 
         $routeProvider
-        .when('/'           ,{templateUrl : 'vistas/login.html'}) // Cuando se inicia se va al home directo porque la url tiene la barra
+/*        .when('/'           ,{templateUrl : 'vistas/login.html'}) // Cuando se inicia se va al home directo porque la url tiene la barra */
+        .when('/'           ,{templateUrl : 'vistas/misreservas.html'}) // Cuando se inicia se va al home directo porque la url tiene la barra
         .when('/misreservas',{templateUrl : 'vistas/misreservas.html'} 
     )
 });
@@ -53,6 +54,7 @@ modbiblioteca.controller("ctllogin" , function($scope , $http){
     };
    
 });
+
 
 
 
