@@ -1,0 +1,55 @@
+<div ng-app='modbiblioteca' ng-controller="ctllogin" class="bodyVerde">
+
+        <section  class="bodyVerde">
+
+            <div layout="column" id="logo" layout-align="center center">
+                <div id="imagen">
+                    <img src="../../imagenes/logoSitioWp.png" alt=""/>
+                </div>
+            </div>
+
+            <div layout="column" layout-align="center center">
+                <p class="separado">SERVICIOS AL AFILIADO</p>
+            </div>
+            <br>
+            <div layout="column" layout-align="center center">
+                <p class="nombre">Caja de Jubilaciones</p>
+            </div>
+            <div layout="column" layout-align="center center">
+                <p class="nombre">y Pensiones Bancarias</p>
+            </div>
+
+            <form id="formulario">
+                <div>
+                    <md-input-container class="md-block">
+                        <label>Usuario</label>
+                        <input ng-model="user.name" required="yes" type="text">
+                    </md-input-container>
+                </div>
+                <div>
+                    <md-input-container class="md-block">
+                        <label>Clave</label>
+                        <input ng-model="user.clave" required="yes" type="password">
+                    </md-input-container>
+                </div>
+
+                <div id="error" layout="col" layout-align="center" style="display:none">
+                    <img src="../imagenes/warning.png" alt=""/>
+                    <p>Credenciales incorrectas</p>
+                </div>
+                <div layout="column" layout-align="center">                    
+                    
+                </div>
+        
+                <div layout="column" layout-align="center center">
+                    <p class="olvido">¿Olvido su contraseña?</p>
+                </div>
+
+                <div layout="column" style="max-height:100%">
+                    <md-button ng-click="clicked()" id="botonIngresar">Ingresar</md-button>
+                </div>
+
+            </form>
+
+        </section>         
+</div>
