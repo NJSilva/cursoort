@@ -10,8 +10,7 @@ modbiblioteca.config(function($locationProvider,$routeProvider){
     $locationProvider.html5Mode(true);
 
         $routeProvider
-/*        .when('/'           ,{templateUrl : 'vistas/login.html'}) // Cuando se inicia se va al home directo porque la url tiene la barra */
-        .when('/'           ,{templateUrl : 'vistas/misreservas.html'}) // Cuando se inicia se va al home directo porque la url tiene la barra
+        .when('/'           ,{templateUrl : 'vistas/login.html'}) // Cuando se inicia se va al home directo porque la url tiene la barra 
         .when('/misreservas',{templateUrl : 'vistas/misreservas.html'} 
     )
 });
@@ -40,16 +39,28 @@ modbiblioteca.controller("ctllogin" , function($scope , $http){
         console.log($scope.user.password);
         $scope.user.valid = 'si';
 
-        $http({
+        var req = {
             method : 'POST',
-            crossDomain: true,
-            url : 'http://192.168.111.29:8080/BibliotecaORT/webresources/login',
-            data :  "{\t\"login_clave\": 12345678,\r\n\t\"personas\": {\r\n\t\t\"personas_cedula\": \"19716428\"\r\n\t}\r\n}",
+            url : 'http://localhost:8080/BibliotecaORT/webresources/login',
             headers : {
                 "Content-Type": "application/json",
                 "Authorization": "Bearer 2018-cjpb",                
+            },
+            data :  "{\"login_clave\": 12345678,\"personas\": {\"personas_cedula\": \"19716428\"}}",
+        };  
+
+        console.log(req);
+        
+        $http(req).then(
+            function success(data){
+                console.log(data);
+                alert('ok');
+            }, 
+            function error(data){
+                console.log(data);
+                alert('error');
             }
-        });        
+        );
 
     };
    
