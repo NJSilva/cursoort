@@ -29,15 +29,14 @@ modbiblioteca.controller("ctllogin" , function($scope , $http){
 
     $scope.user.valid='no'; 
     $scope.user.name=''; 
-    $scope.user.password=''; 
+    $scope.user.clave='';
     $scope.user.email='';
-    $scope.user.phone='';
-    $scope.user.adress='';
+    $scope.user.cedula='';
 
     $scope.clicked = function() {
-        console.log($scope.user.name);
-        console.log($scope.user.password);
-        $scope.user.valid = 'si';
+
+        console.log($scope.user.cedula);
+        console.log($scope.user.clave);
 
         var req = {
             method : 'POST',
@@ -46,19 +45,24 @@ modbiblioteca.controller("ctllogin" , function($scope , $http){
                 "Content-Type": "application/json",
                 "Authorization": "Bearer 2018-cjpb",                
             },
-            data :  "{\"login_clave\": 12345678,\"personas\": {\"personas_cedula\": \"19716428\"}}",
+            data :  '{\"login_clave\":' + $scope.user.clave +',\"personas\": {\"personas_cedula\": \"' + $scope.user.cedula + '\"}}'
         };  
 
-        console.log(req);
-        
         $http(req).then(
             function success(data){
-                console.log(data);
-                alert('ok');
+                $scope.user.valid = 'si';
+                $scope.user.name=data.data.personas_nombre; 
+                $scope.user.email=data.data.personas_mail;
+                $scope.user.cedula=data.data.personas_cedula;
+                
             }, 
             function error(data){
                 console.log(data);
-                alert('error');
+                alert('Error: ' + data.status +' '+data.statusText);
+                $scope.user.valid = 'no'; 
+                $scope.user.name=''; 
+                $scope.user.email='';
+                $scope.user.cedula='';                
             }
         );
 
