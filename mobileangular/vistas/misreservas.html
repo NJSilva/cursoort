@@ -2,22 +2,25 @@
 
     <section>
 
-        <div ng-repeat="reserva in datosmisreservas">
-            <div>
+        <div ng-repeat="reserva in datosmisreservas" layout="row">
+
+            <div  layout="column" layout-align="rigth right">
                 <figure class="imagenlibro"><img src="../libros/{{reserva.libros.libros_imagen}}" alt="" srcset=""></figure>
 
             </div>
-            <div>
+
+            <div flex="66" layout="column" layout-align="right right">
                 <p class="titulolibro">{{reserva.libros.libros_titulo}}</p>
                 <p class="autorlibro">{{reserva.libros.libros_autor}}</p>
                 <p class="desde">Desde:</p>
                 <p class="fechadesde">{{reserva.prestamos_fecha_desde}}</p>
             </div>
-            <div>
+
+            <div layout="column" layout-align="left left">
                 <p class="tipolibro">{{reserva.libros.tiposVO.tipos_nombre}}</p>
             </div>
+
         </div>
-        <div class="separador"></div>
 
     </section>
 
