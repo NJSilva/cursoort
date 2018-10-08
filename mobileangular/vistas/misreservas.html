@@ -1,21 +1,25 @@
-<div class="container-fluid">
-
-    <header>
-    </header>
-
-    <!-- Aca se agrega por javascript las reservas que tenga el afilado-->
+<div ng-init="mireserva()">
 
     <section>
+
+        <div ng-repeat="reserva in datosmisreservas">
+            <div>
+                <figure class="imagenlibro"><img src="../libros/{{reserva.libros.libros_imagen}}" alt="" srcset=""></figure>
+
+            </div>
+            <div>
+                <p class="titulolibro">{{reserva.libros.libros_titulo}}</p>
+                <p class="autorlibro">{{reserva.libros.libros_autor}}</p>
+                <p class="desde">Desde:</p>
+                <p class="fechadesde">{{reserva.prestamos_fecha_desde}}</p>
+            </div>
+            <div>
+                <p class="tipolibro">{{reserva.libros.tiposVO.tipos_nombre}}</p>
+            </div>
+        </div>
+        <div class="separador"></div>
 
     </section>
 
     <!-- Fin section -->
-
-    <footer class="row  fixed-bottom">
-            <div class="col text-center">
-            <button id="boton" type="submit" class="btn btn-block">VOLVER</button>
-            </div>
-    </footer>
-
-
-</div>    
+</div>
