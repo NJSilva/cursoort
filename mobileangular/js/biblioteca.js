@@ -20,6 +20,11 @@ modbiblioteca.config(function ($locationProvider, $routeProvider) {
 /* Controlador login */
 modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $location) {
 
+    // Error en login
+    $scope.errorlogin=false;
+    $scope.mostrarHeader=false;
+    $scope.mostrarFooter=false;
+
     // El usuario que esta logueado en el sistema
     $scope.user = {};
 
@@ -35,8 +40,8 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
 
     $scope.ingresar = function login() {
 
-        console.log($scope.user.cedula);
-        console.log($scope.user.clave);
+        $scope.mostrarFooter=false;
+        $scope.mostrarHeader=false;
 
         var req = {
             method: 'POST',
@@ -46,27 +51,29 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
                 "Authorization": "Bearer 2018-cjpb",
             },
             //data: '{\"login_clave\":' + $scope.user.clave + ',\"personas\": {\"personas_cedula\": \"' + $scope.user.cedula + '\"}}'
-            data: '{\"login_clave\":12345678 ,\"personas\": {\"personas_cedula\": \"19716428\"}}'
+            data: '{\"login_clave\":12345678,\"personas\": {\"personas_cedula\": \"19716428\"}}'
         };
 
         $http(req).then(
             function success(data) {
-                console.log('ok');
                 $scope.user.valid = 'si';
                 $scope.user.name = data.data.personas_nombre;
                 $scope.user.email = data.data.personas_mail;
                 $scope.user.cedula = data.data.personas_cedula;
                 
+                $scope.mostrarFooter=true;
+                $scope.mostrarHeader=true;
+    
+
                 $location.path( '/misreservas' );
 
             },
             function error(data) {
-                console.log(data);
-                alert('Error: ' + data.status + ' ' + data.statusText);
                 $scope.user.valid = 'no';
                 $scope.user.name = '';
                 $scope.user.email = '';
                 $scope.user.cedula = '';
+                $scope.errorlogin=true;
             }
         );
 

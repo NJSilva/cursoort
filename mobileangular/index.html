@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <base href="/">
     <meta charset="UTF-8">
@@ -22,10 +23,45 @@
     <!-- Modulo Angular para biblioteca-->
     <script src="js/biblioteca.js"></script>
 
-    <title>Index</title>
+    <title>Biblioreca ORT</title>
 
 </head>
+
 <body ng-app='modbiblioteca' ng-controller='ctlbiblioteca'>
+
+    <div ng-show="mostrarHeader">
+        <header layout="row" layout-align="center center" >
+
+            <div flex="none" id="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
+            <div flex>
+                <p id="tituloPantalla">MIS RESERVAS</p>
+            </div>
+        </header>
+
+
+        <div layout="row" class="menu" id="menu" style="display:none">
+            <div laoyut="column">
+                <nav>
+                    <ul>
+                        <li><a href="#">Reservar</a></li>
+                        <li><a href="javascript:misReservas()">Mis reservas</a></li>
+                        <li><a href="#">Busquedas</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </div>
+
     <div ng-view></div>
+
+    <div ng-show="mostrarFooter">Footer</div>
+
 </body>
+
 </html>
