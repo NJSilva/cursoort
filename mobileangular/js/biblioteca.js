@@ -14,17 +14,31 @@ modbiblioteca.config(function ($locationProvider, $routeProvider) {
             templateUrl: 'vistas/login.html'
         }) // Cuando se inicia se va al home directo porque la url tiene la barra 
         .when('/misreservas', {
-            templateUrl: 'vistas/misreservas.html' 
-        }) 
+            templateUrl: 'vistas/misreservas.html'
+        })
         .when('/libro', {
             templateUrl: 'vistas/libros.html'
         })
 
 });
 
+modbiblioteca.service('verUsuario', function ($location) {
+
+    this.verificar = function () {
+
+        var usuario = sessionStorage.getItem('cedula');
+        if (usuario == null) {
+            $location.path('/');
+        }
+    };
+});
+
+/* Para cambiar la URL facilmente */
+modbiblioteca.value('url_Biblioteca', 'http://192.168.111.29:8080/BibliotecaORT/webresources');
+
 
 /* Controlador login */
-modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $location) {
+modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $location, url_Biblioteca, verUsuario) {
 
     // Error en login
     $scope.errorlogin = false;
@@ -34,6 +48,7 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
     // El usuario que esta logueado en el sistema
     $scope.user = {};
 
+    //TODO Cambiar para local storage
     $scope.user.valid = 'no';
     $scope.user.name = '';
     $scope.user.clave = '';
@@ -42,7 +57,7 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
 
 
     // Define el titulo de cada pantalla en la barra de menu
-    $scope.titulopantalla='MIS RESERVAS';
+    $scope.titulopantalla = 'MIS RESERVAS';
 
     /***************************************************/
     /* LOGIN
@@ -55,7 +70,7 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
 
         var req = {
             method: 'POST',
-            url: 'http://192.168.111.29:8080/BibliotecaORT/webresources/login',
+            url: url_Biblioteca + '/login',
             headers: {
                 "Content-Type": "application/json",
                 "Authorization": "Bearer 2018-cjpb",
@@ -73,6 +88,10 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
 
                 $scope.mostrarFooter = true;
                 $scope.mostrarHeader = true;
+
+                // Grabo la cedula en el sessionStorage
+                sessionStorage.clear();
+                sessionStorage.setItem('cedula', $scope.user.cedula);
 
 
                 $location.path('/misreservas');
@@ -104,11 +123,11 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
 
         switch (index) {
             case 0:
-                $scope.titulopantalla='RESERVAR' ;
+                $scope.titulopantalla = 'RESERVAR';
                 $location.path('/libro');
                 break;
             case 1:
-                $scope.titulopantalla='MIS RESERVAS'; 
+                $scope.titulopantalla = 'MIS RESERVAS';
                 $location.path('/misreservas');
                 break;
         };
@@ -120,11 +139,11 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
 
     $scope.mireserva = function misReservas() {
 
-        console.log('function mireserva');
+        verUsuario.verificar($scope);
 
         var req = {
             method: 'GET',
-            url: 'http://192.168.111.29:8080/BibliotecaORT/webresources/prestamo?cedula=' + $scope.user.cedula
+            url: url_Biblioteca + '/prestamo?cedula=' + $scope.user.cedula
             /*    headers: {
                     "Content-Type": "application/json",
                     "Authorization": "Bearer 2018-cjpb",
@@ -152,11 +171,13 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
 
     $scope.libros = function libros() {
 
+        verUsuario.verificar($scope);
+
         console.log('function libros');
 
         var req = {
             method: 'GET',
-            url: 'http://192.168.111.29:8080/BibliotecaORT/webresources/libro',
+            url: url_Biblioteca + '/libro',
             headers: {
                 "Content-Type": "application/json",
                 "Authorization": "Bearer 2018-cjpb",
