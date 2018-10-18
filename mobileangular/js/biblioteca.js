@@ -10,10 +10,16 @@ modbiblioteca.config(function ($locationProvider, $routeProvider) {
     $locationProvider.html5Mode(true);
 
     $routeProvider
-        .when('/', { 
-            templateUrl: 'vistas/login.html' }) // Cuando se inicia se va al home directo porque la url tiene la barra 
-        .when('/misreservas', { 
-            templateUrl: 'vistas/misreservas.html' })
+        .when('/', {
+            templateUrl: 'vistas/login.html'
+        }) // Cuando se inicia se va al home directo porque la url tiene la barra 
+        .when('/misreservas', {
+            templateUrl: 'vistas/misreservas.html'
+        })
+        .when('/libro', {
+            templateUrl: 'vistas/libros.html'
+        })
+
 });
 
 
@@ -21,9 +27,9 @@ modbiblioteca.config(function ($locationProvider, $routeProvider) {
 modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $location) {
 
     // Error en login
-    $scope.errorlogin=false;
-    $scope.mostrarHeader=false;
-    $scope.mostrarFooter=false;
+    $scope.errorlogin = false;
+    $scope.mostrarHeader = false;
+    $scope.mostrarFooter = false;
 
     // El usuario que esta logueado en el sistema
     $scope.user = {};
@@ -40,8 +46,8 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
 
     $scope.ingresar = function login() {
 
-        $scope.mostrarFooter=false;
-        $scope.mostrarHeader=false;
+        $scope.mostrarFooter = false;
+        $scope.mostrarHeader = false;
 
         var req = {
             method: 'POST',
@@ -60,12 +66,12 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
                 $scope.user.name = data.data.personas_nombre;
                 $scope.user.email = data.data.personas_mail;
                 $scope.user.cedula = data.data.personas_cedula;
-                
-                $scope.mostrarFooter=true;
-                $scope.mostrarHeader=true;
-    
 
-                $location.path( '/misreservas' );
+                $scope.mostrarFooter = true;
+                $scope.mostrarHeader = true;
+
+
+                $location.path('/misreservas');
 
             },
             function error(data) {
@@ -73,45 +79,95 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
                 $scope.user.name = '';
                 $scope.user.email = '';
                 $scope.user.cedula = '';
-                $scope.errorlogin=true;
+                $scope.errorlogin = true;
             }
         );
 
     };
 
+
     /***************************************************/
-    /* MIS RESERVAS
+    /* Menu Hamburguesa
     /***************************************************/
+    $scope.announceClick = function announceClick(index) {
 
-    $scope.mireserva = function misReservas(){
 
-        console.log('function mireserva');
+        switch (index) {
+            case 0 :
+            $location.path('/libro');
+                break;
+            case 1 :
+                $location.path('/misreservas');
+                break;    
+        };
+    };
 
-        var req = {
-            method: 'GET',
-            url: 'http://192.168.111.29:8080/BibliotecaORT/webresources/prestamo?cedula=' + $scope.user.cedula
-        /*    headers: {
-                "Content-Type": "application/json",
-                "Authorization": "Bearer 2018-cjpb",
-            }
-        */    
+        /***************************************************/
+        /* MIS RESERVAS
+        /***************************************************/
+
+        $scope.mireserva = function misReservas() {
+
+            console.log('function mireserva');
+
+            var req = {
+                method: 'GET',
+                url: 'http://192.168.111.29:8080/BibliotecaORT/webresources/prestamo?cedula=' + $scope.user.cedula
+                /*    headers: {
+                        "Content-Type": "application/json",
+                        "Authorization": "Bearer 2018-cjpb",
+                    }
+                */
+            };
+
+            $http(req).then(
+                function success(data) {
+                    console.log('Dentro de funcion ' + JSON.stringify(data));
+                    $scope.datosmisreservas = data.data;
+                },
+                function error(data) {
+                    console.log(data);
+                    alert('Error: ' + data.status + ' ' + data.statusText);
+                    $scope.datosmisreservas = null;
+                }
+            );
+
         };
 
-        $http(req).then(
-            function success(data) {
-                console.log('Dentro de funcion ' + JSON.stringify(data));
-                $scope.datosmisreservas = data.data;
-            },
-            function error(data) {
-                console.log(data);
-                alert('Error: ' + data.status + ' ' + data.statusText);
-                $scope.datosmisreservas = null;
-            }
-        );
+        /***************************************************/
+        /* LIBROS
+        /***************************************************/
 
-    };
+        $scope.libros = function libros() {
 
-});
+            console.log('function libros');
+
+            var req = {
+                method: 'GET',
+                url: 'http://192.168.111.29:8080/BibliotecaORT/webresources/libro',
+                headers: {
+                    "Content-Type": "application/json",
+                    "Authorization": "Bearer 2018-cjpb",
+                }
+
+            };
+
+            $http(req).then(
+                function success(data) {
+                    console.log('Dentro de funcion ' + JSON.stringify(data));
+                    $scope.datoslibros = data.data;
+                },
+                function error(data) {
+                    console.log(data);
+                    alert('Error: ' + data.status + ' ' + data.statusText);
+                    $scope.datoslibros = null;
+                }
+            );
+
+        };
+
+
+    });
 
 
 
