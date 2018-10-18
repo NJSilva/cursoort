@@ -1,0 +1,25 @@
+<div ng-init="libros()">
+
+    <section>
+
+        <div layout="row" ng-repeat="libro in datoslibros">
+                <div flex id={{libro.libros_id}}>
+                    <figure class="imagenlibro"><img src="../libros/{{libro.libros_imagen}}" alt="" srcset=""></figure>
+                </div>
+        </div>
+
+
+        <!--
+            <div flex="60" layout="column" layout-align="right right">
+                <p class="titulolibro">{{libro.libros_titulo}}</p>
+                <p class="autorlibro">{{libro.libros_autor}}</p>
+                <p class="desde">Desde:</p>
+            </div>
+
+            <div layout="column" layout-align="left left">
+                <p class="tipolibro">{{libro.tiposVO.tipos_nombre}}</p>
+            </div>
+-->
+
+    </section>
+</div>
