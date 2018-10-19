@@ -1,9 +1,9 @@
 <div ng-init="libros()">
 
-    <section>
+    <section layout="row">
 
-        <div layout="row" ng-repeat="libro in datoslibros">
-                <div flex id={{libro.libros_id}}>
+        <div  ng-repeat="libro in datoslibros">
+                <div id={{libro.libros_id}}>
                     <figure class="imagenlibro"><img src="../libros/{{libro.libros_imagen}}" alt="" srcset=""></figure>
                 </div>
         </div>

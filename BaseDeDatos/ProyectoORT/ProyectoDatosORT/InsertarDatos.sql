@@ -1,3 +1,16 @@
+-- Borrar datos existentes
+
+DELETE FROM ESQUEMA.PRESTAMOS;
+DELETE FROM ESQUEMA.LIBROS;
+DELETE FROM ESQUEMA.TIPOS;
+DELETE FROM ESQUEMA.LOGIN;
+DELETE FROM ESQUEMA.PERSONAS;
+
+
+ALTER TABLE ESQUEMA.TIPOS ALTER COLUMN TIPOS_ID RESTART WITH 1;
+ALTER TABLE ESQUEMA.PERSONAS ALTER COLUMN PERSONAS_ID RESTART WITH 1;
+ALTER TABLE ESQUEMA.LIBROS ALTER COLUMN LIBROS_ID RESTART WITH 1;
+
 -- TIPOS -- 
 /*
 Create or Replace Procedure ESQUEMA.SP_Tipos_Insert(
@@ -11,6 +24,7 @@ call esquema.sp_tipos_insert('Geometria');
 call esquema.sp_tipos_insert('Informatica');
 call esquema.sp_tipos_insert('Gastronomia');
 call esquema.sp_tipos_insert('Deportes');
+call esquema.sp_tipos_insert('Novelas Niños');
 
 -- LIBROS -- 
 /*
@@ -28,15 +42,14 @@ IN @TIPOS_ID DECIMAL(5,0)
 */
 
 select * from esquema.tipos;
-update esquema.tipos set tipos_nombre='Novelas niños' where tipos_id=41;
 
-call esquema.sp_libros_insert('1','El principito','35859685214',1960,'Descripcion del libro',15,'elprincipito_antoinedesaintexupery.jpg','Antoine de Saint-Exupery',41);
-call esquema.sp_libros_insert('2','Los crimenes de la Rue Morgue','45644565',1989,'Descripcion del libro',15,'loscrimenesdelacallemorgue.png','Juan C. Morgan',61);
-call esquema.sp_libros_insert('3','Matematica aplicada','18526658485',2005,'Ejercicios de matematica para todos',10,'matematicaaplicada.png','Prof. Vales',62);
-call esquema.sp_libros_insert('4','Asalto al mundial','35859685214',1950,'Breve reseña del mundial de brasil por un uruguayo',2,'AsaltoalMundial_GustaboGrabia.png','Gustavo Grabia',101);
+call esquema.sp_libros_insert('1','El principito','35859685214',1960,'Descripcion del libro',15,'elprincipito_antoinedesaintexupery.png','Antoine de Saint-Exupery',8);
+call esquema.sp_libros_insert('2','Los crimenes de la Rue Morgue','45644565',1989,'Descripcion del libro',15,'loscrimenesdelacallemorgue.png','Juan C. Morgan',1);
+call esquema.sp_libros_insert('3','Matematica aplicada','18526658485',2005,'Ejercicios de matematica para todos',10,'matematicaaplicada.png','Prof. Vales',2);
+call esquema.sp_libros_insert('4','Asalto al mundial','35859685214',1950,'Breve reseña del mundial de brasil por un uruguayo',2,'AsaltoalMundial_GustaboGrabia.png','Gustavo Grabia',7);
 
-call esquema.sp_libros_insert('5','Doce estaciones del alma','35859685214',1960,'Descripcion del libro',15,'elprincipito_antoinedesaintexupery.jpg','Antoine de Saint-Exupery',41);
-call esquema.sp_libros_insert('6','El presidente ha desaparecido','35859685214',1960,'Descripcion del libro',15,'elprincipito_antoinedesaintexupery.jpg','Antoine de Saint-Exupery',41);
+call esquema.sp_libros_insert('5','Doce estaciones del alma','35859685214',1960,'Descripcion del libro',15,'DoceEstacionesDelAlma.png','Tamara Molina',1);
+call esquema.sp_libros_insert('6','El presidente ha desaparecido','35859685214',1960,'Descripcion del libro',15,'ElPresidenteHaDesaparecido.png','Jose Llupes',1);
 
 
 
@@ -70,10 +83,11 @@ select * from esquema.personas;
 select * from esquema.prestamos;
 
 call esquema.sp_prestamos_insert(1,1,'2018-08-31',null);
-call esquema.sp_prestamos_insert(21,1,'2018-05-15',null);
-call esquema.sp_prestamos_insert(22,1,'2017-11-15',null);
-call esquema.sp_prestamos_insert(23,1,'2018-08-31',null);
-
+call esquema.sp_prestamos_insert(2,1,'2018-05-15',null);
+call esquema.sp_prestamos_insert(3,1,'2017-11-15',null);
+call esquema.sp_prestamos_insert(4,1,'2018-08-31',null);
+call esquema.sp_prestamos_insert(5,1,'2017-11-15',null);
+call esquema.sp_prestamos_insert(6,1,'2018-07-31',null);
 
 call esquema.sp_prestamos_insert(1,1,'2018-08-31',null);
 

@@ -38,7 +38,7 @@ modbiblioteca.service('verUsuario', function ($location) {
 });
 
 /* Para cambiar la URL facilmente */
-modbiblioteca.value('url_Biblioteca', 'http://192.168.111.29:8080/BibliotecaORT/webresources');
+modbiblioteca.value('url_Biblioteca', 'http://localhost:8081/BibliotecaORT/webresources');
 
 
 /* Controlador login */

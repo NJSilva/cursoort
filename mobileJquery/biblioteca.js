@@ -19,8 +19,58 @@ $(document).ready(function(){
 
 $('#botonIngresar').click(function(){
 
+    var usuario= $('#exampleInputEmail1').val();
+    console.log(usuario);
+
     $.ajax(
     {
+<<<<<<< HEAD:mobile/biblioteca.js
+        url: 'http://localhost:8081/BibliotecaORT/webresources/login',
+        method: 'POST',
+        dataType: 'json',
+        Authorization: 'Bearer 2018-cjpb',
+        data: '{"login_clave": 12345678,"personas": {"personas_cedula": "19716428"}}'
+ /*       
+        ,
+        success:function(data) {
+            console.log( "La solicitud se ha completado correctamente." );
+            console.log(data);
+        },
+        error:function(jqXHR, textStatus, errorThrown){
+            console.log( "La solicitud a fallado: " +  textStatus);
+            console.log(textStatus);
+        }
+        */
+    });
+
+   console.log('fin');
+      
+/*
+	$.ajax({
+		url : '/WebSolTra/ServletImpresion',
+		// dataType : 'json',
+		type : 'GET',
+		cache : false,
+		async : true,
+		data : {
+			'codigoimpresion' : grilla.selector,
+			'idsolicitud' : filaSeleccionada.idsolicitud
+		},
+		success : function(data) {
+			var myWindow = window.open("", "MsgWindow",
+					"location=1,status=1,scrollbars=1,width=800,height=600%");
+			myWindow.document.write(data);
+		},
+		error : function(request, textStatus, errorThrown) {
+			alert("error:" + textStatus + errorThrown);
+			console.log($.parseJSON(request));
+		}
+	});
+
+*/   
+      
+
+=======
         url: URL_LOGIN,
         method: "POST",
         dataType: "json",
@@ -39,6 +89,7 @@ $('#botonIngresar').click(function(){
 
         console.log('fin');
 });
+>>>>>>> c1ef25dfb45af9907be565206bfc0c8898733d4a:mobileJquery/biblioteca.js
 });
 
 
