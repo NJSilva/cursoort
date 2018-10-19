@@ -1,27 +1,23 @@
 <div ng-init="mireserva()">
 
-    <section>
+    <md-content >
+        <md-list flex>
+            
+            <md-list-item class="md-3-line" ng-repeat="reserva in datosmisreservas">
 
-        <div ng-repeat="reserva in datosmisreservas" layout="row">
+                <img ng-src="../libros/{{reserva.libros.libros_imagen}}" class="md-avatar" alt="" />
+                
+                <div class="md-list-item-text" layout="column">
+                    <h1>{{reserva.libros.libros_titulo}}</h1>
+                    <h3>{{reserva.libros.libros_autor}}</h3>
+                    <h6>{{reserva.libros.tiposVO.tipos_nombre}}</h6>
+                    <p>Desde: {{reserva.prestamos_fecha_desde}}</p>
+                </div>
+                <md-divider></md-divider>                
 
-            <div  class="divimagenlibro" layout="column" layout-align="rigth right" style='background-image:url("../libros/{{reserva.libros.libros_imagen}}"); background-repeat:no-repeat;
-            background-size:cover;'>
-            </div>
+            </md-list-item>
 
-            <div flex="60" layout="column" layout-align="right right">
-                <p class="titulolibro">{{reserva.libros.libros_titulo}}</p>
-                <p class="autorlibro">{{reserva.libros.libros_autor}}</p>
-                <p class="desde">Desde:</p>
-                <p class="fechadesde">{{reserva.prestamos_fecha_desde}}</p>
-            </div>
+        </md-list>
+    </md-content>
 
-            <div layout="column" layout-align="left left">
-                <p class="tipolibro">{{reserva.libros.tiposVO.tipos_nombre}}</p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Fin section -->
 </div>
