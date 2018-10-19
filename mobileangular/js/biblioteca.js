@@ -22,10 +22,14 @@ modbiblioteca.config(function ($locationProvider, $routeProvider) {
 
 });
 
+/*
+Para controlar que el usuario este en sessionStorage, 
+si no esta, se envia a la pagina de login.
+*/
 modbiblioteca.service('verUsuario', function ($location) {
 
+    // verificar es un metodo que se ve desde afuera
     this.verificar = function () {
-
         var usuario = sessionStorage.getItem('cedula');
         if (usuario == null) {
             $location.path('/');
