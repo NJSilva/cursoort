@@ -1,0 +1,24 @@
+<div layout="column">
+
+    <md-card id={{unlibro.libros_id}}>
+        <img ng-src="../libros/{{unlibro.libros_imagen}}" class="md-card-image" alt="Washed Out">
+        <md-card-title>
+            <md-card-title-text>
+                <span class="md-headline">{{unlibro.libros_titulo}}</span>
+                <span class="md-subhead">{{unlibro.tiposVO.tipos_nombre}}</span>
+            </md-card-title-text>
+        </md-card-title>
+        <md-card-content>
+            <p>{{unlibro.libros_descripcion}}</p>
+        </md-card-content>
+
+        <md-card-actions layout="row" layout-align="center center">
+                <md-button class="md-raised md-primary">Reservar</md-button>
+                <md-button class="md-raised md-primary">Volver</md-button>
+        </md-card-actions>
+
+    </md-card>
+
+
+
+</div>
