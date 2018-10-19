@@ -1,4 +1,4 @@
-<div ng-app='modbiblioteca' ng-controller="ctllogin" class="bodyVerde">
+<div class="bodyVerde">
 
         <section  class="bodyVerde">
 
@@ -19,13 +19,14 @@
                 <p class="nombre">y Pensiones Bancarias</p>
             </div>
 
-            <form id="formulario">
+            <form name="formulario" id="formulario" novalidate>
                 <div>
                     <md-input-container class="md-block">
                         <label>Usuario</label>
-                        <input ng-model="user.name" required="yes" type="text">
+                        <input ng-model="user.cedula" required="yes" type="text">
                     </md-input-container>
                 </div>
+                
                 <div>
                     <md-input-container class="md-block">
                         <label>Clave</label>
@@ -33,20 +34,18 @@
                     </md-input-container>
                 </div>
 
-                <div id="error" layout="col" layout-align="center" style="display:none">
+                <div id="error" layout="col" layout-align="center center" ng-show="errorlogin">
                     <img src="../imagenes/warning.png" alt=""/>
                     <p>Credenciales incorrectas</p>
                 </div>
-                <div layout="column" layout-align="center">                    
-                    
-                </div>
+
         
                 <div layout="column" layout-align="center center">
                     <p class="olvido">¿Olvido su contraseña?</p>
                 </div>
 
                 <div layout="column" style="max-height:100%">
-                    <md-button ng-click="clicked()" id="botonIngresar">Ingresar</md-button>
+                    <md-button ng-click="ingresar()" id="botonIngresar">Ingresar</md-button>
                 </div>
 
             </form>
