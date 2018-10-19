@@ -89,7 +89,7 @@ call esquema.sp_prestamos_insert(4,1,'2018-08-31',null);
 call esquema.sp_prestamos_insert(5,1,'2017-11-15',null);
 call esquema.sp_prestamos_insert(6,1,'2018-07-31',null);
 
-call esquema.sp_prestamos_insert(1,1,'2018-08-31',null);
+call esquema.sp_prestamos_insert(1,2,'2018-08-31',null);
 
 
 /* login */

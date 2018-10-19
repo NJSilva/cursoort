@@ -19,6 +19,9 @@ modbiblioteca.config(function ($locationProvider, $routeProvider) {
         .when('/libro', {
             templateUrl: 'vistas/libros.html'
         })
+        .when('/verlibro' , { 
+            templateUrl: 'vistas/unlibro.html'
+        })
 
 });
 
@@ -38,7 +41,10 @@ modbiblioteca.service('verUsuario', function ($location) {
 });
 
 /* Para cambiar la URL facilmente */
-modbiblioteca.value('url_Biblioteca', 'http://localhost:8081/BibliotecaORT/webresources');
+modbiblioteca.value('url_Biblioteca', 'http://192.168.111.29:8080/BibliotecaORT/webresources');
+
+// Modo local
+// modbiblioteca.value('url_Biblioteca', 'http://localhost:8080/BibliotecaORT/webresources');
 
 
 /* Controlador login */
@@ -157,11 +163,9 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
 
         $http(req).then(
             function success(data) {
-                console.log('Dentro de funcion ' + JSON.stringify(data));
                 $scope.datosmisreservas = data.data;
             },
             function error(data) {
-                console.log(data);
                 alert('Error: ' + data.status + ' ' + data.statusText);
                 $scope.datosmisreservas = null;
             }
@@ -177,7 +181,6 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
 
         verUsuario.verificar($scope);
 
-        console.log('function libros');
 
         var req = {
             method: 'GET',
@@ -191,17 +194,60 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
 
         $http(req).then(
             function success(data) {
-                console.log('Dentro de funcion ' + JSON.stringify(data));
                 $scope.datoslibros = data.data;
             },
             function error(data) {
-                console.log(data);
                 alert('Error: ' + data.status + ' ' + data.statusText);
                 $scope.datoslibros = null;
             }
         );
 
     };
+
+
+    /***************************************************/
+    /* UN LIBRO
+    /***************************************************/
+
+    $scope.reservarlibro = function reservarlibro(libro) {
+
+        $scope.unlibro = libro;
+        $location.path('/verlibro');
+
+    };
+
+    /***************************************************/
+    /* UN LIBRO
+    /***************************************************/
+
+    $scope.unlibro = function unlibro() {
+
+        verUsuario.verificar($scope);
+
+        var req = {
+            method: 'GET',
+            url: url_Biblioteca + '/libro/id=' + $scope.id_libro,
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer 2018-cjpb",
+            }
+
+        };
+
+        $http(req).then(
+            function success(data) {
+                console.log('Dentro de funcion ' + JSON.stringify(data));
+                $scope.datolibro = data.data;
+            },
+            function error(data) {
+                console.log(data);
+                alert('Error: ' + data.status + ' ' + data.statusText);
+                $scope.datolibro = null;
+            }
+        );
+
+    };
+
 
 
 });

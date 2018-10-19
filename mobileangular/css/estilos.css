@@ -202,10 +202,12 @@ section{
     background: linear-gradient(90deg, #E2E2E2 30.98%, rgba(226, 226, 226, 0) 82.84%);
 }
 
-.imagenlibro{
+.divimagenlibro{
+    width: 86px;
+    height: 125px;
+    margin-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-right: 10px;
 }
 
 .titulolibro{

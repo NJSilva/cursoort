@@ -4,9 +4,8 @@
 
         <div ng-repeat="reserva in datosmisreservas" layout="row">
 
-            <div  layout="column" layout-align="rigth right">
-                <figure class="imagenlibro"><img src="../libros/{{reserva.libros.libros_imagen}}" alt="" srcset=""></figure>
-
+            <div  class="divimagenlibro" layout="column" layout-align="rigth right" style='background-image:url("../libros/{{reserva.libros.libros_imagen}}"); background-repeat:no-repeat;
+            background-size:cover;'>
             </div>
 
             <div flex="60" layout="column" layout-align="right right">
