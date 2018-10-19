@@ -1,3 +1,9 @@
+-- Borrar datos existentes
+
+DELETE FROM ESQUEMA.PRESTAMOS;
+DELETE FROM ESQUEMA.LIBROS;
+DELETE FROM ESQUEMA.TIPOS;
+
 -- TIPOS -- 
 /*
 Create or Replace Procedure ESQUEMA.SP_Tipos_Insert(
@@ -28,15 +34,15 @@ IN @TIPOS_ID DECIMAL(5,0)
 */
 
 select * from esquema.tipos;
-update esquema.tipos set tipos_nombre='Novelas niños' where tipos_id=41;
+update esquema.tipos set tipos_nombre='Novelas niños' where tipos_id=68;
 
-call esquema.sp_libros_insert('1','El principito','35859685214',1960,'Descripcion del libro',15,'elprincipito_antoinedesaintexupery.jpg','Antoine de Saint-Exupery',41);
-call esquema.sp_libros_insert('2','Los crimenes de la Rue Morgue','45644565',1989,'Descripcion del libro',15,'loscrimenesdelacallemorgue.png','Juan C. Morgan',61);
-call esquema.sp_libros_insert('3','Matematica aplicada','18526658485',2005,'Ejercicios de matematica para todos',10,'matematicaaplicada.png','Prof. Vales',62);
-call esquema.sp_libros_insert('4','Asalto al mundial','35859685214',1950,'Breve reseña del mundial de brasil por un uruguayo',2,'AsaltoalMundial_GustaboGrabia.png','Gustavo Grabia',101);
+call esquema.sp_libros_insert('1','El principito','35859685214',1960,'Descripcion del libro',15,'elprincipito_antoinedesaintexupery.png','Antoine de Saint-Exupery',68);
+call esquema.sp_libros_insert('2','Los crimenes de la Rue Morgue','45644565',1989,'Descripcion del libro',15,'loscrimenesdelacallemorgue.png','Juan C. Morgan',69);
+call esquema.sp_libros_insert('3','Matematica aplicada','18526658485',2005,'Ejercicios de matematica para todos',10,'matematicaaplicada.png','Prof. Vales',70);
+call esquema.sp_libros_insert('4','Asalto al mundial','35859685214',1950,'Breve reseña del mundial de brasil por un uruguayo',2,'AsaltoalMundial_GustaboGrabia.png','Gustavo Grabia',71);
 
-call esquema.sp_libros_insert('5','Doce estaciones del alma','35859685214',1960,'Descripcion del libro',15,'elprincipito_antoinedesaintexupery.jpg','Antoine de Saint-Exupery',41);
-call esquema.sp_libros_insert('6','El presidente ha desaparecido','35859685214',1960,'Descripcion del libro',15,'elprincipito_antoinedesaintexupery.jpg','Antoine de Saint-Exupery',41);
+call esquema.sp_libros_insert('5','Doce estaciones del alma','35859685214',1960,'Descripcion del libro',15,'elprincipito_antoinedesaintexupery.jpg','Antoine de Saint-Exupery',72);
+call esquema.sp_libros_insert('6','El presidente ha desaparecido','35859685214',1960,'Descripcion del libro',15,'elprincipito_antoinedesaintexupery.jpg','Antoine de Saint-Exupery',73);
 
 
 

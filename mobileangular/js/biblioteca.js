@@ -9,12 +9,6 @@ modbiblioteca.config(function ($locationProvider, $routeProvider) {
 
     $locationProvider.html5Mode(true);
 
-<<<<<<< HEAD
-        $routeProvider
-        .when('/'           ,{templateUrl : 'vistas/login.html'}) // Cuando se inicia se va al home directo porque la url tiene la barra
-        .when('/misreservas',{templateUrl : 'vistas/misreservas.html'} 
-    )
-=======
     $routeProvider
         .when('/', {
             templateUrl: 'vistas/login.html'
@@ -26,7 +20,6 @@ modbiblioteca.config(function ($locationProvider, $routeProvider) {
             templateUrl: 'vistas/libros.html'
         })
 
->>>>>>> 3ee8b8242875d0e02fb8aaf8a6ab00f548ae4e1d
 });
 
 modbiblioteca.service('verUsuario', function ($location) {
@@ -41,7 +34,7 @@ modbiblioteca.service('verUsuario', function ($location) {
 });
 
 /* Para cambiar la URL facilmente */
-modbiblioteca.value('url_Biblioteca', 'http://192.168.111.29:8080/BibliotecaORT/webresources');
+modbiblioteca.value('url_Biblioteca', 'http://localhost:8081/BibliotecaORT/webresources');
 
 
 /* Controlador login */
