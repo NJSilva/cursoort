@@ -143,6 +143,10 @@ header{
     height: 40px;
     color: white;
     text-align: center;
+	width: 100%;
+	left: 0; 
+	top: 0; 
+	/*position: fixed;*/
 }
 header p{
     font-family: Roboto;
@@ -210,6 +214,9 @@ section{
 .divlibros{
     width: 90px;
     height: 130px;
+    float:left;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 
@@ -260,10 +267,10 @@ section{
 }
 
 /* footer*/
-footer{
+.footer{
     position: fixed;
     bottom: 0;
-    background-color: rgba(31,104,34,100);
+    /*background-color: rgba(31,104,34,100);*/
     height: 40px;
     width: 100%;
     color: white;
@@ -272,7 +279,7 @@ footer{
 }
 
 
-footer #boton{
+.footer #boton{
     background-color:rgba(31,104,34,100);
     color:white;
     font-family: Roboto;

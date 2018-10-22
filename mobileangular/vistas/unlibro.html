@@ -6,19 +6,21 @@
             <md-card-title-text>
                 <span class="md-headline">{{unlibro.libros_titulo}}</span>
                 <span class="md-subhead">{{unlibro.tiposVO.tipos_nombre}}</span>
+                <span class="md-subhead">{{unlibro.libros_autor}}</span>
+
             </md-card-title-text>
         </md-card-title>
         <md-card-content>
             <p>{{unlibro.libros_descripcion}}</p>
         </md-card-content>
 
+
+        <div class="footer">
         <md-card-actions layout="row" layout-align="center center">
-                <md-button class="md-raised md-primary">Reservar</md-button>
-                <md-button class="md-raised md-primary">Volver</md-button>
+                <md-button flex="50" class="md-primary md-raised">Reservar</md-button>
+                <md-button flex="50" class="md-primary md-raised" ng-click="volver()">Volver</md-button>
         </md-card-actions>
-
+    </div>
     </md-card>
-
-
 
 </div>

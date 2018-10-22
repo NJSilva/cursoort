@@ -16,10 +16,10 @@ modbiblioteca.config(function ($locationProvider, $routeProvider) {
         .when('/misreservas', {
             templateUrl: 'vistas/misreservas.html'
         })
-        .when('/libro', {
+        .when('/libros', {
             templateUrl: 'vistas/libros.html'
         })
-        .when('/verlibro' , { 
+        .when('/verlibro', {
             templateUrl: 'vistas/unlibro.html'
         })
 
@@ -96,7 +96,7 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
                 $scope.user.email = data.data.personas_mail;
                 $scope.user.cedula = data.data.personas_cedula;
 
-                $scope.mostrarFooter = true;
+                $scope.mostrarFooter = false;
                 $scope.mostrarHeader = true;
 
                 // Grabo la cedula en el sessionStorage
@@ -134,7 +134,7 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
         switch (index) {
             case 0:
                 $scope.titulopantalla = 'RESERVAR';
-                $location.path('/libro');
+                $location.path('/libros');
                 break;
             case 1:
                 $scope.titulopantalla = 'MIS RESERVAS';
@@ -204,6 +204,15 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
 
     };
 
+    /***************************************************/
+    /* FUNCION VOLVER
+    /***************************************************/
+
+    $scope.volver = function volver() {
+        $window.history.back();
+    };
+
+
 
     /***************************************************/
     /* UN LIBRO
@@ -215,6 +224,15 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
         $location.path('/verlibro');
 
     };
+
+    /***************************************************/
+    /* TODOS LOS LIBROS
+    /***************************************************/
+
+    $scope.verlibros = function verlibros() {
+        $location.path('/libros');
+    };
+
 
     /***************************************************/
     /* UN LIBRO

@@ -23,13 +23,13 @@
     <!-- Modulo Angular para biblioteca-->
     <script src="js/biblioteca.js"></script>
 
-    <title>Biblioreca ORT</title>
+    <title>Biblioteca ORT</title>
 
 </head>
 
 <body ng-app='modbiblioteca' ng-controller='ctlbiblioteca'>
 
-        <header layout="row" layout-align="center center" ng-show="mostrarHeader">
+        <header class="header" layout="row" layout-align="center center" ng-show="mostrarHeader">
 
 
             <div class="menus" layout-wrap layout="row">
@@ -58,7 +58,7 @@
 
     <div ng-view style="margin-bottom:40px;"></div>
 
-    <footer ng-show="mostrarFooter">Footer</footer>
+    <footer class="footer" ng-show="mostrarFooter">Footer</footer>
 
 </body>
 

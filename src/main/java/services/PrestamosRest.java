@@ -44,7 +44,6 @@ public class PrestamosRest {
         FacadeCliente fc = new FacadeCliente();
         String grabar = fc.grabar(libro, FacadeCliente.PRESTAMOS);
         return grabar;
-
     }
 
     @PUT

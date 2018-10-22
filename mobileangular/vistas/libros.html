@@ -1,10 +1,12 @@
 <div ng-init="libros()">
 
-    <div layout="row" class="imagenlibro">
-    <div class="divlibros" ng-repeat="libro in datoslibros" id={{libro.libros_id}} layout-align="center center"
-        style='background-image:url("../libros/{{libro.libros_imagen}}"); background-repeat:no-repeat;
+    <div>
+        <div class="imagenlibro">
+            <div class="divlibros" ng-repeat="libro in datoslibros" id={{libro.libros_id}} layout-align="center center"
+                style='background-image:url("../libros/{{libro.libros_imagen}}"); background-repeat:no-repeat;
         background-size:cover;'
-        ng-click=reservarlibro(libro)>
+                ng-click=reservarlibro(libro)>
+            </div>
+        </div>
     </div>
-</div>
 </div>
