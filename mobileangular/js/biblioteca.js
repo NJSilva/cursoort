@@ -19,7 +19,7 @@ modbiblioteca.config(function ($locationProvider, $routeProvider) {
         .when('/libros', {
             templateUrl: 'vistas/libros.html'
         })
-        .when('/verlibro', {
+        .when('/verunlibro', {
             templateUrl: 'vistas/unlibro.html'
         })
 
@@ -48,7 +48,7 @@ modbiblioteca.value('url_Biblioteca', 'http://192.168.111.29:8080/BibliotecaORT/
 
 
 /* Controlador login */
-modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $location, url_Biblioteca, verUsuario) {
+modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $location, url_Biblioteca, verUsuario, $mdDialog) {
 
     // Error en login
     $scope.errorlogin = false;
@@ -213,17 +213,66 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
     };
 
 
-
     /***************************************************/
-    /* UN LIBRO
+    /* VER UN LIBRO
     /***************************************************/
 
-    $scope.reservarlibro = function reservarlibro(libro) {
+    $scope.verunlibro = function verunlibro(libro) {
 
         $scope.unlibro = libro;
-        $location.path('/verlibro');
+        $location.path('/verunlibro');
 
     };
+
+    /***************************************************/
+    /* DEVOLVER UN LIBRO
+    /***************************************************/
+
+    $scope.devolverlibro = function devolverlibro(ev , object) {
+
+        console.log(object.reserva);
+        console.log(ev);
+
+        var confirm = $mdDialog.confirm()
+            .title('Devolver el libro seleccionado?')
+            //.textContent('')
+            //.ariaLabel('')
+            .targetEvent(ev)
+            .ok('Aceptar')
+            .cancel('Cancelar');
+
+        $mdDialog.show(confirm).then(function () {
+            console.log('Aceptar');
+        }, function () {
+            console.log('Cancelar');
+        });
+    };
+
+
+
+    /***************************************************/
+    /* RESERVAR UN LIBRO
+    /***************************************************/
+
+    $scope.reservarlibro = function reservarlibro(ev) {
+
+        console.log($scope.unlibro);
+
+        var confirm = $mdDialog.confirm()
+            .title('Reserva el libro seleccionado?')
+            .textContent('')
+            .ariaLabel('')
+            .targetEvent(ev)
+            .ok('Aceptar')
+            .cancel('Cancelar');
+
+        $mdDialog.show(confirm).then(function () {
+            console.log('Aceptar');
+        }, function () {
+            console.log('Cancelar');
+        });
+    };
+
 
     /***************************************************/
     /* TODOS LOS LIBROS

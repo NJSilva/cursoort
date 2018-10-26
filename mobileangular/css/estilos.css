@@ -146,7 +146,10 @@ header{
 	width: 100%;
 	left: 0; 
 	top: 0; 
-	/*position: fixed;*/
+    position: fixed;
+    margin-bottom: 40px;
+    display: block;
+    z-index: 1;
 }
 header p{
     font-family: Roboto;
@@ -156,6 +159,8 @@ header p{
     font-size: 14px;
     letter-spacing: 0.05em;
     text-align: center;
+    margin-top: 12px;
+    z-index: 1;
 }
 
 #hamburger {

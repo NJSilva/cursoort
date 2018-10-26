@@ -6,7 +6,7 @@
 
                 <img ng-src="../libros/{{reserva.libros.libros_imagen}}" class="md-avatar" alt="" />
                 
-                <div class="md-list-item-text" layout="column">
+                <div class="md-list-item-text" layout="column" ng-click="devolverlibro($event , this)">
                     <h1>{{reserva.libros.libros_titulo}}</h1>
                     <h3>{{reserva.libros.libros_autor}}</h3>
                     <h6>{{reserva.libros.tiposVO.tipos_nombre}}</h6>
