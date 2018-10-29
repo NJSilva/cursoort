@@ -13,8 +13,8 @@ modbiblioteca.config(function ($locationProvider, $routeProvider) {
         .when('/', {
             templateUrl: 'vistas/login.html'
         }) // Cuando se inicia se va al home directo porque la url tiene la barra 
-        .when('/misreservas', {
-            templateUrl: 'vistas/misreservas.html'
+        .when('/misprestamos', {
+            templateUrl: 'vistas/misprestamos.html'
         })
         .when('/libros', {
             templateUrl: 'vistas/libros.html'
@@ -67,7 +67,7 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
 
 
     // Define el titulo de cada pantalla en la barra de menu
-    $scope.titulopantalla = 'MIS RESERVAS';
+    $scope.titulopantalla = 'MIS PRESTAMOS';
 
     /***************************************************/
     /* LOGIN
@@ -105,7 +105,7 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
                 sessionStorage.setItem('cedula', $scope.user.cedula);
 
 
-                $location.path('/misreservas');
+                $location.path('/misprestamos');
 
             },
             function error(data) {
@@ -128,7 +128,7 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
     /* ng-repeat="item in 
     [
       0 'Reservar'
-    , 1 'Mis Reservas'
+    , 1 'Mis Prestamos'
     ]"
     /***************************************************/
     $scope.announceClick = function announceClick(index) {
@@ -139,17 +139,17 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
                 $location.path('/libros');
                 break;
             case 1:
-                $scope.titulopantalla = 'MIS RESERVAS';
-                $location.path('/misreservas');
+                $scope.titulopantalla = 'MIS PRESTAMOS';
+                $location.path('/misprestamos');
                 break;
         };
     };
 
     /***************************************************/
-    /* MIS RESERVAS
+    /* MIS PRESTAMOS
     /***************************************************/
 
-    $scope.mireserva = function misReservas() {
+    $scope.misprestamos = function misprestamos() {
 
         verUsuario.verificar($scope);
 
@@ -165,11 +165,11 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
 
         $http(req).then(
             function success(data) {
-                $scope.datosmisreservas = data.data;
+                $scope.datosmisprestamos = data.data;
             },
             function error(data) {
                 alert('Error: ' + data.status + ' ' + data.statusText);
-                $scope.datosmisreservas = null;
+                $scope.datosmisprestamos = null;
             }
         );
 
