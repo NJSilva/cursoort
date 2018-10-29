@@ -92,6 +92,7 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
         $http(req).then(
             function success(data) {
                 $scope.user.valid = 'si';
+                $scope.user.id = data.data.personas_id;
                 $scope.user.name = data.data.personas_nombre;
                 $scope.user.email = data.data.personas_mail;
                 $scope.user.cedula = data.data.personas_cedula;
@@ -109,6 +110,7 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
             },
             function error(data) {
                 $scope.user.valid = 'no';
+                $scope.user.id = '';
                 $scope.user.name = '';
                 $scope.user.email = '';
                 $scope.user.cedula = '';
@@ -228,7 +230,7 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
     /* DEVOLVER UN LIBRO
     /***************************************************/
 
-    $scope.devolverlibro = function devolverlibro(ev , object) {
+    $scope.devolverlibro = function devolverlibro(ev, object) {
 
         console.log(object.reserva);
         console.log(ev);
@@ -316,8 +318,36 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
     };
 
 
+    /***************************************************/
+    /* INSERTAR PRESTAMO
+    /***************************************************/
 
-});
+    $scope.ingresarprestamo = function ingresarprestamo() {
+
+        // Para enviar la fecha del dia de inicio del prestamo
+        var fechaHoy = today();
+        
+        var req = {
+            method: 'POST',
+            url: url_prestamo + '/prestamo',
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer 2018-cjpb",
+            },
+            data: '{\"prestamos_fecha_desde\": ' + fechaHoy +', \"personas\": { \"personas_id\": '+ $scope.user.id +'},\"libros\":{libros_id:' + $scope.libro.libros_id +'}'
+        };
+
+
+        $http(req).then(
+            function success(data) {
+            },
+            function error(data) {
+            }
+        );
+
+    };
+
+}); // Controller
 
 
 

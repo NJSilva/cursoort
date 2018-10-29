@@ -80,8 +80,8 @@ public class FactoryEntidadesI {
             Personas persona = (Personas) getTipo(((PrestamosVO) tipo).getPersonas());
             prestamo.setPersonas(persona);
             
-            prestamo.setPrestamos_fecha_desde( UtilesVarios.formatearFecha(((PrestamosVO) tipo).getPrestamos_fecha_desde()));
-            prestamo.setPrestamos_fecha_hasta( UtilesVarios.formatearFecha(((PrestamosVO) tipo).getPrestamos_fecha_hasta()));
+            prestamo.setPrestamos_fecha_desde( UtilesVarios.formatearFechaVO(((PrestamosVO) tipo).getPrestamos_fecha_desde()));
+            prestamo.setPrestamos_fecha_hasta( UtilesVarios.formatearFechaVO(((PrestamosVO) tipo).getPrestamos_fecha_hasta()));
             
             return prestamo;
         }

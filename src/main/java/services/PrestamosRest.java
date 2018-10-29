@@ -19,6 +19,8 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import src.facade.FacadeCliente;
 import src.framework.valueobject.VOI;
+import src.vo.LoginVO;
+import src.vo.PersonasVO;
 import src.vo.PrestamosVO;
 
 /**
@@ -42,6 +44,15 @@ public class PrestamosRest {
     @Produces(MediaType.APPLICATION_JSON)
     public String createPrestamo(PrestamosVO libro) throws Exception {
         FacadeCliente fc = new FacadeCliente();
+        
+        // Busco la persona asi tengo el ID
+//        LoginVO login = new LoginVO();
+//        login.setPersonas(libro.getPersonas());
+//
+//        // Seteo la persona al libro
+//        PersonasVO persona = fc.autenticar(login);
+//        libro.setPersonas(persona);
+        
         String grabar = fc.grabar(libro, FacadeCliente.PRESTAMOS);
         return grabar;
     }

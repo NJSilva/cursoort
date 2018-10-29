@@ -103,8 +103,23 @@ public class UtilesVarios {
 		if (null != fecha) {
 			return formato.format(fecha);
 		} else {
-			return "";
+			return null;
 		}
 	}
+        
+        
+	public static Date formatearFechaVO(String _fecha) {
+		SimpleDateFormat formatoDeFecha = new SimpleDateFormat("dd/MM/yyyy");
+		Date retorno = null;
+
+                if(null != _fecha){
+                    try {
+                            retorno = formatoDeFecha.parse(_fecha);
+                    } catch (ParseException e) {
+                            // se retorna nulo si el formato no es valido.
+                    }
+                }
+		return retorno;
+	}        
 
 }

@@ -47,4 +47,13 @@ public class PrestamosVO implements VOI{
     public void setPersonas(PersonasVO _personas) {
         this.personas = _personas;
     }
+    
+    public Date getPrestamos_fecha_desde_Date() {
+        return prestamos_fecha_desde;
+    }
+
+    public Date getPrestamos_fecha_hasta_Date() {
+        return prestamos_fecha_hasta;
+    }
+    
 }
