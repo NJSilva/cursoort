@@ -244,9 +244,9 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
             .cancel('Cancelar');
 
         $mdDialog.show(confirm).then(function () {
-            console.log('Aceptar');
+            $scope.ingresardevolucion();
         }, function () {
-            console.log('Cancelar');
+            console.log('Cancelar devolver');
         });
     };
 
@@ -269,7 +269,7 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
             .cancel('Cancelar');
 
         $mdDialog.show(confirm).then(function () {
-            console.log('Aceptar');
+            $scope.ingresarprestamo();
         }, function () {
             console.log('Cancelar');
         });
@@ -317,6 +317,33 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
 
     };
 
+    /***************************************************/
+    /* OBTENER LA FECHA DEL DIA EN FORMATO YYYY-MM-DD
+    /***************************************************/
+    $scope.fechaHoy = function fechaHoy(){
+
+        // Para retornar la fecha del dia en format yyyy-mm-dd
+
+        var fechaHoy = new Date();
+        var dd = fechaHoy.getDate();
+        var mm = fechaHoy.getMonth() + 1; //January is 0!
+        var yyyy = fechaHoy.getFullYear();
+
+        if (dd < 10) {
+            dd = '0' + dd
+        }
+
+        if (mm < 10) {
+            mm = '0' + mm
+        }
+
+        var today = yyyy + '-' + mm + '-' + dd;
+
+        return today;
+
+
+    }
+
 
     /***************************************************/
     /* INSERTAR PRESTAMO
@@ -324,28 +351,61 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
 
     $scope.ingresarprestamo = function ingresarprestamo() {
 
-        // Para enviar la fecha del dia de inicio del prestamo
-        var fechaHoy = today();
-        
         var req = {
             method: 'POST',
-            url: url_prestamo + '/prestamo',
+            url: url_Biblioteca + '/prestamo',
             headers: {
                 "Content-Type": "application/json",
                 "Authorization": "Bearer 2018-cjpb",
             },
-            data: '{\"prestamos_fecha_desde\": ' + fechaHoy +', \"personas\": { \"personas_id\": '+ $scope.user.id +'},\"libros\":{libros_id:' + $scope.libro.libros_id +'}'
+            data: '{\"prestamos_fecha_desde\": \"' + $scope.fechaHoy() + '\", \"personas\": { \"personas_id\": ' + $scope.user.id + '},\"libros\":{\"libros_id\":' + $scope.unlibro.libros_id + '}}'
         };
 
+        console.log(req.data);
 
         $http(req).then(
             function success(data) {
+                $location.path('/libros');
             },
             function error(data) {
+                console.log('Error al ingresar el prestamo !!! ');
+                console.log(data);
             }
         );
 
     };
+
+
+    /***************************************************/
+    /* INSERTAR DEVOLUCION
+    /***************************************************/
+
+    $scope.ingresardevolucion = function ingresardevolucion() {
+
+        var req = {
+            method: 'PUT',
+            url: url_Biblioteca + '/prestamo',
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer 2018-cjpb",
+            },
+            data: '{\"prestamos_fecha_desde\": \"' + $scope.fechaHoy() + '\", \"prestamos_fecha_hasta\": \"' + $scope.fechaHoy() + '\", \"personas\": { \"personas_id\": ' + $scope.user.id + '},\"libros\":{\"libros_id\":' + $scope.unlibro.libros_id + '}}'
+//Agregar la fecha de devolucion 
+        };
+
+        console.log(req.data);
+
+        $http(req).then(
+            function success(data) {
+                $location.path('/libros');
+            },
+            function error(data) {
+                console.log('Error al ingresar la devolucion !!! ');
+                console.log(data);
+            }
+        );
+
+    };    
 
 }); // Controller
 
