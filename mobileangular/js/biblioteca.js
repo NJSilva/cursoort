@@ -232,7 +232,7 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
 
     $scope.devolverlibro = function devolverlibro(ev, object) {
 
-        console.log(object.reserva);
+        console.log(object.prestamo);
         console.log(ev);
 
         var confirm = $mdDialog.confirm()
@@ -244,7 +244,7 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
             .cancel('Cancelar');
 
         $mdDialog.show(confirm).then(function () {
-            $scope.ingresardevolucion();
+            $scope.ingresardevolucion(object.prestamo);
         }, function () {
             console.log('Cancelar devolver');
         });
@@ -380,7 +380,7 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
     /* INSERTAR DEVOLUCION
     /***************************************************/
 
-    $scope.ingresardevolucion = function ingresardevolucion() {
+    $scope.ingresardevolucion = function ingresardevolucion(unprestamo) {
 
         var req = {
             method: 'PUT',
@@ -389,15 +389,14 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
                 "Content-Type": "application/json",
                 "Authorization": "Bearer 2018-cjpb",
             },
-            data: '{\"prestamos_fecha_desde\": \"' + $scope.fechaHoy() + '\", \"prestamos_fecha_hasta\": \"' + $scope.fechaHoy() + '\", \"personas\": { \"personas_id\": ' + $scope.user.id + '},\"libros\":{\"libros_id\":' + $scope.unlibro.libros_id + '}}'
-//Agregar la fecha de devolucion 
+            data: '{\"prestamos_fecha_desde\": \"' + unprestamo.prestamos_fecha_desde_string + '\", \"prestamos_fecha_hasta\": \"' + $scope.fechaHoy() + '\", \"personas\": { \"personas_id\": ' + $scope.user.id + '},\"libros\":{\"libros_id\":' + unprestamo.libros.libros_id + '}}'
         };
 
         console.log(req.data);
 
         $http(req).then(
             function success(data) {
-                $location.path('/libros');
+                $location.path('/misprestamos');
             },
             function error(data) {
                 console.log('Error al ingresar la devolucion !!! ');

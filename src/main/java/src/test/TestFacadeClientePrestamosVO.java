@@ -49,12 +49,12 @@ public class TestFacadeClientePrestamosVO {
             
             prestamosvo.setLibros((LibrosVO) libro);
             prestamosvo.setPersonas((PersonasVO) persona);
-            prestamosvo.setPrestamos_fecha_desde(UtilesVarios.formatearFechaVO("30/11/1975"));
+            prestamosvo.setPrestamos_fecha_desde(UtilesVarios.formatearStringToDate("30/11/1975" , UtilesVarios.FORMATO_DDMMYYYY));
             
           //  fc.eliminar(prestamosvo, FacadeCliente.PRESTAMOS);
             fc.grabar(prestamosvo, FacadeCliente.PRESTAMOS);
 
-            prestamosvo.setPrestamos_fecha_desde(UtilesVarios.formatearFechaVO("05/12/2018"));
+            prestamosvo.setPrestamos_fecha_desde(UtilesVarios.formatearStringToDate("05/12/2018" , UtilesVarios.FORMATO_DDMMYYYY));
 
             fc.actualizar(prestamosvo, FacadeCliente.PRESTAMOS);
         } catch (SQLException ex) {

@@ -20,106 +20,108 @@ import java.util.Date;
  */
 public class UtilesVarios {
 
-	/**
-	 * Formatear fecha.
-	 *
-	 * @param _fecha
-	 *            the _fecha
-	 * @return the date
-	 */
-	public static Date formatearFecha(String _fecha) {
-		SimpleDateFormat formatoDeFecha = new SimpleDateFormat("yyyy-MM-dd");
-		Date retorno = null;
+    public static String FORMATO_yyyyMMdd = "yyyy-MM-dd";
 
-		try {
-			retorno = formatoDeFecha.parse(_fecha);
-		} catch (ParseException e) {
-			// se retorna nulo si el formato no es valido.
-		}
+    public static String FORMATO_DDMMYYYY = "dd/MM/yyyy";
 
-		return retorno;
-	}
+    public static String FORMATO_TIMESTAMP = "yyyy-MM-dd HH:mm:ss.SSSSSS";
 
-	/**
-	 * Formatear time stamp.
-	 *
-	 * @param _fecha
-	 *            the _fecha
-	 * @return the date
-	 */
-	public static String formatearTimeStamp(String _fecha) {
-		SimpleDateFormat formatoDeFecha = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSSSSS");
-		String retorno = null;
+    public static String FORMATO_TIMESTAMPARCHIVO = "yyyyMMddHHmmss";
 
-		Date fecha1 = formatearFecha(_fecha);
-		retorno = formatoDeFecha.format(fecha1);
+    /**
+     *
+     * @param _fecha
+     * @param formato
+     * @return
+     */
+    public static Date formatearStringToDate(String _fecha, String formato) {
+        SimpleDateFormat formatoDeFecha = new SimpleDateFormat(formato);
+        Date retorno = null;
+        if (null != _fecha) {
+            try {
+                retorno = formatoDeFecha.parse(_fecha);
+            } catch (ParseException e) {
+                // se retorna nulo si el formato no es valido.
+            }
+        }
+        return retorno;
+    }
 
-		return retorno;
-	}
+    /**
+     * Formatear time stamp.
+     *
+     * @param _fecha the _fecha
+     * @return the date
+     */
+    public static String formatearTimeStampToString(String _fecha, String formato) {
+        SimpleDateFormat formatoDeFecha = new SimpleDateFormat(formato);
+        String retorno = null;
 
-	/**
-	 * Formatear time stamp.
-	 *
-	 * @param tiempo
-	 *            the tiempo
-	 * @return the string
-	 */
-	public static String formatearTimeStamp(Timestamp tiempo) {
-		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSSSSS");
-		String retorno = null;
-		retorno = format.format(tiempo);
-		return retorno;
-	}
+        Date fecha1 = formatearStringToDate(_fecha, formato);
+        retorno = formatoDeFecha.format(fecha1);
 
-	/**
-	 * Formatear time stamp archivo.
-	 *
-	 * @return the string
-	 */
-	public static String formatearTimeStampArchivo() {
+        return retorno;
+    }
 
-		Calendar calendar = Calendar.getInstance();
-		Date now = calendar.getTime();
+    /**
+     * Formatear time stamp.
+     *
+     * @param tiempo the tiempo
+     * @return the string
+     */
+    public static String formatearTimeStampToString(Timestamp tiempo, String formato) {
+        SimpleDateFormat format = new SimpleDateFormat(formato);
+        String retorno = null;
+        retorno = format.format(tiempo);
+        return retorno;
+    }
 
-		Timestamp currentTimestamp = new java.sql.Timestamp(now.getTime());
+    /**
+     * Formatear time stamp archivo.
+     *
+     * @return the string
+     */
+    public static String formatearTimeStampArchivo() {
 
-		SimpleDateFormat format = new SimpleDateFormat("yyyyMMddHHmmss");
-		String retorno = null;
+        Calendar calendar = Calendar.getInstance();
+        Date now = calendar.getTime();
 
-		retorno = format.format(currentTimestamp);
+        Timestamp currentTimestamp = new java.sql.Timestamp(now.getTime());
 
-		return retorno;
-	}
+        SimpleDateFormat format = new SimpleDateFormat(FORMATO_TIMESTAMPARCHIVO);
+        String retorno = null;
 
-	/**
-	 * Formateo fecha.
-	 *
-	 * @param fecha
-	 *            the fecha
-	 * @return the string
-	 */
-	public static String formateoFecha(Date fecha) {
-		SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
-		if (null != fecha) {
-			return formato.format(fecha);
-		} else {
-			return null;
-		}
-	}
-        
-        
-	public static Date formatearFechaVO(String _fecha) {
-		SimpleDateFormat formatoDeFecha = new SimpleDateFormat("dd/MM/yyyy");
-		Date retorno = null;
+        retorno = format.format(currentTimestamp);
 
-                if(null != _fecha){
-                    try {
-                            retorno = formatoDeFecha.parse(_fecha);
-                    } catch (ParseException e) {
-                            // se retorna nulo si el formato no es valido.
-                    }
-                }
-		return retorno;
-	}        
+        return retorno;
+    }
 
+    /**
+     * Formateo fecha.
+     *
+     * @param fecha the fecha
+     * @return the string
+     */
+    public static String formatearDateToString(Date fecha, String formato) {
+        SimpleDateFormat formatoFecha = new SimpleDateFormat(formato);
+        if (null != fecha) {
+            return formatoFecha.format(fecha);
+        } else {
+            return null;
+        }
+    }
+
+//	public static Date formatearFechaVO(String _fecha) {
+//		SimpleDateFormat formatoDeFecha = new SimpleDateFormat(FORMATO_DDMMYYYY);
+//		Date retorno = null;
+//
+//                if(null != _fecha){
+//                    try {
+//                            retorno = formatoDeFecha.parse(_fecha);
+//                    } catch (ParseException e) {
+//                            // se retorna nulo si el formato no es valido.
+//                    }
+//                }
+//		return retorno;
+//	}        
 }
