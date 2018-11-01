@@ -143,6 +143,13 @@ header{
     height: 40px;
     color: white;
     text-align: center;
+	width: 100%;
+	left: 0; 
+	top: 0; 
+    position: fixed;
+    margin-bottom: 40px;
+    display: block;
+    z-index: 1;
 }
 header p{
     font-family: Roboto;
@@ -152,6 +159,8 @@ header p{
     font-size: 14px;
     letter-spacing: 0.05em;
     text-align: center;
+    margin-top: 12px;
+    z-index: 1;
 }
 
 #hamburger {
@@ -196,9 +205,9 @@ section{
     margin-top: 40px;
 }  
 
-/* MIS RESERVAS*/
+/* MIS PRESTAMOS*/
 
-.reserva{
+.prestamo{
     background: linear-gradient(90deg, #E2E2E2 30.98%, rgba(226, 226, 226, 0) 82.84%);
 }
 
@@ -210,6 +219,9 @@ section{
 .divlibros{
     width: 90px;
     height: 130px;
+    float:left;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 
@@ -260,10 +272,10 @@ section{
 }
 
 /* footer*/
-footer{
+.footer{
     position: fixed;
     bottom: 0;
-    background-color: rgba(31,104,34,100);
+    /*background-color: rgba(31,104,34,100);*/
     height: 40px;
     width: 100%;
     color: white;
@@ -272,7 +284,7 @@ footer{
 }
 
 
-footer #boton{
+.footer #boton{
     background-color:rgba(31,104,34,100);
     color:white;
     font-family: Roboto;

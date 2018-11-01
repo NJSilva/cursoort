@@ -15,9 +15,9 @@ public class Prestamos extends PrestamosVO implements EntidadesI {
     public Object[] generarCampos() {
         Object[] datos = {
             getLibros().getLibros_id(),
-            getPersonas().getPersonas_cedula(),
-            new java.sql.Date(UtilesVarios.formatearFecha(getPrestamos_fecha_desde()).getTime()),
-            (null != getPrestamos_fecha_hasta() ? new java.sql.Date(UtilesVarios.formatearFecha(getPrestamos_fecha_hasta()).getTime()) : null)
+            getPersonas().getPersonas_id(),
+            new java.sql.Date(getPrestamos_fecha_desde_Date().getTime()),
+            (null != getPrestamos_fecha_hasta_Date()? new java.sql.Date(getPrestamos_fecha_hasta_Date().getTime()) : null)
         };
         return datos;
     }
@@ -26,9 +26,9 @@ public class Prestamos extends PrestamosVO implements EntidadesI {
     public Object[] generarCamposPK() {
         Object[] datos = {
             getLibros().getLibros_id(),
-            getPersonas().getPersonas_cedula(),
-            new java.sql.Date(UtilesVarios.formatearFecha(getPrestamos_fecha_desde()).getTime()),
-            (null != getPrestamos_fecha_hasta() ? new java.sql.Date(UtilesVarios.formatearFecha(getPrestamos_fecha_hasta()).getTime()) : null)
+            getPersonas().getPersonas_id(),
+            new java.sql.Date(getPrestamos_fecha_desde_Date().getTime()),
+            (null != getPrestamos_fecha_hasta() ? new java.sql.Date(getPrestamos_fecha_hasta_Date().getTime()) : null)
         };
         return datos;
     }

@@ -13,13 +13,13 @@ modbiblioteca.config(function ($locationProvider, $routeProvider) {
         .when('/', {
             templateUrl: 'vistas/login.html'
         }) // Cuando se inicia se va al home directo porque la url tiene la barra 
-        .when('/misreservas', {
-            templateUrl: 'vistas/misreservas.html'
+        .when('/misprestamos', {
+            templateUrl: 'vistas/misprestamos.html'
         })
-        .when('/libro', {
+        .when('/libros', {
             templateUrl: 'vistas/libros.html'
         })
-        .when('/verlibro' , { 
+        .when('/verunlibro', {
             templateUrl: 'vistas/unlibro.html'
         })
 
@@ -48,7 +48,7 @@ modbiblioteca.service('verUsuario', function ($location) {
 
 
 /* Controlador login */
-modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $location, url_Biblioteca, verUsuario) {
+modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $location, url_Biblioteca, verUsuario, $mdDialog) {
 
     // Error en login
     $scope.errorlogin = false;
@@ -67,7 +67,7 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
 
 
     // Define el titulo de cada pantalla en la barra de menu
-    $scope.titulopantalla = 'MIS RESERVAS';
+    $scope.titulopantalla = 'MIS PRESTAMOS';
 
     /***************************************************/
     /* LOGIN
@@ -92,11 +92,12 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
         $http(req).then(
             function success(data) {
                 $scope.user.valid = 'si';
+                $scope.user.id = data.data.personas_id;
                 $scope.user.name = data.data.personas_nombre;
                 $scope.user.email = data.data.personas_mail;
                 $scope.user.cedula = data.data.personas_cedula;
 
-                $scope.mostrarFooter = true;
+                $scope.mostrarFooter = false;
                 $scope.mostrarHeader = true;
 
                 // Grabo la cedula en el sessionStorage
@@ -104,11 +105,12 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
                 sessionStorage.setItem('cedula', $scope.user.cedula);
 
 
-                $location.path('/misreservas');
+                $location.path('/misprestamos');
 
             },
             function error(data) {
                 $scope.user.valid = 'no';
+                $scope.user.id = '';
                 $scope.user.name = '';
                 $scope.user.email = '';
                 $scope.user.cedula = '';
@@ -126,7 +128,7 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
     /* ng-repeat="item in 
     [
       0 'Reservar'
-    , 1 'Mis Reservas'
+    , 1 'Mis Prestamos'
     ]"
     /***************************************************/
     $scope.announceClick = function announceClick(index) {
@@ -134,20 +136,20 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
         switch (index) {
             case 0:
                 $scope.titulopantalla = 'RESERVAR';
-                $location.path('/libro');
+                $location.path('/libros');
                 break;
             case 1:
-                $scope.titulopantalla = 'MIS RESERVAS';
-                $location.path('/misreservas');
+                $scope.titulopantalla = 'MIS PRESTAMOS';
+                $location.path('/misprestamos');
                 break;
         };
     };
 
     /***************************************************/
-    /* MIS RESERVAS
+    /* MIS PRESTAMOS
     /***************************************************/
 
-    $scope.mireserva = function misReservas() {
+    $scope.misprestamos = function misprestamos() {
 
         verUsuario.verificar($scope);
 
@@ -163,11 +165,11 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
 
         $http(req).then(
             function success(data) {
-                $scope.datosmisreservas = data.data;
+                $scope.datosmisprestamos = data.data;
             },
             function error(data) {
                 alert('Error: ' + data.status + ' ' + data.statusText);
-                $scope.datosmisreservas = null;
+                $scope.datosmisprestamos = null;
             }
         );
 
@@ -204,17 +206,84 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
 
     };
 
+    /***************************************************/
+    /* FUNCION VOLVER
+    /***************************************************/
+
+    $scope.volver = function volver() {
+        $window.history.back();
+    };
+
 
     /***************************************************/
-    /* UN LIBRO
+    /* VER UN LIBRO
     /***************************************************/
 
-    $scope.reservarlibro = function reservarlibro(libro) {
+    $scope.verunlibro = function verunlibro(libro) {
 
         $scope.unlibro = libro;
-        $location.path('/verlibro');
+        $location.path('/verunlibro');
 
     };
+
+    /***************************************************/
+    /* DEVOLVER UN LIBRO
+    /***************************************************/
+
+    $scope.devolverlibro = function devolverlibro(ev, object) {
+
+        console.log(object.reserva);
+        console.log(ev);
+
+        var confirm = $mdDialog.confirm()
+            .title('Devolver el libro seleccionado?')
+            //.textContent('')
+            //.ariaLabel('')
+            .targetEvent(ev)
+            .ok('Aceptar')
+            .cancel('Cancelar');
+
+        $mdDialog.show(confirm).then(function () {
+            $scope.ingresardevolucion();
+        }, function () {
+            console.log('Cancelar devolver');
+        });
+    };
+
+
+
+    /***************************************************/
+    /* RESERVAR UN LIBRO
+    /***************************************************/
+
+    $scope.reservarlibro = function reservarlibro(ev) {
+
+        console.log($scope.unlibro);
+
+        var confirm = $mdDialog.confirm()
+            .title('Reserva el libro seleccionado?')
+            .textContent('')
+            .ariaLabel('')
+            .targetEvent(ev)
+            .ok('Aceptar')
+            .cancel('Cancelar');
+
+        $mdDialog.show(confirm).then(function () {
+            $scope.ingresarprestamo();
+        }, function () {
+            console.log('Cancelar');
+        });
+    };
+
+
+    /***************************************************/
+    /* TODOS LOS LIBROS
+    /***************************************************/
+
+    $scope.verlibros = function verlibros() {
+        $location.path('/libros');
+    };
+
 
     /***************************************************/
     /* UN LIBRO
@@ -248,9 +317,97 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
 
     };
 
+    /***************************************************/
+    /* OBTENER LA FECHA DEL DIA EN FORMATO YYYY-MM-DD
+    /***************************************************/
+    $scope.fechaHoy = function fechaHoy(){
+
+        // Para retornar la fecha del dia en format yyyy-mm-dd
+
+        var fechaHoy = new Date();
+        var dd = fechaHoy.getDate();
+        var mm = fechaHoy.getMonth() + 1; //January is 0!
+        var yyyy = fechaHoy.getFullYear();
+
+        if (dd < 10) {
+            dd = '0' + dd
+        }
+
+        if (mm < 10) {
+            mm = '0' + mm
+        }
+
+        var today = yyyy + '-' + mm + '-' + dd;
+
+        return today;
 
 
-});
+    }
+
+
+    /***************************************************/
+    /* INSERTAR PRESTAMO
+    /***************************************************/
+
+    $scope.ingresarprestamo = function ingresarprestamo() {
+
+        var req = {
+            method: 'POST',
+            url: url_Biblioteca + '/prestamo',
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer 2018-cjpb",
+            },
+            data: '{\"prestamos_fecha_desde\": \"' + $scope.fechaHoy() + '\", \"personas\": { \"personas_id\": ' + $scope.user.id + '},\"libros\":{\"libros_id\":' + $scope.unlibro.libros_id + '}}'
+        };
+
+        console.log(req.data);
+
+        $http(req).then(
+            function success(data) {
+                $location.path('/libros');
+            },
+            function error(data) {
+                console.log('Error al ingresar el prestamo !!! ');
+                console.log(data);
+            }
+        );
+
+    };
+
+
+    /***************************************************/
+    /* INSERTAR DEVOLUCION
+    /***************************************************/
+
+    $scope.ingresardevolucion = function ingresardevolucion() {
+
+        var req = {
+            method: 'PUT',
+            url: url_Biblioteca + '/prestamo',
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer 2018-cjpb",
+            },
+            data: '{\"prestamos_fecha_desde\": \"' + $scope.fechaHoy() + '\", \"prestamos_fecha_hasta\": \"' + $scope.fechaHoy() + '\", \"personas\": { \"personas_id\": ' + $scope.user.id + '},\"libros\":{\"libros_id\":' + $scope.unlibro.libros_id + '}}'
+//Agregar la fecha de devolucion 
+        };
+
+        console.log(req.data);
+
+        $http(req).then(
+            function success(data) {
+                $location.path('/libros');
+            },
+            function error(data) {
+                console.log('Error al ingresar la devolucion !!! ');
+                console.log(data);
+            }
+        );
+
+    };    
+
+}); // Controller
 
 
 

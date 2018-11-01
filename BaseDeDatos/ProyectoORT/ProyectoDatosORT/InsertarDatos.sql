@@ -51,6 +51,16 @@ call esquema.sp_libros_insert('4','Asalto al mundial','35859685214',1950,'Breve 
 call esquema.sp_libros_insert('5','Doce estaciones del alma','35859685214',1960,'Descripcion del libro',15,'DoceEstacionesDelAlma.png','Tamara Molina',1);
 call esquema.sp_libros_insert('6','El presidente ha desaparecido','35859685214',1960,'Descripcion del libro',15,'ElPresidenteHaDesaparecido.png','Jose Llupes',1);
 
+call esquema.sp_libros_insert('7','El diario violeta de carlota ','35859685214',1960,'Descripcion del libro',15,'ElDiarioVioletaDeCarlota.png','Carlota Gimenez',1);
+call esquema.sp_libros_insert('8','La confesion','35859685214',1960,'Descripcion del libro',15,'laconfesion_jhongrisham.png','Jose Llupes',1);
+call esquema.sp_libros_insert('9','La transparencia el tiempo','35859685214',1960,'Descripcion del libro',15,'LaTransparenciaDelTiempo.png','Hugo Alberto Perdomo',3);
+call esquema.sp_libros_insert('10','Pon En Forma Tu Yo Interior','35859685214',1960,'Descripcion del libro',15,'PonEnFormaTuYoInterior.png','Gilberto Saint Rose',3);
+call esquema.sp_libros_insert('11','Querido Noha','35859685214',1960,'Descripcion del libro',15,'querodonoha_cochinfernandez.png','Alberto Sonsol',1);
+call esquema.sp_libros_insert('12','Una novela criminal','35859685214',1960,'Descripcion del libro',15,'UnaNovelaCriminal.png','Jose Llupes',1);
+call esquema.sp_libros_insert('13','Viva la revolucion','35859685214',1960,'Descripcion del libro',15,'VivaLaRevolucion.png','Jose Llupes',1);
+
+
+
 
 
 -- PERSONAS --
