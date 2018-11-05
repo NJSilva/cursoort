@@ -48,7 +48,7 @@ modbiblioteca.value('url_Biblioteca', 'http://192.168.111.29:8080/BibliotecaORT/
 
 
 /* Controlador login */
-modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $location, url_Biblioteca, verUsuario, $mdDialog) {
+modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $location, url_Biblioteca, verUsuario, $mdDialog , $mdToast) {
 
     // Error en login
     $scope.errorlogin = false;
@@ -152,6 +152,8 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
     $scope.misprestamos = function misprestamos() {
 
         verUsuario.verificar($scope);
+        $scope.datosmisprestamos = null;
+        $scope.mostrarMensajeSinPrestamos=false;
 
         var req = {
             method: 'GET',
@@ -166,6 +168,12 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
         $http(req).then(
             function success(data) {
                 $scope.datosmisprestamos = data.data;
+
+                console.log($scope.datosmisprestamos.length);
+
+                if($scope.datosmisprestamos.length==0){
+                    $scope.mostrarMensajeSinPrestamos=true;
+                }
             },
             function error(data) {
                 alert('Error: ' + data.status + ' ' + data.statusText);
@@ -262,8 +270,8 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
 
         var confirm = $mdDialog.confirm()
             .title('Reserva el libro seleccionado?')
-            .textContent('')
-            .ariaLabel('')
+//            .textContent('')
+//            .ariaLabel('')
             .targetEvent(ev)
             .ok('Aceptar')
             .cancel('Cancelar');
@@ -325,7 +333,7 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
         // Para retornar la fecha del dia en format yyyy-mm-dd
 
         var fechaHoy = new Date();
-        var dd = fechaHoy.getDate();
+        var dd = fechaHoy.getDate() + 1;
         var mm = fechaHoy.getMonth() + 1; //January is 0!
         var yyyy = fechaHoy.getFullYear();
 
@@ -396,7 +404,8 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
 
         $http(req).then(
             function success(data) {
-                $location.path('/misprestamos');
+                $scope.misprestamos();
+                $scope.showToast('Se ingreso correctamente');
             },
             function error(data) {
                 console.log('Error al ingresar la devolucion !!! ');
@@ -405,6 +414,21 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
         );
 
     };    
+
+
+    /***************************************************/
+    /* MENSAJES DE CONFIRMACION
+    /***************************************************/
+
+    $scope.showToast = function(texto) {
+        $mdToast.show (
+           $mdToast.simple()
+           .textContent(texto)                       
+           .hideDelay(3000)
+           .position('top right')
+        );
+     };
+
 
 }); // Controller
 
