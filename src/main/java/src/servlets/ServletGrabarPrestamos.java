@@ -41,8 +41,8 @@ public class ServletGrabarPrestamos extends HttpServlet {
             String PRESTAMOS_FECHA_HASTA = request.getParameter("prestamos_fecha_hasta");
             String LIBROS_TITULO = request.getParameter("libros.libros_titulo");
             
-            prestamos.setPrestamos_fecha_desde((PRESTAMOS_FECHA_DESDE.length() != 0 ? UtilesVarios.formatearFecha(PRESTAMOS_FECHA_DESDE) : null));
-            prestamos.setPrestamos_fecha_hasta((PRESTAMOS_FECHA_HASTA.length() != 0 ? UtilesVarios.formatearFecha(PRESTAMOS_FECHA_HASTA) : null));
+            prestamos.setPrestamos_fecha_desde((PRESTAMOS_FECHA_DESDE.length() != 0 ? UtilesVarios.formatearStringToDate(PRESTAMOS_FECHA_DESDE , UtilesVarios.FORMATO_yyyyMMdd) : null));
+            prestamos.setPrestamos_fecha_hasta((PRESTAMOS_FECHA_HASTA.length() != 0 ? UtilesVarios.formatearStringToDate(PRESTAMOS_FECHA_HASTA , UtilesVarios.FORMATO_yyyyMMdd) : null));
             
             Libros libros = (Libros) fc.buscar(LIBROS_CODIGO, "Libros");
             prestamos.setLibros(libros);

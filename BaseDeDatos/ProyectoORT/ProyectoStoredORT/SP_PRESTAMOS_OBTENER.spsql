@@ -37,6 +37,7 @@ where
 	prestamos.LIBROS_ID = libros.LIBROS_ID
  	and  prestamos.PERSONAS_ID = personas.PERSONAS_ID
  	AND LIBROS.TIPOS_ID=TIPOS.TIPOS_ID
+ 	AND PRESTAMOS_FECHA_HASTA IS NULL
 ;
 OPEN C1;
 

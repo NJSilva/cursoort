@@ -35,6 +35,7 @@ WHERE
 	and  prestamos.PERSONAS_ID = personas.PERSONAS_ID
 	and tipos.tipos_id = libros.tipos_id
 	and PERSONAS.PERSONAS_CEDULA=P_PERSONAS_CEDULA
+	AND PRESTAMOS_FECHA_HASTA IS NULL
 	
 	;
 OPEN C1;
