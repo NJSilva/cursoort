@@ -19,4 +19,7 @@ P_PRESTAMOS_FECHA_DESDE,
 P_PRESTAMOS_FECHA_HASTA
 );
 
+-- Actualizo el stock del libro
+UPDATE ESQUEMA.LIBROS SET libros_disponible = libros_disponible - 1 WHERE LIBROS.LIBROS_ID=P_LIBROS_ID;
+
 End P1

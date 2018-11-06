@@ -429,7 +429,6 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
         );
      };
 
-
 }); // Controller
 
 

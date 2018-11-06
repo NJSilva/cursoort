@@ -83,7 +83,7 @@
           </children>
           <styles xsi:type="datanotation:DataListCompartmentStyle" xmi:id="_6Q4Zcn5XEeiaGZiZDjQaCw" sortingKeys="Natural:Ascending"/>
           <styles xsi:type="datanotation:TableStyle" xmi:id="_6Q4ZdH5XEeiaGZiZDjQaCw" showDataType="true" showNullable="true" showLabel="true" showTriggerCompartment="true" showIndexCompartment="true" fontName="Segoe UI" lineWidth="1"/>
-          <layoutConstraint xsi:type="notation:Bounds" xmi:id="_6Q4Zc35XEeiaGZiZDjQaCw" x="5291" y="12938"/>
+          <layoutConstraint xsi:type="notation:Bounds" xmi:id="_6Q4Zc35XEeiaGZiZDjQaCw" x="2540" y="17938"/>
         </children>
         <children xmi:id="_8gsf8X5XEeiaGZiZDjQaCw" element="_8gsf8H5XEeiaGZiZDjQaCw">
           <children xsi:type="notation:Shape" xmi:id="_8gsf9X5XEeiaGZiZDjQaCw" type="TableName" fontName="Segoe UI">
@@ -238,7 +238,7 @@
             <layoutConstraint xsi:type="notation:Location" xmi:id="_3AcuC35YEeiaGZiZDjQaCw" x="-864" y="-1605"/>
           </children>
           <styles xsi:type="datanotation:DataLineStyle" xmi:id="_3AS9AX5YEeiaGZiZDjQaCw" fontName="Segoe UI" routing="Rectilinear" lineWidth="1"/>
-          <bendpoints xsi:type="notation:RelativeBendpoints" xmi:id="_3AS9An5YEeiaGZiZDjQaCw" points="[-1772, 0, 689, 1536]$[-1772, -1561, 689, -25]"/>
+          <bendpoints xsi:type="notation:RelativeBendpoints" xmi:id="_3AS9An5YEeiaGZiZDjQaCw" points="[953, 0, 663, 6113]$[953, -6113, 663, 0]"/>
           <sourceAnchor xsi:type="notation:IdentityAnchor" xmi:id="_3BZwQH5YEeiaGZiZDjQaCw" id="(0.5001290492087043,0.0)"/>
           <targetAnchor xsi:type="notation:IdentityAnchor" xmi:id="_3BZwQX5YEeiaGZiZDjQaCw" id="(0.5000172256614654,1.0)"/>
         </edges>
