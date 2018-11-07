@@ -361,6 +361,7 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
 
         $http(req).then(
             function success(data) {
+                $scope.libros();
                 $location.path('/libros');
             },
             function error(data) {
