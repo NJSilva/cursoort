@@ -29,10 +29,10 @@ public class ConexionSql {
 	private Connection conexionConnection;
 
 	/** The user. */
-	private String user = "nsilva";
+	private String user = "rpons";
 
 	/** The pass. */
-	private String pass = "Lafinur1n";
+	private String pass = "f2a3Pc!h3";
 
 	/**
 	 * Nombre del schema o base de datos a utilizar
