@@ -2,45 +2,36 @@
 package src.entidades;
 
 import src.framework.valueobject.EntidadesI;
-import src.vo.LibrosVO;
+import src.vo.LogsesionesVO;
 
-public class Libros extends LibrosVO implements EntidadesI {
+public class Logsesiones extends LogsesionesVO implements EntidadesI {
 
-    public Libros() {
+    public Logsesiones() {
     }
 
     public Object[] generarCamposPK() {
         Object[] datos = {
-            getLibros_id(),
-            getLibros_codigo(),
-            getLibros_titulo(),
-            getLibros_isbn(),
-            getLibros_anio(),
-            getLibros_descripcion(),
-            getLibros_disponible(),
-            getLibros_imagen(),
-            getLibros_autor(),
-            getTiposVO().getTipos_id()};
+            getPersona().getPersonas_id(),
+            getInicio(),
+            getFin(),
+            getToken()
+            };
         return datos;
     }
 
     public Object[] generarCampos() {
         Object[] datos = {
-            getLibros_codigo(),
-            getLibros_titulo(),
-            getLibros_isbn(),
-            getLibros_anio(),
-            getLibros_descripcion(),
-            getLibros_disponible(),
-            getLibros_imagen(),
-            getLibros_autor(),
-            getTiposVO().getTipos_id()};
+            getFin(),
+            getToken()
+        };
         return datos;
     }
 
     public Object[] generarPK() {
         Object[] datos = {
-            getLibros_id()};
+            getPersona().getPersonas_id(),
+            getInicio()
+        };
         return datos;
     }
 }
