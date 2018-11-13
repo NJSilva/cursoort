@@ -13,7 +13,6 @@ public class Logsesiones extends LogsesionesVO implements EntidadesI {
         Object[] datos = {
             getPersona().getPersonas_id(),
             getInicio(),
-            getFin(),
             getToken()
             };
         return datos;
@@ -21,6 +20,8 @@ public class Logsesiones extends LogsesionesVO implements EntidadesI {
 
     public Object[] generarCampos() {
         Object[] datos = {
+            getPersona().getPersonas_id(),
+            getInicio(),
             getFin(),
             getToken()
         };
@@ -30,7 +31,9 @@ public class Logsesiones extends LogsesionesVO implements EntidadesI {
     public Object[] generarPK() {
         Object[] datos = {
             getPersona().getPersonas_id(),
-            getInicio()
+            getInicio(),
+            getFin(),
+            getToken()
         };
         return datos;
     }
