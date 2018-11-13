@@ -44,11 +44,11 @@ public class TestFacadeClienteLogsesionesVO {
         // Inserto un nuevo registro
             
         try {
-            PersonasVO persona = (PersonasVO) fc.buscar("1" , FacadeCliente.PERSONAS).get(0);
+            PersonasVO persona = (PersonasVO) fc.buscar("2" , FacadeCliente.PERSONAS).get(0);
             
             LogsesionesVO lsvo = new LogsesionesVO();
             lsvo.setPersona(persona);
-            lsvo.setToken("untoken");
+            lsvo.setToken("untokenRomina");
             
             Timestamp ts = new Timestamp(new Date().getTime());
             lsvo.setInicio(ts);
