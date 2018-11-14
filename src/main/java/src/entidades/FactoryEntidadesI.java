@@ -10,6 +10,7 @@ import src.framework.valueobject.EntidadesI;
 import src.framework.valueobject.VOI;
 import src.vo.LibrosVO;
 import src.vo.LoginVO;
+import src.vo.LogsesionesVO;
 import src.vo.PersonasVO;
 import src.vo.PrestamosVO;
 import src.vo.TiposVO;
@@ -89,6 +90,23 @@ public class FactoryEntidadesI {
             
             return prestamo;
         }
+        
+        if(tipo instanceof LogsesionesVO){
+            
+            Logsesiones logsesiones = new Logsesiones();
+            
+            Personas persona = (Personas) getTipo(((LogsesionesVO) tipo).getPersona());
+            
+            logsesiones.setPersona(persona);
+            
+            logsesiones.setInicio(((LogsesionesVO) tipo).getInicio());
+            logsesiones.setFin(((LogsesionesVO) tipo).getFin());
+            logsesiones.setToken(((LogsesionesVO) tipo).getToken());
+            
+            return logsesiones;
+        }
+        
+        
         
        return null;
     }

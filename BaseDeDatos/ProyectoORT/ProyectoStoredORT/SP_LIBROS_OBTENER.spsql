@@ -22,6 +22,7 @@ from
 	, ESQUEMA.TIPOS TIPOS
 where  
 	libros.TIPOS_ID = tipos.TIPOS_ID
+	and libros_disponible>=1
 order by 
 	libros.tipos_id , libros.libros_id	
 ;

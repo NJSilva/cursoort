@@ -1,8 +1,12 @@
 <div ng-init="libros()">
 
+    <br>
+    <label>Buscar: <input ng-model="searchText"></label>
+    <hr>
+
     <div>
         <div class="imagenlibro">
-            <div class="divlibros" ng-repeat="libro in datoslibros" id={{libro.libros_id}} layout-align="center center"
+            <div class="divlibros" ng-repeat="libro in datoslibros | filter:searchText | orderBy : libro.tiposVO.tipos_nombre"  id={{libro.libros_id}} layout-align="center center"
                 style='background-image:url("../libros/{{libro.libros_imagen}}"); background-repeat:no-repeat;
         background-size:cover;'
                 ng-click=verunlibro(libro)>

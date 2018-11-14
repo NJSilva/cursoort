@@ -240,13 +240,8 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
 
     $scope.devolverlibro = function devolverlibro(ev, object) {
 
-        console.log(object.prestamo);
-        console.log(ev);
-
         var confirm = $mdDialog.confirm()
             .title('Devolver el libro seleccionado?')
-            //.textContent('')
-            //.ariaLabel('')
             .targetEvent(ev)
             .ok('Aceptar')
             .cancel('Cancelar');
@@ -270,14 +265,13 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
 
         var confirm = $mdDialog.confirm()
             .title('Reserva el libro seleccionado?')
-//            .textContent('')
-//            .ariaLabel('')
             .targetEvent(ev)
             .ok('Aceptar')
             .cancel('Cancelar');
 
         $mdDialog.show(confirm).then(function () {
             $scope.ingresarprestamo();
+
         }, function () {
             console.log('Cancelar');
         });
@@ -308,16 +302,13 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
                 "Content-Type": "application/json",
                 "Authorization": "Bearer 2018-cjpb",
             }
-
         };
 
         $http(req).then(
             function success(data) {
-                console.log('Dentro de funcion ' + JSON.stringify(data));
                 $scope.datolibro = data.data;
             },
             function error(data) {
-                console.log(data);
                 alert('Error: ' + data.status + ' ' + data.statusText);
                 $scope.datolibro = null;
             }
@@ -331,7 +322,6 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
     $scope.fechaHoy = function fechaHoy(){
 
         // Para retornar la fecha del dia en format yyyy-mm-dd
-
         var fechaHoy = new Date();
         var dd = fechaHoy.getDate() + 1;
         var mm = fechaHoy.getMonth() + 1; //January is 0!
@@ -348,8 +338,6 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
         var today = yyyy + '-' + mm + '-' + dd;
 
         return today;
-
-
     }
 
 
@@ -373,6 +361,7 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
 
         $http(req).then(
             function success(data) {
+                $scope.libros();
                 $location.path('/libros');
             },
             function error(data) {
@@ -405,7 +394,7 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
         $http(req).then(
             function success(data) {
                 $scope.misprestamos();
-                $scope.showToast('Se ingreso correctamente');
+                $scope.showToast('Se registro la devolucion');
             },
             function error(data) {
                 console.log('Error al ingresar la devolucion !!! ');
@@ -430,6 +419,7 @@ modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $loc
      };
 
 
+/******************************************************/     
 }); // Controller
 
 

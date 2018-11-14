@@ -1,0 +1,41 @@
+<div ng-init="misprestamos()">
+    <md-content>
+        <md-list flex>
+
+            <md-list-item class="md-3-line" ng-repeat="prestamo in datosmisprestamos">
+
+                <img ng-src="../libros/{{prestamo.libros.libros_imagen}}" class="md-avatar" alt="" />
+
+                <div class="md-list-item-text" layout="column" ng-click="devolverlibro($event , this)">
+                    <h1>{{prestamo.libros.libros_titulo}}</h1>
+                    <h3>{{prestamo.libros.libros_autor}}</h3>
+                    <h6>{{prestamo.libros.tiposVO.tipos_nombre}}</h6>
+                    <p>Desde: {{prestamo.prestamos_fecha_desde}}</p>
+                </div>
+                <md-divider></md-divider>
+            </md-list-item>
+        </md-list>
+
+        <div ng-show="mostrarMensajeSinPrestamos">
+
+            <md-list flex>
+                <md-list-item class="md-3-line">
+
+                    <img ng-src="../libros/sinprestamos.png" class="md-avatar" alt="" />
+
+                    <div class="md-list-item-text" layout="column">
+                        <h1>No hay libros para mostrar</h1>
+                        <h3></h3>
+                        <h6></h6>
+                        <p>Reserve un libro para actualizar la lista</p>
+                    </div>
+                    <md-divider></md-divider>
+                </md-list-item>
+            </md-list>
+
+            <md-button flex="100%" class="md-primary" ng-click="announceClick(0)">Ir a reservar</md-button>
+        </div>
+
+
+    </md-content>
+</div>
