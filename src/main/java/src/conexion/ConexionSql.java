@@ -32,7 +32,7 @@ public class ConexionSql {
 	private String user = "nsilva";
 
 	/** The pass. */
-	private String pass = "Lafinur1n";
+	private String pass = "Moredance1n";
 
 	/**
 	 * Nombre del schema o base de datos a utilizar
