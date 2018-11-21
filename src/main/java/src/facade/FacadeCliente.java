@@ -53,4 +53,9 @@ public class FacadeCliente extends AbstractFacade {
     public List<VOI> obtenerPorCedula(String cedula) throws SQLException {
         return (List<VOI>) helperPrestamos.obtenerPorCedula(cedula);
     }
+    
+    public List<VOI> obtenerPorToken(String token) throws SQLException {
+        return (List<VOI>) helperLogsesiones.findByToken(token);
+    }
+    
 }
