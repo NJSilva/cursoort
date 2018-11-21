@@ -47,6 +47,7 @@ modbiblioteca.service('verUsuario', function ($location) {
  modbiblioteca.value('url_Biblioteca', 'http://localhost:9080/BibliotecaORT/webresources');
 
 
+
 /* Controlador login */
 modbiblioteca.controller("ctlbiblioteca", function ($scope, $http, $window, $location, url_Biblioteca, verUsuario, $mdDialog , $mdToast) {
 

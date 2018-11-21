@@ -61,6 +61,25 @@ public class TestFacadeClienteLogsesionesVO {
             Logger.getLogger(TestFacadeClienteLogsesionesVO.class.getName()).log(Level.SEVERE, null, ex);
         }
         
+        
+        try{
+            
+           System.out.println("-----------------------");            
+            
+           LogsesionesVO logSesiones = (LogsesionesVO) fc.obtenerPorToken("cjpb nico").get(0);
+           
+           PersonasVO persona = logSesiones.getPersona();
+           
+           System.out.println(persona.getPersonas_cedula());
+           System.out.println(persona.getPersonas_nombre());
+           System.out.println(logSesiones.getToken());
+           
+           
+        } catch(Exception ex){
+            ex.printStackTrace();
+        }
 
+        
+        
     }
 }
