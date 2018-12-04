@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ 
+
+  <ion-list>
+    <ion-item *ngFor="let libro of (libros | async)" (click)="openDetails(libro)">
+      <ion-thumbnail item-start>
+        <img src="../../assets/imgs/{{libro.libros_imagen}}">
+      </ion-thumbnail>
+      <h2>  {{ libro.libros_titulo }}</h2>
+      <p>{{ libro.libros_autor }} •{{ libro.libros_anio }}</p>
+      <button ion-button clear item-end></button>
+    </ion-item>
+  </ion-list>
+</ion-content>

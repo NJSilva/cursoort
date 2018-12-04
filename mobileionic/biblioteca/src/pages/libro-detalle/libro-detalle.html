@@ -1,0 +1,47 @@
+<!--
+  Generated template for the LibroDetallePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>{{ libro.libros_titulo }}</ion-title>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content padding>
+
+<ion-item>
+      <p> {{libro.libros_autor }}  ,{{libro.libros_anio }}  </p>
+    </ion-item>
+  
+    <img src="../../assets/imgs/{{libro.libros_imagen}}">
+  
+    <ion-card-content>
+      <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>
+    </ion-card-content>
+  
+    <ion-row>
+      <ion-col>
+        <button ion-button icon-start clear small>
+          <ion-icon name="thumbs-up"></ion-icon>
+          <div>12 Me gusta</div>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-start clear small>
+          <ion-icon name="text"></ion-icon>
+          <div>4 Recomendaciones</div>
+        </button>
+      </ion-col>
+      <ion-col center text-center>
+        <ion-note>
+          11h ago
+        </ion-note>
+      </ion-col>
+    </ion-row>
+
+</ion-content>
+
