@@ -1,0 +1,32 @@
+
+<ion-content>
+  <form [formGroup]="myForm" (ngSubmit)="login()">
+    <ion-list>
+      <ion-item text-center>
+        <ion-img width="192" height="192" src="../../assets/imgs/logoSitioWp.png" ></ion-img>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="person" item-left></ion-icon>
+        <ion-label stacked>Email:</ion-label>
+        <ion-input formControlName="email" type="text" placeholder="Email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="key" item-left></ion-icon>
+        <ion-label stacked>Password:</ion-label>
+        <ion-input formControlName="password" type="password" placeholder="Password"></ion-input>
+      </ion-item>
+    </ion-list>
+    <div padding>
+      <button ion-button block type="submit" [disabled]="!myForm.valid">Ingresar</button>
+      <button ion-button full color="lightText" (click)="login()">Log in</button>
+    </div>
+  </form>
+  <div text-center>
+    <a ion-button block clear (click)="goToSignup()">
+      Nueva cuenta
+    </a>
+    <a ion-button block clear (click)="goToResetPassword()">
+      Olvide password
+    </a>
+  </div>
+</ion-content>
