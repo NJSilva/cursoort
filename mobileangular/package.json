@@ -14,6 +14,7 @@
     "angular-aria": "^1.7.5",
     "angular-material": "^1.1.10",
     "angular-messages": "^1.7.4",
-    "angular-route": "^1.7.4"
+    "angular-route": "^1.7.4",
+    "npm": "^6.4.1"
   }
 }

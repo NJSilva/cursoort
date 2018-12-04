@@ -28,22 +28,11 @@ public class ConexionSql {
 	// Variables para la conexion
 	private Connection conexionConnection;
 
-	/** The user. */
-<<<<<<< HEAD
-	private String user = "rpons";
-
 	/** The pass. */
-	private String pass = "f2a3Pc!h3";
-=======
 	private String user = "nico";
 
 	/** The pass. */
-<<<<<<< HEAD
 	private String pass = "n1colas1n";
-=======
-	private String pass = "Moredance1n";
->>>>>>> 487663d2294bab3cd6717b677e2bcdab5b8161cb
->>>>>>> 89ac1cbf2d7f97777188085788088f94459830ba
 
 	/**
 	 * Nombre del schema o base de datos a utilizar
@@ -95,7 +84,7 @@ public class ConexionSql {
 				Class.forName(FOR_NAME).newInstance();
 				conexionConnection = DriverManager.getConnection(DRIVER_MANAGER + ddbb, user, pass);
 				conexionConnection.setAutoCommit(false);
-				PreparedStatement ps = conexionConnection.prepareStatement("Set path = 'WEBSOLTRA' , 'GRILLAS'");
+				PreparedStatement ps = conexionConnection.prepareStatement("Set path = 'ESQUEMA'");
 				ps.execute();
 			}
 			// else
