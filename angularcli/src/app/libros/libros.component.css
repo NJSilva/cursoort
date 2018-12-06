@@ -1,0 +1,61 @@
+.imagenlibro{
+    background-repeat:no-repeat;
+    background-size:contain;
+    width: 90px;
+    height: 130px;
+}
+
+img{
+    width: 90px;
+    height: 130px;
+    padding: 10px;
+}
+
+
+.titulolibro{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.autorlibro{
+    font-family: Roboto;
+    font-size: 12px;
+}
+
+.descripcionlibro{
+    font-family: Roboto;
+    font-size: 12px;
+}
+
+.desde{
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 30px;
+    float: left;
+    padding-right: 5px;
+}
+
+.fechadesde{
+    font-family: Roboto;
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+.tipolibro{
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.separador{
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+

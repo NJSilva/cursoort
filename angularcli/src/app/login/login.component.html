@@ -1,0 +1,54 @@
+<div class="bodyVerde">
+
+  <section  class="bodyVerde">
+
+      <div layout="column" id="logo" layout-align="center center">
+          <div id="imagen">
+              <img src="../assets/logoSitioWp.png" alt=""/>
+          </div>
+      </div>
+
+      <div layout="column" layout-align="center center">
+          <p class="separado">SERVICIOS AL AFILIADO</p>
+      </div>
+      <br>
+      <div layout="column" layout-align="center center">
+          <p class="nombre">Caja de Jubilaciones</p>
+      </div>
+      <div layout="column" layout-align="center center">
+          <p class="nombre">y Pensiones Bancarias</p>
+      </div>
+
+      <form name="formulario" id="formulario" novalidate>
+          <div>
+              <div class="md-block">
+                  <label>Usuario</label>
+                  <input ng-model="user.cedula" required="yes" type="text">
+              </div>
+          </div>
+          
+          <div>
+              <div class="md-block">
+                  <label>Clave</label>
+                  <input ng-model="user.clave" required="yes" type="password">
+              </div>
+          </div>
+
+          <div id="error" layout="col" layout-align="center center" ng-show="errorlogin">
+              <img src="../imagenes/warning.png" alt=""/>
+              <p>Credenciales incorrectas</p>
+          </div>
+
+  
+          <div layout="column" layout-align="center center">
+              <p class="olvido">¿Olvido su contraseña?</p>
+          </div>
+
+          <div layout="column" style="max-height:100%">
+              <button ng-click="ingresar()" id="botonIngresar">Ingresar</button>
+          </div>
+
+      </form>
+
+  </section>         
+</div>

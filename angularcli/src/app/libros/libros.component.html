@@ -1,0 +1,23 @@
+<h3 class="text-center">
+  Libros existentes
+</h3>
+
+
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let libro of libros">
+    <div class="row" id={{libro.libros_id}}>
+
+      <div class="imagenlibro col-3">
+
+        <img src="assets/{{libro.libros_imagen}}">
+
+      </div>
+
+      <div class="col-9">
+        <p class="titulolibro">Titulo: {{libro.libros_titulo}}</p>
+        <p class="autorlibro">Autor: {{libro.libros_autor}}</p>
+        <p class="descripcionlibro">Detalle: {{libro.libros_descripcion}}</p>
+      </div>
+    </div>
+  </li>
+</ul>
