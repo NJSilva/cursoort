@@ -1,22 +1,26 @@
 import { Injectable } from '@angular/core';
-import { HttpClient , HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
-import { Libro} from './Libro';
+import { Libro } from './Libro';
+import { UsuarioGlobal} from './UsuarioGlobal';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class LibrosService {
 
- direccion:string = 'http://localhost:9080/BibliotecaORT/webresources/libro';
+  private direccionRest: string;
+  private data:any ;
 
-  encabezado:HttpHeaders = new HttpHeaders({'Content-Type':'application/json' , "Authorization": "Bearer 2018-cjpb"});
-
-  constructor(private httpClient : HttpClient) { 
+  constructor(private httpClient: HttpClient , private usuarioGlobal:UsuarioGlobal) {
     console.log('librosService funcionando');
   }
 
-  getData(){
-      return this.httpClient.get<Libro[]>(this.direccion ,{ headers:this.encabezado });
+  getData() {
+    this.direccionRest = this.usuarioGlobal.direccion +  'libro';
+    return this.httpClient.get<Libro[]>( this.direccionRest, { headers: this.usuarioGlobal.encabezados });
   }
+
+
 }

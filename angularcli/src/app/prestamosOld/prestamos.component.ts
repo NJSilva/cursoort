@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Prestamo } from '../Prestamo';
+
+import { Libro } from '../Libro';
+import { Prestamo, Prestamo } from '../Prestamo';
 
 @Component({
     selector: 'app-Prestamos',
@@ -9,9 +11,10 @@ import { Prestamo } from '../Prestamo';
 })
 export class PrestamosComponent implements OnInit {
 
-    private prestamos: Prestamo[];
-    private unPrestamo: Prestamo;
-    private mensaje: string = 'mensaje';
+    prestamos: Prestamo[];
+    libros: Libro[];
+    unPrestamo: Prestamo;
+    mensaje: string = 'mensaje';
 
     constructor(private prestamosService: PrestamosService) {
         prestamosService.getData().subscribe(data => {

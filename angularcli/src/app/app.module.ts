@@ -12,16 +12,15 @@ import { LibrosComponent } from './libros/libros.component';
 
 import { LoginService} from './login.service';
 import { LibrosService} from './libros.service';
-import { PrestamosService} from './Prestamos.service';
+import { PrestamosService} from './prestamos.service';
 import { TiposService} from './tipos.service';
 import { AboutComponent } from './about/about.component';
 import { NavbarComponent } from './navbar/navbar.component';
-
-import {Constantes} from './Constantes';
+import { UsuarioGlobal } from './UsuarioGlobal';
 
 const rutas : Route[]=[
   {path:'', component: LoginComponent},
-  {path:'Prestamos' , component: PrestamosComponent},
+  {path:'prestamos' , component: PrestamosComponent},
   {path:'libros', component:LibrosComponent},
   {path:'tipos' , component:TiposComponent},
   {path:'about', component:AboutComponent}
@@ -44,7 +43,7 @@ const rutas : Route[]=[
     HttpClientModule,
     RouterModule.forRoot(rutas)
   ],
-  providers: [LoginService,LibrosService,PrestamosService,TiposService],
+  providers: [LoginService,LibrosService,PrestamosService,TiposService,UsuarioGlobal],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

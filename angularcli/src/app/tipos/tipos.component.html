@@ -1,3 +1,15 @@
-<p>
-  tipos works!
-</p>
+<app-navbar>
+  </app-navbar>
+
+  <h3 class="text-center">
+    Tipos existentes
+  </h3>
+
+
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let tipo of tipos">
+      <div class="row" id={{tipo.tipo_id}}>
+        <p class="titulolibro">{{tipo.tipos_nombre}}</p>
+      </div>
+    </li>
+  </ul>

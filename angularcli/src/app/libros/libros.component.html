@@ -1,10 +1,12 @@
+<app-navbar></app-navbar>
+
 <h3 class="text-center">
   Libros existentes
 </h3>
 
 
 <ul class="list-group">
-  <li class="list-group-item" *ngFor="let libro of libros">
+  <button class="list-group-item" *ngFor="let libro of libros" (click)="onClickMe(libro)" data-toggle="modal" data-target="#exampleModalCenter">
     <div class="row" id={{libro.libros_id}}>
 
       <div class="imagenlibro col-3">
@@ -19,5 +21,29 @@
         <p class="descripcionlibro">Detalle: {{libro.libros_descripcion}}</p>
       </div>
     </div>
-  </li>
+  </button>
 </ul>
+
+
+<!-- Para confirmar la reserva -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Reserva</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          {{mensaje}}
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary" (click)="reservar()">Aceptar</button>
+        </div>
+      </div>
+    </div>
+  </div>

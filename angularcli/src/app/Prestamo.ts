@@ -1,5 +1,4 @@
 export interface Prestamo {
-
     "prestamos_fecha_desde": string;
     "prestamos_fecha_hasta": string;
     "libros": {
@@ -17,4 +16,14 @@ export interface Prestamo {
             "tipos_nombre": string;
         }
     }
+    "personas": {
+        "personas_id": number;
+        "personas_cedula": string;
+        "personas_mail": string;
+        "personas_nombre": string;
+    },
+    "prestamos_fecha_desde_string": string;
+    "prestamos_fecha_hasta_string": string;
+    "prestamos_fecha_desde_Date": string;
+    "prestamos_fecha_hasta_Date": string;
 }

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {TiposService} from '../tipos.service';
+
+import { Tipos } from '../Tipos';
 
 @Component({
   selector: 'app-tipos',
@@ -7,7 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TiposComponent implements OnInit {
 
-  constructor() { }
+  tipos : Tipos[];
+
+  constructor(private tiposService:TiposService) { 
+    tiposService.getData().subscribe(data => {
+      this.tipos = data;
+    });
+  }
 
   ngOnInit() {
   }
