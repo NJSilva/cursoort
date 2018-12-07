@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Prestamo } from '../Prestamo';
+import { PrestamosService } from '../prestamos.service';
 
 @Component({
     selector: 'app-Prestamos',
@@ -9,9 +10,9 @@ import { Prestamo } from '../Prestamo';
 })
 export class PrestamosComponent implements OnInit {
 
-    private prestamos: Prestamo[];
-    private unPrestamo: Prestamo;
-    private mensaje: string = 'mensaje';
+     prestamos: Prestamo[];
+     unPrestamo: Prestamo;
+     mensaje: string = 'mensaje';
 
     constructor(private prestamosService: PrestamosService) {
         prestamosService.getData().subscribe(data => {
@@ -21,7 +22,7 @@ export class PrestamosComponent implements OnInit {
 
     ngOnInit(){}
 
-    onClickMePrestamo(_prestamo: Prestamo) {
+    onClickMePrestamo(_prestamo:Prestamo) {
         this.unPrestamo = _prestamo;
         this.mensaje = '¿Desea devolver el libro ' + this.unPrestamo.libros.libros_titulo + ' ?';
     }
@@ -32,7 +33,11 @@ export class PrestamosComponent implements OnInit {
         this.prestamosService.putData(this.unPrestamo).subscribe(data => {
             console.log(data);
         });
+        
+        console.log(document.getElementById('exampleModalCenter'));
 
+        document.getElementById('exampleModalCenter').setAttribute('data-dismiss','modal');
+ 
     }
 
 }

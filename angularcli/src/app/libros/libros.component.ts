@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { LibrosService } from '../libros.service';
 
 import { Libro} from '../Libro';
-import { PrestamosService } from '../Prestamos.service';
+import { PrestamosService } from '../prestamos.service';
 
 @Component({
   selector: 'app-libros',
@@ -24,7 +24,7 @@ export class LibrosComponent implements OnInit {
   ngOnInit() {
   }
 
-  onClickMe(_libro:Libro){
+  onClickMeReserva(_libro:Libro){
     
     this.unLibro=_libro;
 

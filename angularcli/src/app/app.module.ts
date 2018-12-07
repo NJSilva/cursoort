@@ -34,8 +34,7 @@ const rutas : Route[]=[
     LoginComponent,
     LibrosComponent,
     AboutComponent,
-    NavbarComponent,
-    
+    NavbarComponent  
   ],
   imports: [
     BrowserModule,

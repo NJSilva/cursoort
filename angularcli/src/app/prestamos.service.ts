@@ -1,20 +1,18 @@
 import { Injectable } from '@angular/core';
 import { HttpClient , HttpHeaders } from '@angular/common/http';
 
-import {Prestamo} from './Prestamo';
+import { Prestamo } from './Prestamo';
 import { UsuarioGlobal } from './UsuarioGlobal';
 import { Libro } from './Libro';
-
+ 
 
 @Injectable({
   providedIn: 'root'
 })
 export class PrestamosService {
 
-  private direccionRest: string;
-  private data:any ;
-
-  encabezado:HttpHeaders = new HttpHeaders({'Content-Type':'application/json' , "Authorization": "Bearer 2018-cjpb"});
+  direccionRest: string;
+  data:any ;
 
   constructor(private httpClient : HttpClient , private UG:UsuarioGlobal) { 
     console.log('prestamoService funcionando');
@@ -22,7 +20,7 @@ export class PrestamosService {
 
   getData(){
       this.direccionRest = this.UG.direccion + 'prestamo?cedula='+this.UG.usuario.personas_cedula;
-      return this.httpClient.get<Prestamo[]>(this.direccionRest ,{ headers:this.encabezado });
+      return this.httpClient.get<Prestamo[]>(this.direccionRest ,{ headers:this.UG.encabezados });
   }
   
 

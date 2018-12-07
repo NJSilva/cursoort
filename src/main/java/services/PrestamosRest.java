@@ -5,7 +5,6 @@
  */
 package services;
 
-import filters.Secured;
 import java.util.List;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
@@ -19,8 +18,6 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import src.facade.FacadeCliente;
 import src.framework.valueobject.VOI;
-import src.vo.LoginVO;
-import src.vo.PersonasVO;
 import src.vo.PrestamosVO;
 
 /**
