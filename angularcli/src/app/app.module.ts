@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule , Route } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TiposComponent } from './tipos/tipos.component';
@@ -17,6 +19,8 @@ import { TiposService} from './tipos.service';
 import { AboutComponent } from './about/about.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { UsuarioGlobal } from './UsuarioGlobal';
+import { ConfirmationDialogComponent } from './confirmation-dialog/confirmation-dialog.component';
+import { ConfirmationDialogService } from './confirmation-dialog/confirmation-dialog.service';
 
 const rutas : Route[]=[
   {path:'', component: LoginComponent},
@@ -34,15 +38,18 @@ const rutas : Route[]=[
     LoginComponent,
     LibrosComponent,
     AboutComponent,
-    NavbarComponent  
+    NavbarComponent,
+    ConfirmationDialogComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    RouterModule.forRoot(rutas)
+    RouterModule.forRoot(rutas),
+    NgbModule.forRoot()
   ],
-  providers: [LoginService,LibrosService,PrestamosService,TiposService,UsuarioGlobal],
-  bootstrap: [AppComponent]
+  providers: [LoginService,LibrosService,PrestamosService,TiposService,UsuarioGlobal,ConfirmationDialogService],
+  bootstrap: [AppComponent],
+  entryComponents: [ ConfirmationDialogComponent ]
 })
 export class AppModule { }

@@ -6,4 +6,5 @@ export class Usuario{
     personas_cedula: string;
     personas_mail: string;
     personas_nombre: string;
+    personas_clave:string;
 }
