@@ -11,7 +11,6 @@ export class UsuarioGlobal {
 
   encabezados: HttpHeaders = new HttpHeaders({ 'Content-Type': 'application/json', "Authorization": "Bearer 2018-cjpb" });
 
-
   constructor(){
       this.usuario.personas_cedula='19716428';
       this.usuario.personas_id=1;

@@ -8,7 +8,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TiposComponent } from './tipos/tipos.component';
-import { PrestamosComponent } from './Prestamos/Prestamos.component';
+import { PrestamosComponent } from './prestamos/prestamos.component';
 import { LoginComponent } from './login/login.component';
 import { LibrosComponent } from './libros/libros.component';
 
