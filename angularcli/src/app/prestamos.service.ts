@@ -14,27 +14,27 @@ export class PrestamosService {
   direccionRest: string;
   data:any ;
 
-  constructor(private httpClient : HttpClient , private UG:UsuarioGlobal) { 
+  constructor(private httpClient : HttpClient , private usuarioGlobal:UsuarioGlobal) { 
     console.log('prestamoService funcionando');
   }
 
   getData(){
-      this.direccionRest = this.UG.direccion + 'prestamo?cedula='+this.UG.usuario.personas_cedula;
-      return this.httpClient.get<Prestamo[]>(this.direccionRest ,{ headers:this.UG.encabezados });
+      this.direccionRest = this.usuarioGlobal.direccion + 'prestamo?cedula='+this.usuarioGlobal.usuario.personas_cedula;
+      return this.httpClient.get<Prestamo[]>(this.direccionRest ,{ headers:this.usuarioGlobal.encabezados });
   }
   
 
   postData(unlibro:Libro){
-    this.direccionRest = this.UG.direccion +  'prestamo';
-    this.data = '{\"prestamos_fecha_desde\": \"' + this.UG.fechaHoy() + '\", \"personas\": { \"personas_id\": ' + this.UG.usuario.personas_id + '},\"libros\":{\"libros_id\":' + unlibro.libros_id + '}}';
+    this.direccionRest = this.usuarioGlobal.direccion +  'prestamo';
+    this.data = '{\"prestamos_fecha_desde\": \"' + this.usuarioGlobal.fechaHoy() + '\", \"personas\": { \"personas_id\": ' + this.usuarioGlobal.usuario.personas_id + '},\"libros\":{\"libros_id\":' + unlibro.libros_id + '}}';
     console.log(this.data);
-    return this.httpClient.post(this.direccionRest, this.data , { headers: this.UG.encabezados });
+    return this.httpClient.post(this.direccionRest, this.data , { headers: this.usuarioGlobal.encabezados });
   }
 
   putData(unPrestamo:Prestamo){
-    this.direccionRest = this.UG.direccion +  'prestamo';
-    this.data='{\"prestamos_fecha_desde\": \"' + unPrestamo.prestamos_fecha_desde_string + '\", \"prestamos_fecha_hasta\": \"' + this.UG.fechaHoy() + '\", \"personas\": { \"personas_id\": ' +this.UG.usuario.personas_id + '},\"libros\":{\"libros_id\":' + unPrestamo.libros.libros_id + '}}';
+    this.direccionRest = this.usuarioGlobal.direccion +  'prestamo';
+    this.data='{\"prestamos_fecha_desde\": \"' + unPrestamo.prestamos_fecha_desde_string + '\", \"prestamos_fecha_hasta\": \"' + this.usuarioGlobal.fechaHoy() + '\", \"personas\": { \"personas_id\": ' +this.usuarioGlobal.usuario.personas_id + '},\"libros\":{\"libros_id\":' + unPrestamo.libros.libros_id + '}}';
     console.log(this.data);
-    return this.httpClient.put(this.direccionRest, this.data , { headers: this.UG.encabezados });
+    return this.httpClient.put(this.direccionRest, this.data , { headers: this.usuarioGlobal.encabezados });
   }
 }

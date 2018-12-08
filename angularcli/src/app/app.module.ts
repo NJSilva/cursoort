@@ -21,6 +21,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { UsuarioGlobal } from './UsuarioGlobal';
 import { ConfirmationDialogComponent } from './confirmation-dialog/confirmation-dialog.component';
 import { ConfirmationDialogService } from './confirmation-dialog/confirmation-dialog.service';
+import { FormsModule } from '@angular/forms';
 
 const rutas : Route[]=[
   {path:'', component: LoginComponent},
@@ -46,7 +47,8 @@ const rutas : Route[]=[
     AppRoutingModule,
     HttpClientModule,
     RouterModule.forRoot(rutas),
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    FormsModule
   ],
   providers: [LoginService,LibrosService,PrestamosService,TiposService,UsuarioGlobal,ConfirmationDialogService],
   bootstrap: [AppComponent],
