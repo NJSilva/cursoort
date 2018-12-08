@@ -14,10 +14,15 @@ export class LoginComponent implements OnInit {
 
   @Input() user:string;
   @Input() clave:string;
+  credencialesincorrectas:boolean;
 
   usuario:Usuario;
 
-  constructor(private loginService:LoginService , private router:Router , private usuarioGlobal:UsuarioGlobal) { }
+  constructor(private loginService:LoginService , private router:Router , private usuarioGlobal:UsuarioGlobal) {
+
+    this.credencialesincorrectas=false;
+
+   }
 
   ngOnInit() {
   }
@@ -36,6 +41,7 @@ export class LoginComponent implements OnInit {
         this.router.navigateByUrl('/prestamos');
       } else {
         console.log('No hay datos');
+        this.credencialesincorrectas=true;
       }
     });
   }
