@@ -5,17 +5,19 @@ import { Usuario } from './usuario';
 
 @Injectable()
 export class UsuarioGlobal {
-  usuario= new Usuario;
+  usuario:Usuario;
 
   direccion: string = 'http://localhost:9080/BibliotecaORT/webresources/';
 
   encabezados: HttpHeaders = new HttpHeaders({ 'Content-Type': 'application/json', "Authorization": "Bearer 2018-cjpb" });
 
   constructor(){
-      this.usuario.personas_cedula='19716428';
-      this.usuario.personas_id=1;
-      this.usuario.personas_mail='njsilva@gmail.com';
-      this.usuario.personas_nombre='Nicolas Silva';
+     // this.usuario.personas_cedula='19716428';
+     // this.usuario.personas_id=1;
+     // this.usuario.personas_mail='njsilva@gmail.com';
+     // this.usuario.personas_nombre='Nicolas Silva';
+
+     this.usuario= new Usuario;
   }
 
   fechaHoy() {

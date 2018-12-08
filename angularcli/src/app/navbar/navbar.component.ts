@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UsuarioGlobal } from '../UsuarioGlobal';
 
 @Component({
   selector: 'app-navbar',
@@ -6,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+  usuario:string;
 
-  constructor() { }
+  constructor(private usuarioGloblal:UsuarioGlobal) { 
+    this.usuario = this.usuarioGloblal.usuario.personas_nombre;
+  }
 
   ngOnInit() {
   }
